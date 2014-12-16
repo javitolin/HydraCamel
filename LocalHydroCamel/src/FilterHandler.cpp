@@ -32,6 +32,11 @@ FilterHandler::FilterHandler(Log* log)
 	_frontFilters["Gate"] = new Gate((Traffic*)_frontFilters.at("traffic"));
 	_frontFilters["Gate"]->Init(false);
 
+	//JAVI ADDED
+	_frontFilters["javiTest"] = new JaviTest();
+	_frontFilters["javiTest"]->Init(false);
+	//END JAVI ADDED
+
 	loadParameters(_frontFilters);
 	loadParameters(_bottomFilters);
 
@@ -207,6 +212,11 @@ map<string, BaseAlgorithm*> FilterHandler::instanceGenerator()
 	//IMPORTANT: Don't remove traffic if using Gate
 	_frontFilters["Gate"] = new Gate((Traffic*)_frontFilters.at("traffic"));
 	_frontFilters["Gate"]->Init(false);
+
+	//Javi added
+	_frontFilters["Javi_Test"] = new JaviTest();
+	_frontFilters["Javi_Test"]->Init(false);
+	//END JAVI ADDED
 
 	loadParameters(_frontFilters);
 	loadParameters(_bottomFilters);
@@ -458,6 +468,10 @@ void FilterHandler::updateConfigs()
 	//IMPORTANT: Don't remove traffic if using Gate
 	_frontFilters["Gate"] = new Gate((Traffic*)_frontFilters.at("traffic"));
 	_frontFilters["Gate"]->Init(false);
+	//JAVI ADDED
+	_frontFilters["Javi_Test"] = new JaviTest();
+	_frontFilters["Javi_Test"]->Init(false);
+	//END JAVI ADDED
 
 	loadParameters(_frontFilters);
 	loadParameters(_bottomFilters);

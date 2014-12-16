@@ -16,6 +16,7 @@
 #include "../Algos/blackGate2/BlackGate_adaptive.h"
 #include "../Algos/Shadow/ShadowAlgorithm.h"
 #include "../Algos/Utils/Utils.h"
+#include "../Algos/JaviTest/JaviTest.h"
 #include <boost/thread/mutex.hpp>
 #include <boost/filesystem.hpp>
 #include "../include/Log.h"
