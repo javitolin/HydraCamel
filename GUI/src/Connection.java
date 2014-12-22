@@ -47,6 +47,8 @@ public class Connection {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
+		} catch(Exception e1){
+			System.out.println(e1.getMessage());
 		}
 		return null;
 

@@ -76,7 +76,6 @@ public class Menu extends JPanel implements ActionListener {
 	int fileOpen = -1;
 	String pathToLastFile = "";
 
-
 	//connection to servers
 	private JMenuItem subServerConnect, localServerConnect;
 
@@ -105,7 +104,6 @@ public class Menu extends JPanel implements ActionListener {
 
 		JMenuBar menuBar = new JMenuBar();
 		JMenu menu, submenu, submenu2;
-
 		///////////////   parameters initialization ///////////////////
 		//openImage 
 		try {
@@ -386,8 +384,8 @@ public class Menu extends JPanel implements ActionListener {
 
 	public void actionPerformed(ActionEvent e) {
 
-    	if(e.getSource() == subServerConnect){    		
-    		
+    	if(e.getSource() == subServerConnect){
+    		gui.setLocalCon(false);
     		if(!gui.getConnection().isConnected()){
     			gui.allFiltersListSub = gui.getConnection().connect();
     			if(gui.allFiltersListSub != null){
@@ -413,8 +411,8 @@ public class Menu extends JPanel implements ActionListener {
     		}
     	}
     	//TODO:: add this to gui in linux
-    	else if(e.getSource() == localServerConnect){	
-
+    	else if(e.getSource() == localServerConnect){
+    		gui.setLocalCon(true);
     		if(!gui.getLocalConnection().isConnected()){
     			gui.allFiltersListLoc = gui.getLocalConnection().connect();
     			if(gui.allFiltersListLoc != null){
@@ -441,7 +439,7 @@ public class Menu extends JPanel implements ActionListener {
     	}
 
     	else if(e.getSource() == camStartStream){
-    		if(!gui.getConnection().isStreaming()){
+    		if(!gui.getConnection().isStreaming() || gui.getLocalCon()){
     			gui.startStreamThread();
     			gui.consoleListModel.addElement("Start video stream.");
    			}
@@ -497,6 +495,7 @@ public class Menu extends JPanel implements ActionListener {
 		}
 
 		else if(e.getSource() == openImage){
+			System.out.println(System.getProperty("java.library.path"));
 			System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
 			fc = new JFileChooser();
 			int returnVal = fc.showOpenDialog(Menu.this);
@@ -1029,6 +1028,11 @@ public class Menu extends JPanel implements ActionListener {
 						for(int i = 0; i < rListModel.size(); i++){
 							gui.currFiltersListVideo.add(rListModel.get(i));
 							gui.videoList.add(new DefaultMutableTreeNode(rListModel.get(i)));
+							//Javi Testing
+							if(gui.getLocalCon()){
+								gui.currFiltersListCam1.add(rListModel.get(i));
+								gui.frontCamList.add(new DefaultMutableTreeNode(rListModel.get(i)));
+							}
 						}
 						gui.VideoImage = -1;
 						gui.videoFilterRunning = 1;
@@ -1209,7 +1213,12 @@ public class Menu extends JPanel implements ActionListener {
 
 		else if(e.getSource() == runCFrontCamera){
 			if(!gui.currFiltersListCam1.isEmpty()){
-				if(!gui.getConnection().chainedFiltersList(gui.currFiltersListCam1, true));
+				//Javi Testing
+				if(gui.getLocalCon()){
+					if(!gui.getLocalConnection().chainedFiltersList(gui.currFiltersListCam1));
+				}
+				else
+					if(!gui.getConnection().chainedFiltersList(gui.currFiltersListCam1, true));
 				gui.fCamImage = 0;     			//default filter index
 
 				//TODO:: remove later
@@ -1232,7 +1241,12 @@ public class Menu extends JPanel implements ActionListener {
 		}
 		else if(e.getSource() == runUCFrontCamera){
 			if(!gui.currFiltersListCam1.isEmpty()){
-				if(!gui.getConnection().unorderedFiltersList(gui.currFiltersListCam1, true));
+				if(gui.getLocalCon()){
+					System.out.println("Javi testing adding the functionality");
+					if(!gui.getLocalConnection().unorderedFiltersList(gui.currFiltersListCam1));
+				}
+				else
+					if(!gui.getConnection().unorderedFiltersList(gui.currFiltersListCam1, true));
 				gui.fCamImage = 0; //default filter index
 			}
 			else{
@@ -1424,10 +1438,19 @@ public class Menu extends JPanel implements ActionListener {
 				if(rListModel.size() > 0){
 					gui.currFiltersListVideo.clear();
 					gui.videoList.removeAllChildren();
+					if(gui.getLocalCon()){
+						gui.currFiltersListCam1.clear();
+						gui.frontCamList.removeAllChildren();
+					}
 					//add filters to current filters list in gui
 					for(int i = 0; i < rListModel.size(); i++){
 						gui.currFiltersListVideo.add(rListModel.get(i));
 						gui.videoList.add(new DefaultMutableTreeNode(rListModel.get(i)));
+						//Javi Add
+						if(gui.getLocalCon()){
+							gui.currFiltersListCam1.add(rListModel.get(i));
+							gui.frontCamList.add(new DefaultMutableTreeNode(rListModel.get(i)));
+						}
 					}
 					gui.VideoImage = -1;
 					gui.videoFilterRunning = 0;

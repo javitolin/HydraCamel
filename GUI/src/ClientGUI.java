@@ -1,65 +1,37 @@
 
 
-import java.io.File; 
-import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
-import java.awt.Event;
-import java.awt.Image;
-import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.awt.image.BufferedImage;
-import java.io.BufferedInputStream;
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.DataOutputStream;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.PrintWriter;
-import java.io.FileWriter;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.InetAddress;
-import java.net.Socket;
-import java.net.URL;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
 
 import javax.imageio.ImageIO;
 import javax.swing.BorderFactory;
 import javax.swing.DefaultListModel;
-import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
-import javax.swing.JEditorPane;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JList;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTree;
-import javax.swing.ListSelectionModel;
 import javax.swing.WindowConstants;
 import javax.swing.border.EtchedBorder;
 import javax.swing.border.TitledBorder;
-import javax.swing.event.ListSelectionEvent;
-
-import javax.swing.event.ListSelectionListener;
 import javax.swing.event.TreeSelectionEvent;
 import javax.swing.event.TreeSelectionListener;
-import javax.swing.plaf.basic.BasicArrowButton;
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.DefaultTreeCellRenderer;
 import javax.swing.tree.DefaultTreeModel;
@@ -70,7 +42,6 @@ import org.opencv.core.Mat;
 import org.opencv.core.MatOfByte;
 import org.opencv.core.Size;
 import org.opencv.highgui.Highgui;
-import org.opencv.highgui.VideoCapture;
 import org.opencv.imgproc.Imgproc;
 
 
@@ -92,6 +63,7 @@ public class ClientGUI implements ActionListener, TreeSelectionListener{
 	public JPanel unfilteredStreamCam1, filteredStreamCam1;
 	public JPanel unfilteredStreamCam2, filteredStreamCam2;
 	public JPanel unfilteredVideoStream, filteredVideoStream;
+	private static boolean isLocal;
 
 	
 	// 0 -> config connection file, 1 -> config local connection file, 
@@ -134,12 +106,17 @@ public class ClientGUI implements ActionListener, TreeSelectionListener{
 	public DefaultMutableTreeNode videoList;
 
 	ArrayList<Mat> filteredImages;
-
+	public void setLocalCon(boolean toSet){
+		isLocal = toSet;
+	}
+	public boolean getLocalCon(){
+		return isLocal;
+	}
 	public void startGUI() throws IOException{	
 
 		initGui();
 		menu.setGui(this);
-		menu.disableSubServerButtons();
+		//menu.disableSubServerButtons();
 		menu.disableLocalServerButtons();
 
 
@@ -559,7 +536,12 @@ public class ClientGUI implements ActionListener, TreeSelectionListener{
 			public void run() {
 			
 				//start stream
-				con.startStream();
+				if(isLocal){
+					localCon.startStream("/dev/video0");
+				}
+				else{
+					con.startStream();
+				}
 				try{
 					//The client sends (for now) any message to the server, and the server starts the video stream.
 					DatagramSocket clientSocketVid = new DatagramSocket();

@@ -31,17 +31,21 @@ public class LocalConnection {
 	{
 
 		try {
+			System.out.println("Entering connect function");
 			this.tcpSocket = new Socket("localhost", 5000);
 			this.outToServer = new DataOutputStream( tcpSocket.getOutputStream() );
 			//			this.inFromServer = new BufferedInputStream(tcpSocket.getInputStream());
 			this.inFromServer = new DataInputStream(tcpSocket.getInputStream());
 			connected = true;
+			System.out.println("All initializations have been taken placed");
 			return getFilters();
 		
 		} catch (UnknownHostException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
+		} catch (Exception e1){
+			e1.printStackTrace();
 		}
 		return null;
 
@@ -62,7 +66,10 @@ public class LocalConnection {
 	{
 		return connected;
 	}
-
+	public boolean isStreaming()
+	{
+		return streaming;
+	}
 	/**
 	 * Close the connection to the server.
 	 * Use this function when existing the program!

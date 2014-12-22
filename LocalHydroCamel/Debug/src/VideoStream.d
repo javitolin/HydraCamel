@@ -28,6 +28,8 @@ src/VideoStream.d: ../src/VideoStream.cpp ../src/../include/VideoStream.h \
  ../src/../include/../include/../include/../Algos/blackGate2/BlackGate_adaptive.h \
  ../src/../include/../include/../include/../Algos/Shadow/ShadowAlgorithm.h \
  ../src/../include/../include/../include/../Algos/Utils/Utils.h \
+ ../src/../include/../include/../include/../Algos/JaviTest/JaviTest.h \
+ ../src/../include/../include/../include/../Algos/JaviTest/../BaseAlgorithm.h \
  ../src/../include/../include/../include/../include/Log.h \
  ../src/../include/../include/../include/../include/CreatedFilter.h \
  ../src/../include/../include/../include/../include/../Algos/BaseAlgorithm.h
@@ -91,6 +93,10 @@ src/VideoStream.d: ../src/VideoStream.cpp ../src/../include/VideoStream.h \
 ../src/../include/../include/../include/../Algos/Shadow/ShadowAlgorithm.h:
 
 ../src/../include/../include/../include/../Algos/Utils/Utils.h:
+
+../src/../include/../include/../include/../Algos/JaviTest/JaviTest.h:
+
+../src/../include/../include/../include/../Algos/JaviTest/../BaseAlgorithm.h:
 
 ../src/../include/../include/../include/../include/Log.h:
 

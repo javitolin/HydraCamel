@@ -133,13 +133,23 @@ void VideoStream::run()
 	//open default camera. Need to check if works on submarine.
 	_log->printLog("VideoStream", "Streaming video: "+_videoPath+"...", "Info");
 	cv::VideoCapture cap(_videoPath);
+	cv::VideoCapture defaultCamera(0);
+	bool useDefault = 0;
 	cap.set(CV_CAP_PROP_FPS, 15);
 	if( !cap.isOpened() )
 	{
+		useDefault = 1;
 		_log->printLog("VideoStream", "Failed to open video file " + _videoPath + " killing thread...", "Error" );
-		return;
+		//return;
 	}
-
+	else{
+		defaultCamera.set(CV_CAP_PROP_FPS, 15);
+		if( !defaultCamera.isOpened() )
+		{
+			_log->printLog("VideoStream", "Failed to open default video stream " + _videoPath + " killing thread...", "Error" );
+			return;
+		}
+	}
 	while( !_killStream )
 	{
 		cout << _killStream << endl;
@@ -157,7 +167,10 @@ void VideoStream::run()
 		}
 		cv::Mat frame;
 		//get a new frame from camera.
-		cap >> frame;
+		if(useDefault)
+			defaultCamera >> frame;
+		else
+			cap >> frame;
 		if(frame.empty())
 			break;
 

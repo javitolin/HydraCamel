@@ -47,6 +47,7 @@ Algos/Debug/Traffic \
 Algos/Debug/Torpedo \
 Algos/Debug/Shadow \
 Algos/Debug/Path \
+Algos/Debug/JaviTest \
 Algos/Debug/Gate \
 Algos/Debug \
 Algos/Debug/Balls \

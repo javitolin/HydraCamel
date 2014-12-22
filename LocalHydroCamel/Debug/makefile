@@ -32,6 +32,7 @@ RM := rm -rf
 -include Algos/Debug/Torpedo/subdir.mk
 -include Algos/Debug/Shadow/subdir.mk
 -include Algos/Debug/Path/subdir.mk
+-include Algos/Debug/JaviTest/subdir.mk
 -include Algos/Debug/Gate/subdir.mk
 -include Algos/Debug/Balls/subdir.mk
 -include Algos/Debug/subdir.mk

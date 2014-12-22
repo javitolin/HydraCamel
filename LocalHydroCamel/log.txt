@@ -39232,3 +39232,3328 @@ Info
 Date: 03-11-2014	Time: 19:17:48
 Info
 	Waiting for client...
+Date: 24-11-2014	Time: 17:54:55
+Date: 24-11-2014	Time: 17:54:55
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 24-11-2014	Time: 17:54:55
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 24-11-2014	Time: 17:54:55
+Info
+	Loading created filters...
+FilterHandler:	Date: 24-11-2014	Time: 17:54:55
+Info
+	Done loading created filters
+Date: 24-11-2014	Time: 17:54:55
+Info
+	Waiting for client...
+	Connected to client
+Date: 24-11-2014	Time: 17:55:17
+Info
+	Sending list of filters in machine...
+	Number of filters: 5
+	Sending filter: Gate with length of: 4
+	Sending filter: blackGate with length of: 9
+	Sending filter: path with length of: 4
+	Sending filter: torpedo with length of: 7
+	Sending filter: traffic with length of: 7
+VideoStream:	Date: 24-11-2014	Time: 17:55:17
+Info
+	checking the latest video file number
+	Latest video file number is: 0
+Date: 24-11-2014	Time: 17:55:17
+Info
+	Receiving server code...
+	Received 106
+Date: 24-11-2014	Time: 17:59:03
+Info
+	Ending contact with client...
+Date: 24-11-2014	Time: 17:59:03
+Info
+	Contact with client ended. Waiting for contact...
+Date: 15-12-2014	Time: 17:07:43
+Date: 15-12-2014	Time: 17:07:43
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 15-12-2014	Time: 17:07:43
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 15-12-2014	Time: 17:07:43
+Info
+	Loading created filters...
+FilterHandler:	Date: 15-12-2014	Time: 17:07:43
+Info
+	Done loading created filters
+Date: 15-12-2014	Time: 17:07:43
+Info
+	Waiting for client...
+	Connected to client
+Date: 15-12-2014	Time: 17:08:22
+Info
+	Sending list of filters in machine...
+	Number of filters: 5
+	Sending filter: Gate with length of: 4
+	Sending filter: blackGate with length of: 9
+	Sending filter: path with length of: 4
+	Sending filter: torpedo with length of: 7
+	Sending filter: traffic with length of: 7
+VideoStream:	Date: 15-12-2014	Time: 17:08:22
+Info
+	checking the latest video file number
+	Latest video file number is: 0
+Date: 15-12-2014	Time: 17:08:22
+Info
+	Receiving server code...
+	Received 109
+Date: 15-12-2014	Time: 17:12:22
+Info
+	Sending hard disk statistics...
+	Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda6       354G  280G   57G  84% /
+none            4.0K     0  4.0K   0% /sys/fs/cgroup
+udev            3.9G  4.0K  3.9G   1% /dev
+tmpfs           790M  1.3M  788M   1% /run
+none            5.0M     0  5.0M   0% /run/lock
+none            3.9G   21M  3.9G   1% /run/shm
+none            100M   60K  100M   1% /run/user
+/dev/sda2       229G  193G   37G  85% /media/jdorfsman/1C8E4D688E4D3C10
+
+Date: 15-12-2014	Time: 17:12:22
+Info
+	Receiving server code...
+	Received 106
+Date: 15-12-2014	Time: 17:12:37
+Info
+	Ending contact with client...
+Date: 15-12-2014	Time: 17:12:37
+Info
+	Contact with client ended. Waiting for contact...
+Date: 15-12-2014	Time: 17:12:56
+Info
+	Connected to client
+Date: 15-12-2014	Time: 17:12:56
+Info
+	Sending list of filters in machine...
+	Number of filters: 5
+	Sending filter: Gate with length of: 4
+	Sending filter: blackGate with length of: 9
+	Sending filter: path with length of: 4
+	Sending filter: torpedo with length of: 7
+	Sending filter: traffic with length of: 7
+Date: 15-12-2014	Time: 17:12:56
+Info
+	Receiving server code...
+	Received 103
+Date: 15-12-2014	Time: 17:39:23
+Info
+	Operating on new unordered list of filters...
+	Receiving 2 bytes as length...
+	Received 2 bytes successfully
+Date: 15-12-2014	Time: 17:39:23
+Info
+	Receiving 1 filters...
+	Receiving 2 bytes as length...
+	Received 2 bytes successfully
+	Receiving 4 bytes to fill buffer...
+	Received 4 bytes successfully
+	Received filter: Gate
+	Trying to stop the stream...
+	Stream did not start
+FilterRun:	Date: 15-12-2014	Time: 17:39:23
+Info
+	Unordered: Using the following filter for front camera:
+	Gate
+Date: 15-12-2014	Time: 17:39:23
+Info
+	Unordered filters list was changed successfully.
+Date: 15-12-2014	Time: 17:39:23
+Info
+	Receiving server code...
+Date: 15-12-2014	Time: 17:41:10
+Date: 15-12-2014	Time: 17:41:10
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 15-12-2014	Time: 17:41:10
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 15-12-2014	Time: 17:41:10
+Info
+	Loading created filters...
+FilterHandler:	Date: 15-12-2014	Time: 17:41:10
+Info
+	Done loading created filters
+Date: 15-12-2014	Time: 17:41:10
+Info
+	Waiting for client...
+	Connected to client
+Date: 15-12-2014	Time: 17:41:15
+Info
+	Sending list of filters in machine...
+	Number of filters: 5
+	Sending filter: Gate with length of: 4
+	Sending filter: blackGate with length of: 9
+	Sending filter: path with length of: 4
+	Sending filter: torpedo with length of: 7
+	Sending filter: traffic with length of: 7
+VideoStream:	Date: 15-12-2014	Time: 17:41:15
+Info
+	checking the latest video file number
+	Latest video file number is: 0
+Date: 15-12-2014	Time: 17:41:15
+Info
+	Receiving server code...
+Date: 15-12-2014	Time: 18:09:32
+Date: 15-12-2014	Time: 18:09:32
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 15-12-2014	Time: 18:09:32
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 15-12-2014	Time: 18:09:32
+Info
+	Loading created filters...
+FilterHandler:	Date: 15-12-2014	Time: 18:09:32
+Info
+	Done loading created filters
+Date: 15-12-2014	Time: 18:09:32
+Info
+	Waiting for client...
+	Connected to client
+Date: 15-12-2014	Time: 18:09:35
+Info
+	Sending list of filters in machine...
+	Number of filters: 5
+	Sending filter: Gate with length of: 4
+	Sending filter: blackGate with length of: 9
+	Sending filter: path with length of: 4
+	Sending filter: torpedo with length of: 7
+	Sending filter: traffic with length of: 7
+VideoStream:	Date: 15-12-2014	Time: 18:09:35
+Info
+	checking the latest video file number
+	Latest video file number is: 0
+Date: 15-12-2014	Time: 18:09:35
+Info
+	Receiving server code...
+Date: 15-12-2014	Time: 18:10:32
+Date: 15-12-2014	Time: 18:10:32
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 15-12-2014	Time: 18:10:32
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 15-12-2014	Time: 18:10:32
+Info
+	Loading created filters...
+FilterHandler:	Date: 15-12-2014	Time: 18:10:32
+Info
+	Done loading created filters
+Date: 15-12-2014	Time: 18:10:32
+Info
+	Waiting for client...
+	Connected to client
+Date: 15-12-2014	Time: 18:10:34
+Info
+	Sending list of filters in machine...
+	Number of filters: 5
+	Sending filter: Gate with length of: 4
+	Sending filter: blackGate with length of: 9
+	Sending filter: path with length of: 4
+	Sending filter: torpedo with length of: 7
+	Sending filter: traffic with length of: 7
+VideoStream:	Date: 15-12-2014	Time: 18:10:34
+Info
+	checking the latest video file number
+	Latest video file number is: 0
+Date: 15-12-2014	Time: 18:10:34
+Info
+	Receiving server code...
+Date: 15-12-2014	Time: 18:15:06
+Date: 15-12-2014	Time: 18:15:06
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 15-12-2014	Time: 18:15:06
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 15-12-2014	Time: 18:15:06
+Info
+	Loading created filters...
+FilterHandler:	Date: 15-12-2014	Time: 18:15:06
+Info
+	Done loading created filters
+Date: 15-12-2014	Time: 18:15:06
+Error
+	bind: Address already in use
+Date: 15-12-2014	Time: 18:15:06
+Info
+	Communication ended at: Date: 15-12-2014	Time: 18:15:06
+
+
+Date: 15-12-2014	Time: 18:15:36
+Date: 15-12-2014	Time: 18:15:36
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 15-12-2014	Time: 18:15:36
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 15-12-2014	Time: 18:15:36
+Info
+	Loading created filters...
+FilterHandler:	Date: 15-12-2014	Time: 18:15:36
+Info
+	Done loading created filters
+Date: 15-12-2014	Time: 18:15:36
+Info
+	Waiting for client...
+	Connected to client
+Date: 15-12-2014	Time: 18:15:40
+Info
+	Sending list of filters in machine...
+	Number of filters: 5
+	Sending filter: Gate with length of: 4
+	Sending filter: blackGate with length of: 9
+	Sending filter: path with length of: 4
+	Sending filter: torpedo with length of: 7
+	Sending filter: traffic with length of: 7
+VideoStream:	Date: 15-12-2014	Time: 18:15:40
+Info
+	checking the latest video file number
+	Latest video file number is: 0
+Date: 15-12-2014	Time: 18:15:40
+Info
+	Receiving server code...
+Date: 15-12-2014	Time: 18:15:58
+Date: 15-12-2014	Time: 18:15:58
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 15-12-2014	Time: 18:15:58
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 15-12-2014	Time: 18:15:58
+Info
+	Loading created filters...
+FilterHandler:	Date: 15-12-2014	Time: 18:15:58
+Info
+	Done loading created filters
+Date: 15-12-2014	Time: 18:15:58
+Info
+	Waiting for client...
+	Connected to client
+Date: 15-12-2014	Time: 18:16:04
+Info
+	Sending list of filters in machine...
+	Number of filters: 5
+	Sending filter: Gate with length of: 4
+	Sending filter: blackGate with length of: 9
+	Sending filter: path with length of: 4
+	Sending filter: torpedo with length of: 7
+	Sending filter: traffic with length of: 7
+VideoStream:	Date: 15-12-2014	Time: 18:16:04
+Info
+	checking the latest video file number
+	Latest video file number is: 0
+Date: 15-12-2014	Time: 18:16:04
+Info
+	Receiving server code...
+Date: 16-12-2014	Time: 00:22:50
+Date: 16-12-2014	Time: 00:22:50
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 16-12-2014	Time: 00:22:50
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 16-12-2014	Time: 00:22:50
+Info
+	Loading created filters...
+FilterHandler:	Date: 16-12-2014	Time: 00:22:50
+Info
+	Done loading created filters
+Date: 16-12-2014	Time: 00:22:50
+Info
+	Waiting for client...
+	Connected to client
+Date: 16-12-2014	Time: 00:22:56
+Info
+	Sending list of filters in machine...
+	Number of filters: 5
+	Sending filter: Gate with length of: 4
+	Sending filter: blackGate with length of: 9
+	Sending filter: path with length of: 4
+	Sending filter: torpedo with length of: 7
+	Sending filter: traffic with length of: 7
+VideoStream:	Date: 16-12-2014	Time: 00:22:56
+Info
+	checking the latest video file number
+	Latest video file number is: 0
+Date: 16-12-2014	Time: 00:22:56
+Info
+	Receiving server code...
+Date: 16-12-2014	Time: 00:24:25
+Date: 16-12-2014	Time: 00:24:25
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 16-12-2014	Time: 00:24:25
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 16-12-2014	Time: 00:24:25
+Info
+	Loading created filters...
+FilterHandler:	Date: 16-12-2014	Time: 00:24:25
+Info
+	Done loading created filters
+Date: 16-12-2014	Time: 00:24:25
+Info
+	Waiting for client...
+	Connected to client
+Date: 16-12-2014	Time: 00:24:28
+Info
+	Sending list of filters in machine...
+	Number of filters: 5
+	Sending filter: Gate with length of: 4
+	Sending filter: blackGate with length of: 9
+	Sending filter: path with length of: 4
+	Sending filter: torpedo with length of: 7
+	Sending filter: traffic with length of: 7
+VideoStream:	Date: 16-12-2014	Time: 00:24:28
+Info
+	checking the latest video file number
+	Latest video file number is: 0
+Date: 16-12-2014	Time: 00:24:28
+Info
+	Receiving server code...
+	Received 106
+Date: 16-12-2014	Time: 00:24:31
+Info
+	Ending contact with client...
+Date: 16-12-2014	Time: 00:24:31
+Info
+	Contact with client ended. Waiting for contact...
+Date: 16-12-2014	Time: 00:29:08
+Date: 16-12-2014	Time: 00:29:08
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 16-12-2014	Time: 00:29:08
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 16-12-2014	Time: 00:29:08
+Info
+	Loading created filters...
+FilterHandler:	Date: 16-12-2014	Time: 00:29:08
+Info
+	Done loading created filters
+Date: 16-12-2014	Time: 00:29:08
+Info
+	Waiting for client...
+	Connected to client
+Date: 16-12-2014	Time: 00:29:13
+Info
+	Sending list of filters in machine...
+	Number of filters: 5
+	Sending filter: Gate with length of: 4
+	Sending filter: blackGate with length of: 9
+	Sending filter: path with length of: 4
+	Sending filter: torpedo with length of: 7
+	Sending filter: traffic with length of: 7
+VideoStream:	Date: 16-12-2014	Time: 00:29:13
+Info
+	checking the latest video file number
+	Latest video file number is: 0
+Date: 16-12-2014	Time: 00:29:13
+Info
+	Receiving server code...
+Date: 16-12-2014	Time: 00:30:10
+Date: 16-12-2014	Time: 00:30:10
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 16-12-2014	Time: 00:30:10
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 16-12-2014	Time: 00:30:10
+Info
+	Loading created filters...
+FilterHandler:	Date: 16-12-2014	Time: 00:30:10
+Info
+	Done loading created filters
+Date: 16-12-2014	Time: 00:30:10
+Info
+	Waiting for client...
+	Connected to client
+Date: 16-12-2014	Time: 00:30:14
+Info
+	Sending list of filters in machine...
+	Number of filters: 5
+	Sending filter: Gate with length of: 4
+	Sending filter: blackGate with length of: 9
+	Sending filter: path with length of: 4
+	Sending filter: torpedo with length of: 7
+	Sending filter: traffic with length of: 7
+VideoStream:	Date: 16-12-2014	Time: 00:30:14
+Info
+	checking the latest video file number
+	Latest video file number is: 0
+Date: 16-12-2014	Time: 00:30:14
+Info
+	Receiving server code...
+	Received 106
+Date: 16-12-2014	Time: 00:30:20
+Info
+	Ending contact with client...
+Date: 16-12-2014	Time: 00:30:20
+Info
+	Contact with client ended. Waiting for contact...
+Date: 16-12-2014	Time: 00:34:00
+Date: 16-12-2014	Time: 00:34:00
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 16-12-2014	Time: 00:34:00
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 16-12-2014	Time: 00:34:00
+Info
+	Loading created filters...
+FilterHandler:	Date: 16-12-2014	Time: 00:34:00
+Info
+	Done loading created filters
+Date: 16-12-2014	Time: 00:34:00
+Info
+	Waiting for client...
+	Connected to client
+Date: 16-12-2014	Time: 00:34:06
+Info
+	Sending list of filters in machine...
+	Number of filters: 5
+	Sending filter: Gate with length of: 4
+	Sending filter: blackGate with length of: 9
+	Sending filter: path with length of: 4
+	Sending filter: torpedo with length of: 7
+	Sending filter: traffic with length of: 7
+VideoStream:	Date: 16-12-2014	Time: 00:34:06
+Info
+	checking the latest video file number
+	Latest video file number is: 0
+Date: 16-12-2014	Time: 00:34:06
+Info
+	Receiving server code...
+Date: 16-12-2014	Time: 00:36:24
+Date: 16-12-2014	Time: 00:36:24
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 16-12-2014	Time: 00:36:24
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 16-12-2014	Time: 00:36:24
+Info
+	Loading created filters...
+FilterHandler:	Date: 16-12-2014	Time: 00:36:24
+Info
+	Done loading created filters
+Date: 16-12-2014	Time: 00:36:24
+Error
+	bind: Address already in use
+Date: 16-12-2014	Time: 00:36:24
+Info
+	Communication ended at: Date: 16-12-2014	Time: 00:36:24
+
+
+Date: 16-12-2014	Time: 00:36:38
+Date: 16-12-2014	Time: 00:36:38
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 16-12-2014	Time: 00:36:38
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 16-12-2014	Time: 00:36:38
+Info
+	Loading created filters...
+FilterHandler:	Date: 16-12-2014	Time: 00:36:38
+Info
+	Done loading created filters
+Date: 16-12-2014	Time: 00:36:38
+Info
+	Waiting for client...
+	Connected to client
+Date: 16-12-2014	Time: 00:36:45
+Info
+	Sending list of filters in machine...
+	Number of filters: 5
+	Sending filter: Gate with length of: 4
+	Sending filter: blackGate with length of: 9
+	Sending filter: path with length of: 4
+	Sending filter: torpedo with length of: 7
+	Sending filter: traffic with length of: 7
+VideoStream:	Date: 16-12-2014	Time: 00:36:45
+Info
+	checking the latest video file number
+	Latest video file number is: 0
+Date: 16-12-2014	Time: 00:36:45
+Info
+	Receiving server code...
+Date: 16-12-2014	Time: 00:38:25
+Date: 16-12-2014	Time: 00:38:25
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 16-12-2014	Time: 00:38:25
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 16-12-2014	Time: 00:38:25
+Info
+	Loading created filters...
+FilterHandler:	Date: 16-12-2014	Time: 00:38:25
+Info
+	Done loading created filters
+Date: 16-12-2014	Time: 00:38:25
+Info
+	Waiting for client...
+	Connected to client
+Date: 16-12-2014	Time: 00:38:32
+Info
+	Sending list of filters in machine...
+	Number of filters: 5
+	Sending filter: Gate with length of: 4
+	Sending filter: blackGate with length of: 9
+	Sending filter: path with length of: 4
+	Sending filter: torpedo with length of: 7
+	Sending filter: traffic with length of: 7
+VideoStream:	Date: 16-12-2014	Time: 00:38:32
+Info
+	checking the latest video file number
+	Latest video file number is: 0
+Date: 16-12-2014	Time: 00:38:32
+Info
+	Receiving server code...
+Date: 16-12-2014	Time: 00:42:37
+Date: 16-12-2014	Time: 00:42:37
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 16-12-2014	Time: 00:42:37
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 16-12-2014	Time: 00:42:37
+Info
+	Loading created filters...
+FilterHandler:	Date: 16-12-2014	Time: 00:42:37
+Info
+	Done loading created filters
+Date: 16-12-2014	Time: 00:42:37
+Info
+	Waiting for client...
+	Connected to client
+Date: 16-12-2014	Time: 00:42:41
+Info
+	Sending list of filters in machine...
+	Number of filters: 5
+	Sending filter: Gate with length of: 4
+	Sending filter: blackGate with length of: 9
+	Sending filter: path with length of: 4
+	Sending filter: torpedo with length of: 7
+	Sending filter: traffic with length of: 7
+VideoStream:	Date: 16-12-2014	Time: 00:42:41
+Info
+	checking the latest video file number
+	Latest video file number is: 0
+Date: 16-12-2014	Time: 00:42:41
+Info
+	Receiving server code...
+	Received 106
+Date: 16-12-2014	Time: 00:42:50
+Info
+	Ending contact with client...
+Date: 16-12-2014	Time: 00:42:50
+Info
+	Contact with client ended. Waiting for contact...
+Date: 16-12-2014	Time: 00:47:58
+Date: 16-12-2014	Time: 00:47:58
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 16-12-2014	Time: 00:47:58
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 16-12-2014	Time: 00:47:58
+Info
+	Loading created filters...
+FilterHandler:	Date: 16-12-2014	Time: 00:47:58
+Info
+	Done loading created filters
+Date: 16-12-2014	Time: 00:47:58
+Info
+	Waiting for client...
+	Connected to client
+Date: 16-12-2014	Time: 00:48:02
+Info
+	Sending list of filters in machine...
+	Number of filters: 5
+	Sending filter: Gate with length of: 4
+	Sending filter: blackGate with length of: 9
+	Sending filter: path with length of: 4
+	Sending filter: torpedo with length of: 7
+	Sending filter: traffic with length of: 7
+VideoStream:	Date: 16-12-2014	Time: 00:48:02
+Info
+	checking the latest video file number
+	Latest video file number is: 0
+Date: 16-12-2014	Time: 00:48:02
+Info
+	Receiving server code...
+Date: 16-12-2014	Time: 10:15:43
+Date: 16-12-2014	Time: 10:15:43
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 16-12-2014	Time: 10:15:43
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 16-12-2014	Time: 10:15:43
+Info
+	Loading created filters...
+FilterHandler:	Date: 16-12-2014	Time: 10:15:43
+Info
+	Done loading created filters
+Date: 16-12-2014	Time: 10:15:43
+Info
+	Waiting for client...
+	Connected to client
+Date: 16-12-2014	Time: 10:15:52
+Info
+	Sending list of filters in machine...
+	Number of filters: 5
+	Sending filter: Gate with length of: 4
+	Sending filter: blackGate with length of: 9
+	Sending filter: path with length of: 4
+	Sending filter: torpedo with length of: 7
+	Sending filter: traffic with length of: 7
+VideoStream:	Date: 16-12-2014	Time: 10:15:52
+Info
+	checking the latest video file number
+	Latest video file number is: 0
+Date: 16-12-2014	Time: 10:15:52
+Info
+	Receiving server code...
+Date: 16-12-2014	Time: 11:12:39
+Date: 16-12-2014	Time: 11:12:39
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 16-12-2014	Time: 11:12:39
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 16-12-2014	Time: 11:12:39
+Info
+	Loading created filters...
+FilterHandler:	Date: 16-12-2014	Time: 11:12:39
+Info
+	Done loading created filters
+Date: 16-12-2014	Time: 11:12:39
+Info
+	Waiting for client...
+	Connected to client
+Date: 16-12-2014	Time: 11:12:43
+Info
+	Sending list of filters in machine...
+	Number of filters: 5
+	Sending filter: Gate with length of: 4
+	Sending filter: blackGate with length of: 9
+	Sending filter: path with length of: 4
+	Sending filter: torpedo with length of: 7
+	Sending filter: traffic with length of: 7
+VideoStream:	Date: 16-12-2014	Time: 11:12:43
+Info
+	checking the latest video file number
+	Latest video file number is: 0
+Date: 16-12-2014	Time: 11:12:43
+Info
+	Receiving server code...
+Date: 16-12-2014	Time: 11:13:48
+Date: 16-12-2014	Time: 11:13:48
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 16-12-2014	Time: 11:13:48
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 16-12-2014	Time: 11:13:48
+Info
+	Loading created filters...
+FilterHandler:	Date: 16-12-2014	Time: 11:13:48
+Info
+	Done loading created filters
+Date: 16-12-2014	Time: 11:13:48
+Info
+	Waiting for client...
+	Connected to client
+Date: 16-12-2014	Time: 11:13:53
+Info
+	Sending list of filters in machine...
+	Number of filters: 5
+	Sending filter: Gate with length of: 4
+	Sending filter: blackGate with length of: 9
+	Sending filter: path with length of: 4
+	Sending filter: torpedo with length of: 7
+	Sending filter: traffic with length of: 7
+VideoStream:	Date: 16-12-2014	Time: 11:13:53
+Info
+	checking the latest video file number
+	Latest video file number is: 0
+Date: 16-12-2014	Time: 11:13:53
+Info
+	Receiving server code...
+	Received 104
+Date: 16-12-2014	Time: 11:14:17
+Info
+	Operating on new filters chained list...
+	Receiving 2 bytes as length...
+	Received 2 bytes successfully
+Date: 16-12-2014	Time: 11:14:17
+Info
+	Receiving 1 filters...
+	Receiving 2 bytes as length...
+	Received 2 bytes successfully
+	Receiving 4 bytes to fill buffer...
+	Received 4 bytes successfully
+	Received filter: Gate
+	Trying to stop the stream...
+	Stream did not start
+FilterRun:	Date: 16-12-2014	Time: 11:14:17
+Info
+	Chained: Using the following filter for front camera:
+	Gate
+Date: 16-12-2014	Time: 11:14:17
+Info
+	Chained filters list was changed successfully.
+Date: 16-12-2014	Time: 11:14:17
+Info
+	Receiving server code...
+	Received 115
+Date: 16-12-2014	Time: 11:14:17
+Info
+	Receiving image to filter
+	Receiving 10 bytes as length...
+	Received 10 bytes successfully
+	Receiving 37 bytes to fill buffer...
+	Received 37 bytes successfully
+FilterRun:	Date: 16-12-2014	Time: 11:14:17
+Info
+	Chained mode
+	Filtered image is good
+Date: 16-12-2014	Time: 11:14:17
+Info
+	Sending number of filters that filtered the image...
+	Number of filters: 1
+Date: 16-12-2014	Time: 11:14:17
+Info
+	Sending the images...
+Date: 16-12-2014	Time: 11:14:17
+Info
+	Sending image size: 0000031115...
+	Sending image...
+	Sent 31115 bytes successfully
+Date: 16-12-2014	Time: 11:14:17
+Info
+	Receiving server code...
+	Received 104
+Date: 16-12-2014	Time: 11:14:30
+Info
+	Operating on new filters chained list...
+	Receiving 2 bytes as length...
+	Received 2 bytes successfully
+Date: 16-12-2014	Time: 11:14:30
+Info
+	Receiving 1 filters...
+	Receiving 2 bytes as length...
+	Received 2 bytes successfully
+	Receiving 7 bytes to fill buffer...
+	Received 7 bytes successfully
+	Received filter: traffic
+	Trying to stop the stream...
+	Stream did not start
+FilterRun:	Date: 16-12-2014	Time: 11:14:30
+Info
+	Chained: Using the following filter for front camera:
+	traffic
+Date: 16-12-2014	Time: 11:14:30
+Info
+	Chained filters list was changed successfully.
+Date: 16-12-2014	Time: 11:14:30
+Info
+	Receiving server code...
+	Received 115
+Date: 16-12-2014	Time: 11:14:30
+Info
+	Receiving image to filter
+	Receiving 10 bytes as length...
+	Received 10 bytes successfully
+	Receiving 37 bytes to fill buffer...
+	Received 37 bytes successfully
+FilterRun:	Date: 16-12-2014	Time: 11:14:30
+Info
+	Chained mode
+Date: 16-12-2014	Time: 18:26:12
+Date: 16-12-2014	Time: 18:26:12
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 16-12-2014	Time: 18:26:12
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 16-12-2014	Time: 18:26:12
+Info
+	Loading created filters...
+FilterHandler:	Date: 16-12-2014	Time: 18:26:12
+Info
+	Done loading created filters
+Date: 16-12-2014	Time: 18:26:12
+Info
+	Waiting for client...
+	Connected to client
+Date: 16-12-2014	Time: 18:26:19
+Info
+	Sending list of filters in machine...
+	Number of filters: 5
+	Sending filter: Gate with length of: 4
+	Sending filter: blackGate with length of: 9
+	Sending filter: path with length of: 4
+	Sending filter: torpedo with length of: 7
+	Sending filter: traffic with length of: 7
+VideoStream:	Date: 16-12-2014	Time: 18:26:19
+Info
+	checking the latest video file number
+	Latest video file number is: 0
+Date: 16-12-2014	Time: 18:26:19
+Info
+	Receiving server code...
+	Received 106
+Date: 16-12-2014	Time: 18:26:42
+Info
+	Ending contact with client...
+Date: 16-12-2014	Time: 18:26:42
+Info
+	Contact with client ended. Waiting for contact...
+Date: 16-12-2014	Time: 18:30:06
+Date: 16-12-2014	Time: 18:30:06
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 16-12-2014	Time: 18:30:06
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 16-12-2014	Time: 18:30:06
+Info
+	Loading created filters...
+FilterHandler:	Date: 16-12-2014	Time: 18:30:06
+Info
+	Done loading created filters
+Date: 16-12-2014	Time: 18:30:06
+Info
+	Waiting for client...
+	Connected to client
+Date: 16-12-2014	Time: 18:30:17
+Info
+	Sending list of filters in machine...
+	Number of filters: 5
+	Sending filter: Gate with length of: 4
+	Sending filter: blackGate with length of: 9
+	Sending filter: path with length of: 4
+	Sending filter: torpedo with length of: 7
+	Sending filter: traffic with length of: 7
+VideoStream:	Date: 16-12-2014	Time: 18:30:17
+Info
+	checking the latest video file number
+	Latest video file number is: 0
+Date: 16-12-2014	Time: 18:30:17
+Info
+	Receiving server code...
+	Received 106
+Date: 16-12-2014	Time: 18:30:26
+Info
+	Ending contact with client...
+Date: 16-12-2014	Time: 18:30:26
+Info
+	Contact with client ended. Waiting for contact...
+Date: 16-12-2014	Time: 18:32:37
+Date: 16-12-2014	Time: 18:32:37
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 16-12-2014	Time: 18:32:37
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 16-12-2014	Time: 18:32:37
+Info
+	Loading created filters...
+FilterHandler:	Date: 16-12-2014	Time: 18:32:37
+Info
+	Done loading created filters
+Date: 16-12-2014	Time: 18:32:37
+Info
+	Waiting for client...
+	Connected to client
+Date: 16-12-2014	Time: 18:32:45
+Info
+	Sending list of filters in machine...
+	Number of filters: 5
+	Sending filter: Gate with length of: 4
+	Sending filter: blackGate with length of: 9
+	Sending filter: path with length of: 4
+	Sending filter: torpedo with length of: 7
+	Sending filter: traffic with length of: 7
+VideoStream:	Date: 16-12-2014	Time: 18:32:45
+Info
+	checking the latest video file number
+	Latest video file number is: 0
+Date: 16-12-2014	Time: 18:32:45
+Info
+	Receiving server code...
+	Received 105
+Date: 16-12-2014	Time: 18:33:08
+Info
+	Adding a new filter...
+	Receiving 2 bytes as length...
+	Received 2 bytes successfully
+	Receiving 11 bytes to fill buffer...
+	Received 11 bytes successfully
+	File name is: javiAlgo.so
+	Receiving 10 bytes as length...
+	Received 10 bytes successfully
+	Receiving 243866 bytes to fill buffer...
+	Received 243866 bytes successfully
+	Receiving 10 bytes as length...
+	Received 10 bytes successfully
+	Receiving 0 bytes to fill buffer...
+	Received 0 bytes successfully
+	Deleting file javiAlgo.config...
+Date: 16-12-2014	Time: 18:33:08
+Info
+	File javiAlgo.config does not exist
+Date: 16-12-2014	Time: 18:33:08
+Info
+	File javiAlgo.config has been written successfully
+	Deleting file SOFilters/javiAlgo.so...
+Date: 16-12-2014	Time: 18:33:08
+Info
+	File SOFilters/javiAlgo.so does not exist
+Date: 16-12-2014	Time: 18:33:08
+Info
+	File SOFilters/javiAlgo.so has been written successfully
+	Trying to stop the stream...
+	Stream did not start
+FilterHandler:	Date: 16-12-2014	Time: 18:33:08
+Info
+	Loading .so filters...
+	Trying to load javiAlgo.so...
+FilterHandler:	Date: 16-12-2014	Time: 18:33:08
+Error
+	Cannot load symbol create: ./SOFilters/javiAlgo.so: undefined symbol: offset
+	Done
+FilterHandler:	Date: 16-12-2014	Time: 18:33:08
+Info
+	Loading created filters...
+FilterHandler:	Date: 16-12-2014	Time: 18:33:08
+Info
+	Done loading created filters
+Date: 16-12-2014	Time: 18:33:08
+Info
+	Added filter javiAlgo.so and javiAlgo.config to the machine successfully
+Date: 16-12-2014	Time: 18:33:08
+Info
+	Sending list of filters in machine...
+	Number of filters: 5
+	Sending filter: Gate with length of: 4
+	Sending filter: blackGate with length of: 9
+	Sending filter: path with length of: 4
+	Sending filter: torpedo with length of: 7
+	Sending filter: traffic with length of: 7
+Date: 16-12-2014	Time: 18:33:08
+Info
+	Receiving server code...
+	Received 105
+Date: 16-12-2014	Time: 18:33:08
+Info
+	Adding a new filter...
+	Receiving 2 bytes as length...
+	Received 2 bytes successfully
+	Receiving 11 bytes to fill buffer...
+	Received 11 bytes successfully
+	File name is: javiAlgo.so
+	Receiving 10 bytes as length...
+	Received 10 bytes successfully
+	Receiving 243866 bytes to fill buffer...
+	Received 243866 bytes successfully
+	Receiving 10 bytes as length...
+	Received 10 bytes successfully
+	Receiving 0 bytes to fill buffer...
+	Received 0 bytes successfully
+	Deleting file javiAlgo.config...
+Date: 16-12-2014	Time: 18:33:08
+Info
+	File javiAlgo.config was deleted successfully
+Date: 16-12-2014	Time: 18:33:08
+Info
+	File javiAlgo.config has been written successfully
+	Deleting file SOFilters/javiAlgo.so...
+Date: 16-12-2014	Time: 18:33:08
+Info
+	File SOFilters/javiAlgo.so was deleted successfully
+Date: 16-12-2014	Time: 18:33:08
+Info
+	File SOFilters/javiAlgo.so has been written successfully
+	Trying to stop the stream...
+	Stream did not start
+FilterHandler:	Date: 16-12-2014	Time: 18:33:08
+Info
+	Loading .so filters...
+	Trying to load javiAlgo.so...
+FilterHandler:	Date: 16-12-2014	Time: 18:33:08
+Error
+	Cannot load symbol create: ./SOFilters/javiAlgo.so: undefined symbol: offset
+	Done
+FilterHandler:	Date: 16-12-2014	Time: 18:33:08
+Info
+	Loading created filters...
+FilterHandler:	Date: 16-12-2014	Time: 18:33:08
+Info
+	Done loading created filters
+Date: 16-12-2014	Time: 18:33:08
+Info
+	Added filter javiAlgo.so and javiAlgo.config to the machine successfully
+Date: 16-12-2014	Time: 18:33:08
+Info
+	Sending list of filters in machine...
+	Number of filters: 5
+	Sending filter: Gate with length of: 4
+	Sending filter: blackGate with length of: 9
+	Sending filter: path with length of: 4
+	Sending filter: torpedo with length of: 7
+	Sending filter: traffic with length of: 7
+Date: 16-12-2014	Time: 18:33:08
+Info
+	Receiving server code...
+Date: 16-12-2014	Time: 18:52:13
+Date: 16-12-2014	Time: 18:52:13
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 16-12-2014	Time: 18:52:13
+Error
+	missing config file of javiTest
+FilterHandler:	Date: 16-12-2014	Time: 18:52:13
+Error
+	javiTest not working because failure in loading parameters
+Date: 16-12-2014	Time: 18:52:37
+Date: 16-12-2014	Time: 18:52:37
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 16-12-2014	Time: 18:52:37
+Error
+	missing config file of javiTest
+FilterHandler:	Date: 16-12-2014	Time: 18:52:37
+Error
+	javiTest not working because failure in loading parameters
+Date: 16-12-2014	Time: 18:52:48
+Date: 16-12-2014	Time: 18:52:48
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 16-12-2014	Time: 18:52:48
+Info
+	Loading .so filters...
+	Trying to load javiAlgo.so...
+FilterHandler:	Date: 16-12-2014	Time: 18:52:48
+Error
+	Cannot load symbol create: ./SOFilters/javiAlgo.so: undefined symbol: offset
+	Done
+FilterHandler:	Date: 16-12-2014	Time: 18:52:48
+Info
+	Loading created filters...
+FilterHandler:	Date: 16-12-2014	Time: 18:52:48
+Info
+	Done loading created filters
+Date: 16-12-2014	Time: 18:52:48
+Info
+	Waiting for client...
+	Connected to client
+Date: 16-12-2014	Time: 18:52:55
+Info
+	Sending list of filters in machine...
+	Number of filters: 6
+	Sending filter: Gate with length of: 4
+	Sending filter: blackGate with length of: 9
+	Sending filter: javiTest with length of: 8
+	Sending filter: path with length of: 4
+	Sending filter: torpedo with length of: 7
+	Sending filter: traffic with length of: 7
+VideoStream:	Date: 16-12-2014	Time: 18:52:55
+Info
+	checking the latest video file number
+	Latest video file number is: 0
+Date: 16-12-2014	Time: 18:52:55
+Info
+	Receiving server code...
+	Received 104
+Date: 16-12-2014	Time: 18:53:22
+Info
+	Operating on new filters chained list...
+	Receiving 2 bytes as length...
+	Received 2 bytes successfully
+Date: 16-12-2014	Time: 18:53:22
+Info
+	Receiving 1 filters...
+	Receiving 2 bytes as length...
+	Received 2 bytes successfully
+	Receiving 8 bytes to fill buffer...
+	Received 8 bytes successfully
+	Received filter: javiTest
+	Trying to stop the stream...
+	Stream did not start
+FilterRun:	Date: 16-12-2014	Time: 18:53:22
+Info
+	Chained: Using the following filter for front camera:
+	javiTest
+Date: 16-12-2014	Time: 18:53:22
+Info
+	Chained filters list was changed successfully.
+Date: 16-12-2014	Time: 18:53:22
+Info
+	Receiving server code...
+	Received 115
+Date: 16-12-2014	Time: 18:53:22
+Info
+	Receiving image to filter
+	Receiving 10 bytes as length...
+	Received 10 bytes successfully
+	Receiving 37 bytes to fill buffer...
+	Received 37 bytes successfully
+FilterRun:	Date: 16-12-2014	Time: 18:53:22
+Info
+	Chained mode
+	Filtered image is good
+Date: 16-12-2014	Time: 18:53:22
+Info
+	Sending number of filters that filtered the image...
+	Number of filters: 1
+Date: 16-12-2014	Time: 18:53:22
+Info
+	Sending the images...
+Date: 16-12-2014	Time: 18:53:22
+Info
+	Sending image size: 0000031970...
+	Sending image...
+	Sent 31970 bytes successfully
+Date: 16-12-2014	Time: 18:53:22
+Info
+	Receiving server code...
+	Received 106
+Date: 16-12-2014	Time: 18:53:27
+Info
+	Ending contact with client...
+Date: 16-12-2014	Time: 18:53:27
+Info
+	Contact with client ended. Waiting for contact...
+Date: 22-12-2014	Time: 12:19:42
+Date: 22-12-2014	Time: 12:19:42
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 22-12-2014	Time: 12:19:42
+Info
+	Loading .so filters...
+	Trying to load javiAlgo.so...
+FilterHandler:	Date: 22-12-2014	Time: 12:19:42
+Error
+	Cannot load symbol create: ./SOFilters/javiAlgo.so: undefined symbol: offset
+	Done
+FilterHandler:	Date: 22-12-2014	Time: 12:19:42
+Info
+	Loading created filters...
+FilterHandler:	Date: 22-12-2014	Time: 12:19:42
+Info
+	Done loading created filters
+Date: 22-12-2014	Time: 12:19:42
+Info
+	Waiting for client...
+Date: 22-12-2014	Time: 12:22:46
+Date: 22-12-2014	Time: 12:22:46
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 22-12-2014	Time: 12:22:46
+Info
+	Loading .so filters...
+	Trying to load javiAlgo.so...
+FilterHandler:	Date: 22-12-2014	Time: 12:22:46
+Error
+	Cannot load symbol create: ./SOFilters/javiAlgo.so: undefined symbol: offset
+	Done
+FilterHandler:	Date: 22-12-2014	Time: 12:22:46
+Info
+	Loading created filters...
+FilterHandler:	Date: 22-12-2014	Time: 12:22:46
+Info
+	Done loading created filters
+Date: 22-12-2014	Time: 12:22:46
+Info
+	Waiting for client...
+Date: 22-12-2014	Time: 12:22:56
+Date: 22-12-2014	Time: 12:22:56
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 22-12-2014	Time: 12:22:56
+Info
+	Loading .so filters...
+	Trying to load javiAlgo.so...
+FilterHandler:	Date: 22-12-2014	Time: 12:22:56
+Error
+	Cannot load symbol create: ./SOFilters/javiAlgo.so: undefined symbol: offset
+	Done
+FilterHandler:	Date: 22-12-2014	Time: 12:22:56
+Info
+	Loading created filters...
+FilterHandler:	Date: 22-12-2014	Time: 12:22:56
+Info
+	Done loading created filters
+Date: 22-12-2014	Time: 12:22:56
+Info
+	Waiting for client...
+Date: 22-12-2014	Time: 12:27:18
+Date: 22-12-2014	Time: 12:27:18
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 22-12-2014	Time: 12:27:18
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 22-12-2014	Time: 12:27:18
+Info
+	Loading created filters...
+FilterHandler:	Date: 22-12-2014	Time: 12:27:18
+Info
+	Done loading created filters
+Date: 22-12-2014	Time: 12:27:18
+Info
+	Waiting for client...
+Date: 22-12-2014	Time: 12:27:53
+Date: 22-12-2014	Time: 12:27:53
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 22-12-2014	Time: 12:27:53
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 22-12-2014	Time: 12:27:53
+Info
+	Loading created filters...
+FilterHandler:	Date: 22-12-2014	Time: 12:27:53
+Info
+	Done loading created filters
+Date: 22-12-2014	Time: 12:27:53
+Info
+	Waiting for client...
+	Connected to client
+Date: 22-12-2014	Time: 12:28:08
+Info
+	Sending list of filters in machine...
+	Number of filters: 6
+	Sending filter: Gate with length of: 4
+	Sending filter: blackGate with length of: 9
+	Sending filter: javiTest with length of: 8
+	Sending filter: path with length of: 4
+	Sending filter: torpedo with length of: 7
+	Sending filter: traffic with length of: 7
+VideoStream:	Date: 22-12-2014	Time: 12:28:08
+Info
+	checking the latest video file number
+	Latest video file number is: 0
+Date: 22-12-2014	Time: 12:28:20
+Info
+	Receiving server code...
+	Received 106
+Date: 22-12-2014	Time: 12:36:08
+Date: 22-12-2014	Time: 12:36:08
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 22-12-2014	Time: 12:36:08
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 22-12-2014	Time: 12:36:08
+Info
+	Loading created filters...
+FilterHandler:	Date: 22-12-2014	Time: 12:36:08
+Info
+	Done loading created filters
+Date: 22-12-2014	Time: 12:36:08
+Info
+	Waiting for client...
+	Connected to client
+Date: 22-12-2014	Time: 12:36:15
+Info
+	Sending list of filters in machine...
+	Number of filters: 6
+	Sending filter: Gate with length of: 4
+	Sending filter: blackGate with length of: 9
+	Sending filter: javiTest with length of: 8
+	Sending filter: path with length of: 4
+	Sending filter: torpedo with length of: 7
+	Sending filter: traffic with length of: 7
+VideoStream:	Date: 22-12-2014	Time: 12:36:15
+Info
+	checking the latest video file number
+	Latest video file number is: 0
+Date: 22-12-2014	Time: 12:36:15
+Info
+	Receiving server code...
+Date: 22-12-2014	Time: 12:38:19
+Date: 22-12-2014	Time: 12:38:19
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 22-12-2014	Time: 12:38:19
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 22-12-2014	Time: 12:38:19
+Info
+	Loading created filters...
+FilterHandler:	Date: 22-12-2014	Time: 12:38:19
+Info
+	Done loading created filters
+Date: 22-12-2014	Time: 12:38:19
+Info
+	Waiting for client...
+	Connected to client
+Date: 22-12-2014	Time: 12:38:29
+Info
+	Sending list of filters in machine...
+	Number of filters: 6
+	Sending filter: Gate with length of: 4
+	Sending filter: blackGate with length of: 9
+	Sending filter: javiTest with length of: 8
+	Sending filter: path with length of: 4
+	Sending filter: torpedo with length of: 7
+	Sending filter: traffic with length of: 7
+VideoStream:	Date: 22-12-2014	Time: 12:38:29
+Info
+	checking the latest video file number
+	Latest video file number is: 0
+Date: 22-12-2014	Time: 12:38:29
+Info
+	Receiving server code...
+Date: 22-12-2014	Time: 12:41:43
+Date: 22-12-2014	Time: 12:41:43
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 22-12-2014	Time: 12:41:43
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 22-12-2014	Time: 12:41:43
+Info
+	Loading created filters...
+FilterHandler:	Date: 22-12-2014	Time: 12:41:43
+Info
+	Done loading created filters
+Date: 22-12-2014	Time: 12:41:43
+Info
+	Waiting for client...
+	Connected to client
+Date: 22-12-2014	Time: 12:41:47
+Info
+	Sending list of filters in machine...
+	Number of filters: 6
+	Sending filter: Gate with length of: 4
+	Sending filter: blackGate with length of: 9
+	Sending filter: javiTest with length of: 8
+	Sending filter: path with length of: 4
+	Sending filter: torpedo with length of: 7
+	Sending filter: traffic with length of: 7
+VideoStream:	Date: 22-12-2014	Time: 12:41:47
+Info
+	checking the latest video file number
+	Latest video file number is: 0
+Date: 22-12-2014	Time: 12:41:47
+Info
+	Receiving server code...
+Date: 22-12-2014	Time: 12:44:17
+Date: 22-12-2014	Time: 12:44:17
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 22-12-2014	Time: 12:44:17
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 22-12-2014	Time: 12:44:17
+Info
+	Loading created filters...
+FilterHandler:	Date: 22-12-2014	Time: 12:44:17
+Info
+	Done loading created filters
+Date: 22-12-2014	Time: 12:44:17
+Info
+	Waiting for client...
+	Connected to client
+Date: 22-12-2014	Time: 12:44:21
+Info
+	Sending list of filters in machine...
+	Number of filters: 6
+	Sending filter: Gate with length of: 4
+	Sending filter: blackGate with length of: 9
+	Sending filter: javiTest with length of: 8
+	Sending filter: path with length of: 4
+	Sending filter: torpedo with length of: 7
+	Sending filter: traffic with length of: 7
+VideoStream:	Date: 22-12-2014	Time: 12:44:21
+Info
+	checking the latest video file number
+	Latest video file number is: 0
+Date: 22-12-2014	Time: 12:44:21
+Info
+	Receiving server code...
+Date: 22-12-2014	Time: 12:45:10
+Date: 22-12-2014	Time: 12:45:10
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 22-12-2014	Time: 12:45:10
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 22-12-2014	Time: 12:45:10
+Info
+	Loading created filters...
+FilterHandler:	Date: 22-12-2014	Time: 12:45:10
+Info
+	Done loading created filters
+Date: 22-12-2014	Time: 12:45:10
+Info
+	Waiting for client...
+	Connected to client
+Date: 22-12-2014	Time: 12:45:12
+Info
+	Sending list of filters in machine...
+	Number of filters: 6
+	Sending filter: Gate with length of: 4
+	Sending filter: blackGate with length of: 9
+	Sending filter: javiTest with length of: 8
+	Sending filter: path with length of: 4
+	Sending filter: torpedo with length of: 7
+	Sending filter: traffic with length of: 7
+VideoStream:	Date: 22-12-2014	Time: 12:45:12
+Info
+	checking the latest video file number
+	Latest video file number is: 0
+Date: 22-12-2014	Time: 12:45:12
+Info
+	Receiving server code...
+Date: 22-12-2014	Time: 12:46:01
+Date: 22-12-2014	Time: 12:46:01
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 22-12-2014	Time: 12:46:01
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 22-12-2014	Time: 12:46:01
+Info
+	Loading created filters...
+FilterHandler:	Date: 22-12-2014	Time: 12:46:01
+Info
+	Done loading created filters
+Date: 22-12-2014	Time: 12:46:01
+Error
+	bind: Address already in use
+Date: 22-12-2014	Time: 12:46:01
+Info
+	Communication ended at: Date: 22-12-2014	Time: 12:46:01
+
+
+Date: 22-12-2014	Time: 12:46:08
+Date: 22-12-2014	Time: 12:46:08
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 22-12-2014	Time: 12:46:08
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 22-12-2014	Time: 12:46:08
+Info
+	Loading created filters...
+FilterHandler:	Date: 22-12-2014	Time: 12:46:08
+Info
+	Done loading created filters
+Date: 22-12-2014	Time: 12:46:08
+Info
+	Waiting for client...
+Date: 22-12-2014	Time: 12:46:11
+Date: 22-12-2014	Time: 12:46:11
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 22-12-2014	Time: 12:46:11
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 22-12-2014	Time: 12:46:11
+Info
+	Loading created filters...
+FilterHandler:	Date: 22-12-2014	Time: 12:46:11
+Info
+	Done loading created filters
+Date: 22-12-2014	Time: 12:46:11
+Error
+	bind: Address already in use
+Date: 22-12-2014	Time: 12:46:11
+Info
+	Communication ended at: Date: 22-12-2014	Time: 12:46:11
+
+
+	Connected to client
+Date: 22-12-2014	Time: 12:46:18
+Info
+	Sending list of filters in machine...
+	Number of filters: 6
+	Sending filter: Gate with length of: 4
+	Sending filter: blackGate with length of: 9
+	Sending filter: javiTest with length of: 8
+	Sending filter: path with length of: 4
+	Sending filter: torpedo with length of: 7
+	Sending filter: traffic with length of: 7
+VideoStream:	Date: 22-12-2014	Time: 12:46:18
+Info
+	checking the latest video file number
+	Latest video file number is: 0
+Date: 22-12-2014	Time: 12:46:18
+Info
+	Receiving server code...
+Date: 22-12-2014	Time: 12:50:56
+Date: 22-12-2014	Time: 12:50:56
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 22-12-2014	Time: 12:50:56
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 22-12-2014	Time: 12:50:56
+Info
+	Loading created filters...
+FilterHandler:	Date: 22-12-2014	Time: 12:50:56
+Info
+	Done loading created filters
+Date: 22-12-2014	Time: 12:50:56
+Info
+	Waiting for client...
+	Connected to client
+Date: 22-12-2014	Time: 12:51:06
+Info
+	Sending list of filters in machine...
+	Number of filters: 6
+	Sending filter: Gate with length of: 4
+	Sending filter: blackGate with length of: 9
+	Sending filter: javiTest with length of: 8
+	Sending filter: path with length of: 4
+	Sending filter: torpedo with length of: 7
+	Sending filter: traffic with length of: 7
+VideoStream:	Date: 22-12-2014	Time: 12:51:06
+Info
+	checking the latest video file number
+	Latest video file number is: 0
+Date: 22-12-2014	Time: 12:51:06
+Info
+	Receiving server code...
+Date: 22-12-2014	Time: 12:52:31
+Date: 22-12-2014	Time: 12:52:31
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 22-12-2014	Time: 12:52:31
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 22-12-2014	Time: 12:52:31
+Info
+	Loading created filters...
+FilterHandler:	Date: 22-12-2014	Time: 12:52:31
+Info
+	Done loading created filters
+Date: 22-12-2014	Time: 12:52:31
+Info
+	Waiting for client...
+	Connected to client
+Date: 22-12-2014	Time: 12:52:36
+Info
+	Sending list of filters in machine...
+	Number of filters: 6
+	Sending filter: Gate with length of: 4
+	Sending filter: blackGate with length of: 9
+	Sending filter: javiTest with length of: 8
+	Sending filter: path with length of: 4
+	Sending filter: torpedo with length of: 7
+	Sending filter: traffic with length of: 7
+VideoStream:	Date: 22-12-2014	Time: 12:52:36
+Info
+	checking the latest video file number
+	Latest video file number is: 0
+Date: 22-12-2014	Time: 12:52:36
+Info
+	Receiving server code...
+Date: 22-12-2014	Time: 12:55:52
+Date: 22-12-2014	Time: 12:55:52
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 22-12-2014	Time: 12:55:52
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 22-12-2014	Time: 12:55:52
+Info
+	Loading created filters...
+FilterHandler:	Date: 22-12-2014	Time: 12:55:52
+Info
+	Done loading created filters
+Date: 22-12-2014	Time: 12:55:52
+Info
+	Waiting for client...
+	Connected to client
+Date: 22-12-2014	Time: 12:55:54
+Info
+	Sending list of filters in machine...
+	Number of filters: 6
+	Sending filter: Gate with length of: 4
+	Sending filter: blackGate with length of: 9
+	Sending filter: javiTest with length of: 8
+	Sending filter: path with length of: 4
+	Sending filter: torpedo with length of: 7
+	Sending filter: traffic with length of: 7
+VideoStream:	Date: 22-12-2014	Time: 12:55:54
+Info
+	checking the latest video file number
+	Latest video file number is: 0
+Date: 22-12-2014	Time: 12:55:54
+Info
+	Receiving server code...
+	Received 101
+Date: 22-12-2014	Time: 12:58:49
+Info
+	Starting video stream...
+	Receiving 10 bytes as length...
+Date: 22-12-2014	Time: 12:59:11
+Date: 22-12-2014	Time: 12:59:11
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 22-12-2014	Time: 12:59:11
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 22-12-2014	Time: 12:59:11
+Info
+	Loading created filters...
+FilterHandler:	Date: 22-12-2014	Time: 12:59:11
+Info
+	Done loading created filters
+Date: 22-12-2014	Time: 12:59:11
+Info
+	Waiting for client...
+	Connected to client
+Date: 22-12-2014	Time: 12:59:13
+Info
+	Sending list of filters in machine...
+	Number of filters: 6
+	Sending filter: Gate with length of: 4
+	Sending filter: blackGate with length of: 9
+	Sending filter: javiTest with length of: 8
+	Sending filter: path with length of: 4
+	Sending filter: torpedo with length of: 7
+	Sending filter: traffic with length of: 7
+VideoStream:	Date: 22-12-2014	Time: 12:59:13
+Info
+	checking the latest video file number
+	Latest video file number is: 0
+Date: 22-12-2014	Time: 12:59:13
+Info
+	Receiving server code...
+Date: 22-12-2014	Time: 12:59:33
+Date: 22-12-2014	Time: 12:59:33
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 22-12-2014	Time: 12:59:33
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 22-12-2014	Time: 12:59:33
+Info
+	Loading created filters...
+FilterHandler:	Date: 22-12-2014	Time: 12:59:33
+Info
+	Done loading created filters
+Date: 22-12-2014	Time: 12:59:33
+Info
+	Waiting for client...
+Date: 22-12-2014	Time: 13:00:39
+Date: 22-12-2014	Time: 13:00:39
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 22-12-2014	Time: 13:00:39
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 22-12-2014	Time: 13:00:39
+Info
+	Loading created filters...
+FilterHandler:	Date: 22-12-2014	Time: 13:00:39
+Info
+	Done loading created filters
+Date: 22-12-2014	Time: 13:00:39
+Error
+	bind: Address already in use
+Date: 22-12-2014	Time: 13:00:39
+Info
+	Communication ended at: Date: 22-12-2014	Time: 13:00:39
+
+
+	Connected to client
+Date: 22-12-2014	Time: 13:00:57
+Info
+	Sending list of filters in machine...
+	Number of filters: 6
+	Sending filter: Gate with length of: 4
+	Sending filter: blackGate with length of: 9
+	Sending filter: javiTest with length of: 8
+	Sending filter: path with length of: 4
+	Sending filter: torpedo with length of: 7
+	Sending filter: traffic with length of: 7
+VideoStream:	Date: 22-12-2014	Time: 13:00:57
+Info
+	checking the latest video file number
+	Latest video file number is: 0
+Date: 22-12-2014	Time: 13:00:57
+Info
+	Receiving server code...
+Date: 22-12-2014	Time: 13:03:18
+Date: 22-12-2014	Time: 13:03:18
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 22-12-2014	Time: 13:03:18
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 22-12-2014	Time: 13:03:18
+Info
+	Loading created filters...
+FilterHandler:	Date: 22-12-2014	Time: 13:03:18
+Info
+	Done loading created filters
+Date: 22-12-2014	Time: 13:03:18
+Info
+	Waiting for client...
+	Connected to client
+Date: 22-12-2014	Time: 13:03:21
+Info
+	Sending list of filters in machine...
+	Number of filters: 6
+	Sending filter: Gate with length of: 4
+	Sending filter: blackGate with length of: 9
+	Sending filter: javiTest with length of: 8
+	Sending filter: path with length of: 4
+	Sending filter: torpedo with length of: 7
+	Sending filter: traffic with length of: 7
+VideoStream:	Date: 22-12-2014	Time: 13:03:21
+Info
+	checking the latest video file number
+	Latest video file number is: 0
+Date: 22-12-2014	Time: 13:03:21
+Info
+	Receiving server code...
+Date: 22-12-2014	Time: 13:03:36
+Date: 22-12-2014	Time: 13:03:36
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 22-12-2014	Time: 13:03:36
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 22-12-2014	Time: 13:03:36
+Info
+	Loading created filters...
+FilterHandler:	Date: 22-12-2014	Time: 13:03:36
+Info
+	Done loading created filters
+Date: 22-12-2014	Time: 13:03:36
+Info
+	Waiting for client...
+Date: 22-12-2014	Time: 13:03:38
+Date: 22-12-2014	Time: 13:03:38
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 22-12-2014	Time: 13:03:38
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 22-12-2014	Time: 13:03:38
+Info
+	Loading created filters...
+FilterHandler:	Date: 22-12-2014	Time: 13:03:38
+Info
+	Done loading created filters
+Date: 22-12-2014	Time: 13:03:38
+Error
+	bind: Address already in use
+Date: 22-12-2014	Time: 13:03:38
+Info
+	Communication ended at: Date: 22-12-2014	Time: 13:03:38
+
+
+	Connected to client
+Date: 22-12-2014	Time: 13:03:45
+Info
+	Sending list of filters in machine...
+	Number of filters: 6
+	Sending filter: Gate with length of: 4
+	Sending filter: blackGate with length of: 9
+	Sending filter: javiTest with length of: 8
+	Sending filter: path with length of: 4
+	Sending filter: torpedo with length of: 7
+	Sending filter: traffic with length of: 7
+VideoStream:	Date: 22-12-2014	Time: 13:03:45
+Info
+	checking the latest video file number
+	Latest video file number is: 0
+Date: 22-12-2014	Time: 13:03:45
+Info
+	Receiving server code...
+Date: 22-12-2014	Time: 13:04:51
+Date: 22-12-2014	Time: 13:04:51
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 22-12-2014	Time: 13:04:51
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 22-12-2014	Time: 13:04:51
+Info
+	Loading created filters...
+FilterHandler:	Date: 22-12-2014	Time: 13:04:51
+Info
+	Done loading created filters
+Date: 22-12-2014	Time: 13:04:51
+Info
+	Waiting for client...
+	Connected to client
+Date: 22-12-2014	Time: 13:04:53
+Info
+	Sending list of filters in machine...
+	Number of filters: 6
+	Sending filter: Gate with length of: 4
+	Sending filter: blackGate with length of: 9
+	Sending filter: javiTest with length of: 8
+	Sending filter: path with length of: 4
+	Sending filter: torpedo with length of: 7
+	Sending filter: traffic with length of: 7
+VideoStream:	Date: 22-12-2014	Time: 13:04:53
+Info
+	checking the latest video file number
+	Latest video file number is: 0
+Date: 22-12-2014	Time: 13:04:53
+Info
+	Receiving server code...
+Date: 22-12-2014	Time: 13:17:19
+Date: 22-12-2014	Time: 13:17:19
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 22-12-2014	Time: 13:17:19
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 22-12-2014	Time: 13:17:19
+Info
+	Loading created filters...
+FilterHandler:	Date: 22-12-2014	Time: 13:17:19
+Info
+	Done loading created filters
+Date: 22-12-2014	Time: 13:17:19
+Info
+	Waiting for client...
+	Connected to client
+Date: 22-12-2014	Time: 13:17:35
+Info
+	Sending list of filters in machine...
+	Number of filters: 6
+	Sending filter: Gate with length of: 4
+	Sending filter: blackGate with length of: 9
+	Sending filter: javiTest with length of: 8
+	Sending filter: path with length of: 4
+	Sending filter: torpedo with length of: 7
+	Sending filter: traffic with length of: 7
+VideoStream:	Date: 22-12-2014	Time: 13:17:35
+Info
+	checking the latest video file number
+	Latest video file number is: 0
+Date: 22-12-2014	Time: 13:17:35
+Info
+	Receiving server code...
+	Received 101
+Date: 22-12-2014	Time: 13:17:41
+Info
+	Starting video stream...
+	Receiving 10 bytes as length...
+Date: 22-12-2014	Time: 13:20:07
+Date: 22-12-2014	Time: 13:20:07
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 22-12-2014	Time: 13:20:07
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 22-12-2014	Time: 13:20:07
+Info
+	Loading created filters...
+FilterHandler:	Date: 22-12-2014	Time: 13:20:07
+Info
+	Done loading created filters
+Date: 22-12-2014	Time: 13:20:07
+Info
+	Waiting for client...
+	Connected to client
+Date: 22-12-2014	Time: 13:20:09
+Info
+	Sending list of filters in machine...
+	Number of filters: 6
+	Sending filter: Gate with length of: 4
+	Sending filter: blackGate with length of: 9
+	Sending filter: javiTest with length of: 8
+	Sending filter: path with length of: 4
+	Sending filter: torpedo with length of: 7
+	Sending filter: traffic with length of: 7
+VideoStream:	Date: 22-12-2014	Time: 13:20:09
+Info
+	checking the latest video file number
+	Latest video file number is: 0
+Date: 22-12-2014	Time: 13:20:09
+Info
+	Receiving server code...
+	Received 101
+Date: 22-12-2014	Time: 13:20:12
+Info
+	Starting video stream...
+	Receiving 10 bytes as length...
+	Received 10 bytes successfully
+	Receiving 11 bytes to fill buffer...
+	Received 11 bytes successfully
+Date: 22-12-2014	Time: 13:20:12
+Info
+	Trying to start a stream from video /dev/video0...
+Date: 22-12-2014	Time: 13:20:12
+Info
+	Video stream has started successfully
+Date: 22-12-2014	Time: 13:20:12
+Info
+	Receiving server code...
+VideoStream:	Date: 22-12-2014	Time: 13:20:12
+Info
+	Waiting for client...
+VideoStream:	Date: 22-12-2014	Time: 13:20:12
+Info
+	Starting stream...
+VideoStream:	Date: 22-12-2014	Time: 13:20:12
+Info
+	Streaming video: /dev/video0...
+VideoStream:	Date: 22-12-2014	Time: 13:20:12
+Error
+	Failed to open video file /dev/video0 killing thread...
+Date: 22-12-2014	Time: 13:29:40
+Date: 22-12-2014	Time: 13:29:40
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 22-12-2014	Time: 13:29:40
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 22-12-2014	Time: 13:29:40
+Info
+	Loading created filters...
+FilterHandler:	Date: 22-12-2014	Time: 13:29:40
+Info
+	Done loading created filters
+Date: 22-12-2014	Time: 13:29:40
+Info
+	Waiting for client...
+Date: 22-12-2014	Time: 13:31:56
+Date: 22-12-2014	Time: 13:31:56
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 22-12-2014	Time: 13:31:56
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 22-12-2014	Time: 13:31:56
+Info
+	Loading created filters...
+FilterHandler:	Date: 22-12-2014	Time: 13:31:56
+Info
+	Done loading created filters
+Date: 22-12-2014	Time: 13:31:56
+Info
+	Waiting for client...
+	Connected to client
+Date: 22-12-2014	Time: 13:32:04
+Info
+	Sending list of filters in machine...
+	Number of filters: 6
+	Sending filter: Gate with length of: 4
+	Sending filter: blackGate with length of: 9
+	Sending filter: javiTest with length of: 8
+	Sending filter: path with length of: 4
+	Sending filter: torpedo with length of: 7
+	Sending filter: traffic with length of: 7
+VideoStream:	Date: 22-12-2014	Time: 13:32:04
+Info
+	checking the latest video file number
+	Latest video file number is: 0
+Date: 22-12-2014	Time: 13:32:04
+Info
+	Receiving server code...
+	Received 101
+Date: 22-12-2014	Time: 13:32:06
+Info
+	Starting video stream...
+	Receiving 10 bytes as length...
+	Received 10 bytes successfully
+	Receiving 11 bytes to fill buffer...
+	Received 11 bytes successfully
+Date: 22-12-2014	Time: 13:32:06
+Info
+	Trying to start a stream from video /dev/video0...
+Date: 22-12-2014	Time: 13:32:06
+Info
+	Video stream has started successfully
+Date: 22-12-2014	Time: 13:32:06
+Info
+	Receiving server code...
+VideoStream:	Date: 22-12-2014	Time: 13:32:06
+Info
+	Waiting for client...
+VideoStream:	Date: 22-12-2014	Time: 13:32:06
+Info
+	Starting stream...
+VideoStream:	Date: 22-12-2014	Time: 13:32:06
+Info
+	Streaming video: /dev/video0...
+VideoStream:	Date: 22-12-2014	Time: 13:32:06
+Error
+	Failed to open video file /dev/video0 killing thread...
+	Received 102
+Date: 22-12-2014	Time: 13:32:47
+Info
+	Closing video stream...
+VideoStream:	Date: 22-12-2014	Time: 13:32:47
+Info
+	Trying to kill the stream...
+VideoStream:	Date: 22-12-2014	Time: 13:32:47
+Info
+	Video stream has ended successfully
+VideoStream:	Date: 22-12-2014	Time: 13:32:47
+Info
+	Waiting for client...
+VideoStream:	Date: 22-12-2014	Time: 13:32:47
+Info
+	Stream killed successfully
+Date: 22-12-2014	Time: 13:32:47
+Info
+	Receiving server code...
+	Received 106
+Date: 22-12-2014	Time: 13:32:47
+Info
+	Ending contact with client...
+Date: 22-12-2014	Time: 13:32:47
+Info
+	Contact with client ended. Waiting for contact...
+Date: 22-12-2014	Time: 13:48:44
+Date: 22-12-2014	Time: 13:48:44
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 22-12-2014	Time: 13:48:44
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 22-12-2014	Time: 13:48:44
+Info
+	Loading created filters...
+FilterHandler:	Date: 22-12-2014	Time: 13:48:44
+Info
+	Done loading created filters
+Date: 22-12-2014	Time: 13:48:44
+Info
+	Waiting for client...
+	Connected to client
+Date: 22-12-2014	Time: 13:48:51
+Info
+	Sending list of filters in machine...
+	Number of filters: 6
+	Sending filter: Gate with length of: 4
+	Sending filter: blackGate with length of: 9
+	Sending filter: javiTest with length of: 8
+	Sending filter: path with length of: 4
+	Sending filter: torpedo with length of: 7
+	Sending filter: traffic with length of: 7
+VideoStream:	Date: 22-12-2014	Time: 13:48:51
+Info
+	checking the latest video file number
+	Latest video file number is: 0
+Date: 22-12-2014	Time: 13:48:51
+Info
+	Receiving server code...
+	Received 101
+Date: 22-12-2014	Time: 13:49:08
+Info
+	Starting video stream...
+	Receiving 10 bytes as length...
+	Received 10 bytes successfully
+	Receiving 11 bytes to fill buffer...
+	Received 11 bytes successfully
+Date: 22-12-2014	Time: 13:49:08
+Info
+	Trying to start a stream from video /dev/video0...
+Date: 22-12-2014	Time: 13:49:08
+Info
+	Video stream has started successfully
+Date: 22-12-2014	Time: 13:49:08
+Info
+	Receiving server code...
+VideoStream:	Date: 22-12-2014	Time: 13:49:08
+Info
+	Waiting for client...
+VideoStream:	Date: 22-12-2014	Time: 13:49:08
+Info
+	Starting stream...
+VideoStream:	Date: 22-12-2014	Time: 13:49:08
+Info
+	Streaming video: /dev/video0...
+VideoStream:	Date: 22-12-2014	Time: 13:49:08
+Error
+	Failed to open video file /dev/video0 killing thread...
+	Received 104
+Date: 22-12-2014	Time: 13:49:38
+Info
+	Operating on new filters chained list...
+	Receiving 2 bytes as length...
+	Received 2 bytes successfully
+Date: 22-12-2014	Time: 13:49:38
+Info
+	Receiving 1 filters...
+	Receiving 2 bytes as length...
+	Received 2 bytes successfully
+	Receiving 4 bytes to fill buffer...
+	Received 4 bytes successfully
+	Received filter: Gate
+	Trying to stop the stream...
+VideoStream:	Date: 22-12-2014	Time: 13:49:38
+Info
+	Stream stopped
+	Stream stopped successfully
+FilterRun:	Date: 22-12-2014	Time: 13:49:38
+Info
+	Chained: Using the following filter for front camera:
+	Gate
+VideoStream:	Date: 22-12-2014	Time: 13:49:38
+Info
+	Stream continued
+Date: 22-12-2014	Time: 13:49:38
+Info
+	Chained filters list was changed successfully.
+VideoStream:	Date: 22-12-2014	Time: 13:49:38
+Info
+	Stream returned
+Date: 22-12-2014	Time: 13:49:38
+Info
+	Receiving server code...
+	Received 102
+Date: 22-12-2014	Time: 13:49:39
+Info
+	Closing video stream...
+VideoStream:	Date: 22-12-2014	Time: 13:49:39
+Info
+	Trying to kill the stream...
+VideoStream:	Date: 22-12-2014	Time: 13:49:39
+Info
+	Video stream has ended successfully
+VideoStream:	Date: 22-12-2014	Time: 13:49:39
+Info
+	Waiting for client...
+VideoStream:	Date: 22-12-2014	Time: 13:49:39
+Info
+	Stream killed successfully
+Date: 22-12-2014	Time: 13:49:39
+Info
+	Receiving server code...
+	Received 106
+Date: 22-12-2014	Time: 13:49:39
+Info
+	Ending contact with client...
+Date: 22-12-2014	Time: 13:49:39
+Info
+	Contact with client ended. Waiting for contact...
+Date: 22-12-2014	Time: 13:52:50
+Date: 22-12-2014	Time: 13:52:50
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 22-12-2014	Time: 13:52:50
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 22-12-2014	Time: 13:52:50
+Info
+	Loading created filters...
+FilterHandler:	Date: 22-12-2014	Time: 13:52:50
+Info
+	Done loading created filters
+Date: 22-12-2014	Time: 13:52:50
+Info
+	Waiting for client...
+	Connected to client
+Date: 22-12-2014	Time: 13:53:06
+Info
+	Sending list of filters in machine...
+	Number of filters: 6
+	Sending filter: Gate with length of: 4
+	Sending filter: blackGate with length of: 9
+	Sending filter: javiTest with length of: 8
+	Sending filter: path with length of: 4
+	Sending filter: torpedo with length of: 7
+	Sending filter: traffic with length of: 7
+VideoStream:	Date: 22-12-2014	Time: 13:53:06
+Info
+	checking the latest video file number
+	Latest video file number is: 0
+Date: 22-12-2014	Time: 13:53:06
+Info
+	Receiving server code...
+	Received 101
+Date: 22-12-2014	Time: 13:53:09
+Info
+	Starting video stream...
+	Receiving 10 bytes as length...
+	Received 10 bytes successfully
+	Receiving 11 bytes to fill buffer...
+	Received 11 bytes successfully
+Date: 22-12-2014	Time: 13:53:09
+Info
+	Trying to start a stream from video /dev/video0...
+Date: 22-12-2014	Time: 13:53:09
+Info
+	Video stream has started successfully
+Date: 22-12-2014	Time: 13:53:09
+Info
+	Receiving server code...
+VideoStream:	Date: 22-12-2014	Time: 13:53:09
+Info
+	Waiting for client...
+VideoStream:	Date: 22-12-2014	Time: 13:53:09
+Info
+	Starting stream...
+VideoStream:	Date: 22-12-2014	Time: 13:53:09
+Info
+	Streaming video: /dev/video0...
+VideoStream:	Date: 22-12-2014	Time: 13:53:09
+Error
+	Failed to open video file /dev/video0 killing thread...
+	Received 102
+Date: 22-12-2014	Time: 13:53:26
+Info
+	Closing video stream...
+VideoStream:	Date: 22-12-2014	Time: 13:53:26
+Info
+	Trying to kill the stream...
+VideoStream:	Date: 22-12-2014	Time: 13:53:26
+Info
+	Video stream has ended successfully
+VideoStream:	Date: 22-12-2014	Time: 13:53:26
+Info
+	Waiting for client...
+VideoStream:	Date: 22-12-2014	Time: 13:53:26
+Info
+	Stream killed successfully
+Date: 22-12-2014	Time: 13:53:26
+Info
+	Receiving server code...
+	Received 106
+Date: 22-12-2014	Time: 13:53:26
+Info
+	Ending contact with client...
+Date: 22-12-2014	Time: 13:53:26
+Info
+	Contact with client ended. Waiting for contact...
+Date: 22-12-2014	Time: 13:58:51
+Date: 22-12-2014	Time: 13:58:51
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 22-12-2014	Time: 13:58:51
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 22-12-2014	Time: 13:58:51
+Info
+	Loading created filters...
+FilterHandler:	Date: 22-12-2014	Time: 13:58:51
+Info
+	Done loading created filters
+Date: 22-12-2014	Time: 13:58:51
+Info
+	Waiting for client...
+	Connected to client
+Date: 22-12-2014	Time: 13:58:54
+Info
+	Sending list of filters in machine...
+	Number of filters: 6
+	Sending filter: Gate with length of: 4
+	Sending filter: blackGate with length of: 9
+	Sending filter: javiTest with length of: 8
+	Sending filter: path with length of: 4
+	Sending filter: torpedo with length of: 7
+	Sending filter: traffic with length of: 7
+VideoStream:	Date: 22-12-2014	Time: 13:58:54
+Info
+	checking the latest video file number
+	Latest video file number is: 0
+Date: 22-12-2014	Time: 13:58:54
+Info
+	Receiving server code...
+	Received 101
+Date: 22-12-2014	Time: 13:58:56
+Info
+	Starting video stream...
+	Receiving 10 bytes as length...
+	Received 10 bytes successfully
+	Receiving 11 bytes to fill buffer...
+	Received 11 bytes successfully
+Date: 22-12-2014	Time: 13:58:56
+Info
+	Trying to start a stream from video /dev/video0...
+Date: 22-12-2014	Time: 13:58:56
+Info
+	Video stream has started successfully
+Date: 22-12-2014	Time: 13:58:56
+Info
+	Receiving server code...
+VideoStream:	Date: 22-12-2014	Time: 13:58:56
+Info
+	Waiting for client...
+VideoStream:	Date: 22-12-2014	Time: 13:58:56
+Info
+	Starting stream...
+VideoStream:	Date: 22-12-2014	Time: 13:58:56
+Info
+	Streaming video: /dev/video0...
+VideoStream:	Date: 22-12-2014	Time: 13:58:56
+Error
+	Failed to open video file /dev/video0 killing thread...
+	Received 102
+Date: 22-12-2014	Time: 13:59:37
+Info
+	Closing video stream...
+VideoStream:	Date: 22-12-2014	Time: 13:59:37
+Info
+	Trying to kill the stream...
+VideoStream:	Date: 22-12-2014	Time: 13:59:37
+Info
+	Video stream has ended successfully
+VideoStream:	Date: 22-12-2014	Time: 13:59:37
+Info
+	Waiting for client...
+VideoStream:	Date: 22-12-2014	Time: 13:59:37
+Info
+	Stream killed successfully
+Date: 22-12-2014	Time: 13:59:37
+Info
+	Receiving server code...
+	Received 106
+Date: 22-12-2014	Time: 13:59:37
+Info
+	Ending contact with client...
+Date: 22-12-2014	Time: 13:59:37
+Info
+	Contact with client ended. Waiting for contact...
+Date: 22-12-2014	Time: 14:01:22
+Date: 22-12-2014	Time: 14:01:22
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 22-12-2014	Time: 14:01:22
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 22-12-2014	Time: 14:01:22
+Info
+	Loading created filters...
+FilterHandler:	Date: 22-12-2014	Time: 14:01:22
+Info
+	Done loading created filters
+Date: 22-12-2014	Time: 14:01:22
+Info
+	Waiting for client...
+	Connected to client
+Date: 22-12-2014	Time: 14:01:29
+Info
+	Sending list of filters in machine...
+	Number of filters: 6
+	Sending filter: Gate with length of: 4
+	Sending filter: blackGate with length of: 9
+	Sending filter: javiTest with length of: 8
+	Sending filter: path with length of: 4
+	Sending filter: torpedo with length of: 7
+	Sending filter: traffic with length of: 7
+VideoStream:	Date: 22-12-2014	Time: 14:01:29
+Info
+	checking the latest video file number
+	Latest video file number is: 0
+Date: 22-12-2014	Time: 14:01:29
+Info
+	Receiving server code...
+	Received 101
+Date: 22-12-2014	Time: 14:01:32
+Info
+	Starting video stream...
+	Receiving 10 bytes as length...
+	Received 10 bytes successfully
+	Receiving 11 bytes to fill buffer...
+	Received 11 bytes successfully
+Date: 22-12-2014	Time: 14:01:32
+Info
+	Trying to start a stream from video /dev/video0...
+Date: 22-12-2014	Time: 14:01:32
+Info
+	Video stream has started successfully
+Date: 22-12-2014	Time: 14:01:32
+Info
+	Receiving server code...
+VideoStream:	Date: 22-12-2014	Time: 14:01:32
+Info
+	Waiting for client...
+VideoStream:	Date: 22-12-2014	Time: 14:01:32
+Info
+	Starting stream...
+VideoStream:	Date: 22-12-2014	Time: 14:01:32
+Info
+	Streaming video: /dev/video0...
+VideoStream:	Date: 22-12-2014	Time: 14:01:32
+Error
+	Failed to open video file /dev/video0 killing thread...
+	Received 104
+Date: 22-12-2014	Time: 14:01:44
+Info
+	Operating on new filters chained list...
+	Receiving 2 bytes as length...
+	Received 2 bytes successfully
+Date: 22-12-2014	Time: 14:01:44
+Info
+	Receiving 1 filters...
+	Receiving 2 bytes as length...
+	Received 2 bytes successfully
+	Receiving 4 bytes to fill buffer...
+	Received 4 bytes successfully
+	Received filter: Gate
+	Trying to stop the stream...
+	Stream stopped successfully
+FilterRun:	Date: 22-12-2014	Time: 14:01:44
+Info
+	Chained: Using the following filter for front camera:
+	Gate
+VideoStream:	Date: 22-12-2014	Time: 14:01:44
+Info
+	Stream continued
+VideoStream:	Date: 22-12-2014	Time: 14:01:44
+Info
+	Stream stopped
+VideoStream:	Date: 22-12-2014	Time: 14:01:44
+Info
+	Stream returned
+Date: 22-12-2014	Time: 14:01:44
+Info
+	Chained filters list was changed successfully.
+Date: 22-12-2014	Time: 14:01:44
+Info
+	Receiving server code...
+	Received 104
+Date: 22-12-2014	Time: 14:02:07
+Info
+	Operating on new filters chained list...
+	Receiving 2 bytes as length...
+	Received 2 bytes successfully
+Date: 22-12-2014	Time: 14:02:07
+Info
+	Receiving 2 filters...
+	Receiving 2 bytes as length...
+	Received 2 bytes successfully
+	Receiving 4 bytes to fill buffer...
+	Received 4 bytes successfully
+	Received filter: Gate
+	Receiving 2 bytes as length...
+	Received 2 bytes successfully
+	Receiving 8 bytes to fill buffer...
+	Received 8 bytes successfully
+	Received filter: javiTest
+	Trying to stop the stream...
+VideoStream:	Date: 22-12-2014	Time: 14:02:07
+Info
+	Stream stopped
+	Stream stopped successfully
+FilterRun:	Date: 22-12-2014	Time: 14:02:07
+Info
+	Chained: Using the following filter for front camera:
+	Gate
+	javiTest
+VideoStream:	Date: 22-12-2014	Time: 14:02:07
+Info
+	Stream continued
+Date: 22-12-2014	Time: 14:02:07
+Info
+	Chained filters list was changed successfully.
+VideoStream:	Date: 22-12-2014	Time: 14:02:07
+Info
+	Stream returned
+Date: 22-12-2014	Time: 14:02:07
+Info
+	Receiving server code...
+	Received 102
+Date: 22-12-2014	Time: 14:02:16
+Info
+	Closing video stream...
+VideoStream:	Date: 22-12-2014	Time: 14:02:16
+Info
+	Trying to kill the stream...
+VideoStream:	Date: 22-12-2014	Time: 14:02:17
+Info
+	Video stream has ended successfully
+VideoStream:	Date: 22-12-2014	Time: 14:02:17
+Info
+	Waiting for client...
+VideoStream:	Date: 22-12-2014	Time: 14:02:17
+Info
+	Stream killed successfully
+Date: 22-12-2014	Time: 14:02:17
+Info
+	Receiving server code...
+	Received 106
+Date: 22-12-2014	Time: 14:02:17
+Info
+	Ending contact with client...
+Date: 22-12-2014	Time: 14:02:17
+Info
+	Contact with client ended. Waiting for contact...
+Date: 22-12-2014	Time: 14:03:09
+Date: 22-12-2014	Time: 14:03:09
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 22-12-2014	Time: 14:03:09
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 22-12-2014	Time: 14:03:09
+Info
+	Loading created filters...
+FilterHandler:	Date: 22-12-2014	Time: 14:03:09
+Info
+	Done loading created filters
+Date: 22-12-2014	Time: 14:03:09
+Info
+	Waiting for client...
+	Connected to client
+Date: 22-12-2014	Time: 14:03:12
+Info
+	Sending list of filters in machine...
+	Number of filters: 6
+	Sending filter: Gate with length of: 4
+	Sending filter: blackGate with length of: 9
+	Sending filter: javiTest with length of: 8
+	Sending filter: path with length of: 4
+	Sending filter: torpedo with length of: 7
+	Sending filter: traffic with length of: 7
+VideoStream:	Date: 22-12-2014	Time: 14:03:12
+Info
+	checking the latest video file number
+	Latest video file number is: 0
+Date: 22-12-2014	Time: 14:03:12
+Info
+	Receiving server code...
+	Received 101
+Date: 22-12-2014	Time: 14:03:21
+Info
+	Starting video stream...
+	Receiving 10 bytes as length...
+	Received 10 bytes successfully
+	Receiving 11 bytes to fill buffer...
+	Received 11 bytes successfully
+Date: 22-12-2014	Time: 14:03:21
+Info
+	Trying to start a stream from video /dev/video0...
+Date: 22-12-2014	Time: 14:03:21
+Info
+	Video stream has started successfully
+Date: 22-12-2014	Time: 14:03:21
+Info
+	Receiving server code...
+VideoStream:	Date: 22-12-2014	Time: 14:03:21
+Info
+	Waiting for client...
+VideoStream:	Date: 22-12-2014	Time: 14:03:21
+Info
+	Starting stream...
+VideoStream:	Date: 22-12-2014	Time: 14:03:21
+Info
+	Streaming video: /dev/video0...
+VideoStream:	Date: 22-12-2014	Time: 14:03:21
+Error
+	Failed to open video file /dev/video0 killing thread...
+	Received 103
+Date: 22-12-2014	Time: 14:03:26
+Info
+	Operating on new unordered list of filters...
+	Receiving 2 bytes as length...
+	Received 2 bytes successfully
+Date: 22-12-2014	Time: 14:03:26
+Info
+	Receiving 1 filters...
+	Receiving 2 bytes as length...
+	Received 2 bytes successfully
+	Receiving 8 bytes to fill buffer...
+	Received 8 bytes successfully
+	Received filter: javiTest
+	Trying to stop the stream...
+	Stream stopped successfully
+FilterRun:	Date: 22-12-2014	Time: 14:03:27
+Info
+	Unordered: Using the following filter for front camera:
+	javiTest
+VideoStream:	Date: 22-12-2014	Time: 14:03:27
+Info
+	Stream continued
+Date: 22-12-2014	Time: 14:03:27
+Info
+	Unordered filters list was changed successfully.
+Date: 22-12-2014	Time: 14:03:27
+Info
+	Receiving server code...
+VideoStream:	Date: 22-12-2014	Time: 14:03:27
+Info
+	Stream stopped
+VideoStream:	Date: 22-12-2014	Time: 14:03:27
+Info
+	Stream returned
+	Received 103
+Date: 22-12-2014	Time: 14:04:04
+Info
+	Operating on new unordered list of filters...
+	Receiving 2 bytes as length...
+	Received 2 bytes successfully
+Date: 22-12-2014	Time: 14:04:04
+Info
+	Receiving 1 filters...
+	Receiving 2 bytes as length...
+	Received 2 bytes successfully
+	Receiving 4 bytes to fill buffer...
+	Received 4 bytes successfully
+	Received filter: Gate
+	Trying to stop the stream...
+VideoStream:	Date: 22-12-2014	Time: 14:04:04
+Info
+	Stream stopped
+	Stream stopped successfully
+FilterRun:	Date: 22-12-2014	Time: 14:04:04
+Info
+	Unordered: Using the following filter for front camera:
+	Gate
+VideoStream:	Date: 22-12-2014	Time: 14:04:04
+Info
+	Stream continued
+Date: 22-12-2014	Time: 14:04:04
+Info
+	Unordered filters list was changed successfully.
+Date: 22-12-2014	Time: 14:04:04
+Info
+	Receiving server code...
+VideoStream:	Date: 22-12-2014	Time: 14:04:04
+Info
+	Stream returned
+	Received 103
+Date: 22-12-2014	Time: 14:04:21
+Info
+	Operating on new unordered list of filters...
+	Receiving 2 bytes as length...
+	Received 2 bytes successfully
+Date: 22-12-2014	Time: 14:04:21
+Info
+	Receiving 1 filters...
+	Receiving 2 bytes as length...
+	Received 2 bytes successfully
+	Receiving 4 bytes to fill buffer...
+	Received 4 bytes successfully
+	Received filter: path
+	Trying to stop the stream...
+	Stream stopped successfully
+FilterRun:	Date: 22-12-2014	Time: 14:04:22
+Info
+	Unordered: Using the following filter for front camera:
+	path
+VideoStream:	Date: 22-12-2014	Time: 14:04:22
+Info
+	Stream continued
+Date: 22-12-2014	Time: 14:04:22
+Info
+	Unordered filters list was changed successfully.
+VideoStream:	Date: 22-12-2014	Time: 14:04:22
+Info
+	Stream stopped
+VideoStream:	Date: 22-12-2014	Time: 14:04:22
+Info
+	Stream returned
+Date: 22-12-2014	Time: 14:04:22
+Info
+	Receiving server code...
+	Received 103
+Date: 22-12-2014	Time: 14:04:44
+Info
+	Operating on new unordered list of filters...
+	Receiving 2 bytes as length...
+	Received 2 bytes successfully
+Date: 22-12-2014	Time: 14:04:44
+Info
+	Receiving 1 filters...
+	Receiving 2 bytes as length...
+	Received 2 bytes successfully
+	Receiving 9 bytes to fill buffer...
+	Received 9 bytes successfully
+	Received filter: blackGate
+	Trying to stop the stream...
+VideoStream:	Date: 22-12-2014	Time: 14:04:44
+Info
+	Stream stopped
+	Stream stopped successfully
+FilterRun:	Date: 22-12-2014	Time: 14:04:44
+Info
+	Unordered: Using the following filter for front camera:
+	blackGate
+VideoStream:	Date: 22-12-2014	Time: 14:04:44
+Info
+	Stream continued
+Date: 22-12-2014	Time: 14:04:44
+Info
+	Unordered filters list was changed successfully.
+VideoStream:	Date: 22-12-2014	Time: 14:04:44
+Info
+	Stream returned
+Date: 22-12-2014	Time: 14:04:44
+Info
+	Receiving server code...
+Date: 22-12-2014	Time: 14:05:51
+Date: 22-12-2014	Time: 14:05:51
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 22-12-2014	Time: 14:05:51
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 22-12-2014	Time: 14:05:51
+Info
+	Loading created filters...
+FilterHandler:	Date: 22-12-2014	Time: 14:05:51
+Info
+	Done loading created filters
+Date: 22-12-2014	Time: 14:05:51
+Info
+	Waiting for client...
+Date: 22-12-2014	Time: 15:04:57
+Date: 22-12-2014	Time: 15:04:57
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 22-12-2014	Time: 15:04:57
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 22-12-2014	Time: 15:04:57
+Info
+	Loading created filters...
+FilterHandler:	Date: 22-12-2014	Time: 15:04:57
+Info
+	Done loading created filters
+Date: 22-12-2014	Time: 15:04:57
+Info
+	Waiting for client...
+	Connected to client
+Date: 22-12-2014	Time: 15:05:03
+Info
+	Sending list of filters in machine...
+	Number of filters: 6
+	Sending filter: Gate with length of: 4
+	Sending filter: blackGate with length of: 9
+	Sending filter: javiTest with length of: 8
+	Sending filter: path with length of: 4
+	Sending filter: torpedo with length of: 7
+	Sending filter: traffic with length of: 7
+VideoStream:	Date: 22-12-2014	Time: 15:05:03
+Info
+	checking the latest video file number
+	Latest video file number is: 0
+Date: 22-12-2014	Time: 15:05:03
+Info
+	Receiving server code...
+	Received 101
+Date: 22-12-2014	Time: 15:05:05
+Info
+	Starting video stream...
+	Receiving 10 bytes as length...
+	Received 10 bytes successfully
+	Receiving 11 bytes to fill buffer...
+	Received 11 bytes successfully
+Date: 22-12-2014	Time: 15:05:05
+Info
+	Trying to start a stream from video /dev/video0...
+Date: 22-12-2014	Time: 15:05:05
+Info
+	Video stream has started successfully
+Date: 22-12-2014	Time: 15:05:05
+Info
+	Receiving server code...
+VideoStream:	Date: 22-12-2014	Time: 15:05:05
+Info
+	Waiting for client...
+VideoStream:	Date: 22-12-2014	Time: 15:05:05
+Info
+	Starting stream...
+VideoStream:	Date: 22-12-2014	Time: 15:05:05
+Info
+	Streaming video: /dev/video0...
+VideoStream:	Date: 22-12-2014	Time: 15:05:05
+Error
+	Failed to open video file /dev/video0 killing thread...
+	Received 103
+Date: 22-12-2014	Time: 15:05:35
+Info
+	Operating on new unordered list of filters...
+	Receiving 2 bytes as length...
+	Received 2 bytes successfully
+Date: 22-12-2014	Time: 15:05:35
+Info
+	Receiving 1 filters...
+	Receiving 2 bytes as length...
+	Received 2 bytes successfully
+	Receiving 8 bytes to fill buffer...
+	Received 8 bytes successfully
+	Received filter: javiTest
+	Trying to stop the stream...
+VideoStream:	Date: 22-12-2014	Time: 15:05:35
+Info
+	Stream stopped
+	Stream stopped successfully
+FilterRun:	Date: 22-12-2014	Time: 15:05:35
+Info
+	Unordered: Using the following filter for front camera:
+	javiTest
+VideoStream:	Date: 22-12-2014	Time: 15:05:35
+Info
+	Stream continued
+Date: 22-12-2014	Time: 15:05:35
+Info
+	Unordered filters list was changed successfully.
+VideoStream:	Date: 22-12-2014	Time: 15:05:35
+Info
+	Stream returned
+Date: 22-12-2014	Time: 15:05:35
+Info
+	Receiving server code...
+	Received 102
+Date: 22-12-2014	Time: 15:06:15
+Info
+	Closing video stream...
+VideoStream:	Date: 22-12-2014	Time: 15:06:15
+Info
+	Trying to kill the stream...
+VideoStream:	Date: 22-12-2014	Time: 15:06:15
+Info
+	Video stream has ended successfully
+VideoStream:	Date: 22-12-2014	Time: 15:06:15
+Info
+	Waiting for client...
+VideoStream:	Date: 22-12-2014	Time: 15:06:15
+Info
+	Stream killed successfully
+Date: 22-12-2014	Time: 15:06:15
+Info
+	Receiving server code...
+	Received 106
+Date: 22-12-2014	Time: 15:06:15
+Info
+	Ending contact with client...
+Date: 22-12-2014	Time: 15:06:15
+Info
+	Contact with client ended. Waiting for contact...
