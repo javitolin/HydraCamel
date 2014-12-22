@@ -42557,3 +42557,497 @@ Info
 Date: 22-12-2014	Time: 15:06:15
 Info
 	Contact with client ended. Waiting for contact...
+Date: 22-12-2014	Time: 16:04:15
+Date: 22-12-2014	Time: 16:04:15
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 22-12-2014	Time: 16:04:15
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 22-12-2014	Time: 16:04:15
+Info
+	Loading created filters...
+FilterHandler:	Date: 22-12-2014	Time: 16:04:15
+Info
+	Done loading created filters
+Date: 22-12-2014	Time: 16:04:15
+Info
+	Waiting for client...
+	Connected to client
+Date: 22-12-2014	Time: 16:04:23
+Info
+	Sending list of filters in machine...
+	Number of filters: 6
+	Sending filter: Gate with length of: 4
+	Sending filter: blackGate with length of: 9
+	Sending filter: javiTest with length of: 8
+	Sending filter: path with length of: 4
+	Sending filter: torpedo with length of: 7
+	Sending filter: traffic with length of: 7
+VideoStream:	Date: 22-12-2014	Time: 16:04:23
+Info
+	checking the latest video file number
+	Latest video file number is: 0
+Date: 22-12-2014	Time: 16:04:23
+Info
+	Receiving server code...
+	Received 101
+Date: 22-12-2014	Time: 16:04:31
+Info
+	Starting video stream...
+	Receiving 10 bytes as length...
+	Received 10 bytes successfully
+	Receiving 11 bytes to fill buffer...
+	Received 11 bytes successfully
+Date: 22-12-2014	Time: 16:04:31
+Info
+	Trying to start a stream from video /dev/video0...
+Date: 22-12-2014	Time: 16:04:31
+Info
+	Video stream has started successfully
+Date: 22-12-2014	Time: 16:04:31
+Info
+	Receiving server code...
+VideoStream:	Date: 22-12-2014	Time: 16:04:31
+Info
+	Waiting for client...
+VideoStream:	Date: 22-12-2014	Time: 16:04:31
+Info
+	Starting stream...
+VideoStream:	Date: 22-12-2014	Time: 16:04:31
+Info
+	Streaming video: /dev/video0...
+VideoStream:	Date: 22-12-2014	Time: 16:04:31
+Error
+	Failed to open video file /dev/video0 killing thread...
+	Received 100
+Date: 22-12-2014	Time: 16:28:24
+Info
+	Changing config file...
+	Receiving 2 bytes as length...
+	Received 2 bytes successfully
+	Receiving 11 bytes to fill buffer...
+	Received 11 bytes successfully
+	Receiving 10 bytes as length...
+	Received 10 bytes successfully
+	Receiving 458 bytes to fill buffer...
+	Received 458 bytes successfully
+	Deleting file Gate.config...
+Date: 22-12-2014	Time: 16:28:24
+Info
+	File Gate.config was deleted successfully
+Date: 22-12-2014	Time: 16:28:24
+Info
+	File Gate.config has been written successfully
+Date: 22-12-2014	Time: 16:28:24
+Info
+	Receiving server code...
+	Received 100
+Date: 22-12-2014	Time: 16:29:59
+Info
+	Changing config file...
+	Receiving 2 bytes as length...
+	Received 2 bytes successfully
+	Receiving 11 bytes to fill buffer...
+	Received 11 bytes successfully
+	Receiving 10 bytes as length...
+	Received 10 bytes successfully
+	Receiving 459 bytes to fill buffer...
+	Received 459 bytes successfully
+	Deleting file Gate.config...
+Date: 22-12-2014	Time: 16:29:59
+Info
+	File Gate.config was deleted successfully
+Date: 22-12-2014	Time: 16:29:59
+Info
+	File Gate.config has been written successfully
+Date: 22-12-2014	Time: 16:29:59
+Info
+	Receiving server code...
+	Received 100
+Date: 22-12-2014	Time: 16:30:23
+Info
+	Changing config file...
+	Receiving 2 bytes as length...
+	Received 2 bytes successfully
+	Receiving 11 bytes to fill buffer...
+	Received 11 bytes successfully
+	Receiving 10 bytes as length...
+	Received 10 bytes successfully
+	Receiving 459 bytes to fill buffer...
+	Received 459 bytes successfully
+	Deleting file Gate.config...
+Date: 22-12-2014	Time: 16:30:23
+Info
+	File Gate.config was deleted successfully
+Date: 22-12-2014	Time: 16:30:23
+Info
+	File Gate.config has been written successfully
+Date: 22-12-2014	Time: 16:30:23
+Info
+	Receiving server code...
+	Received 100
+Date: 22-12-2014	Time: 16:30:36
+Info
+	Changing config file...
+	Receiving 2 bytes as length...
+	Received 2 bytes successfully
+	Receiving 11 bytes to fill buffer...
+	Received 11 bytes successfully
+	Receiving 10 bytes as length...
+	Received 10 bytes successfully
+	Receiving 460 bytes to fill buffer...
+	Received 460 bytes successfully
+	Deleting file Gate.config...
+Date: 22-12-2014	Time: 16:30:36
+Info
+	File Gate.config was deleted successfully
+Date: 22-12-2014	Time: 16:30:36
+Info
+	File Gate.config has been written successfully
+Date: 22-12-2014	Time: 16:30:36
+Info
+	Receiving server code...
+	Received 100
+Date: 22-12-2014	Time: 16:30:48
+Info
+	Changing config file...
+	Receiving 2 bytes as length...
+	Received 2 bytes successfully
+	Receiving 11 bytes to fill buffer...
+	Received 11 bytes successfully
+	Receiving 10 bytes as length...
+	Received 10 bytes successfully
+	Receiving 457 bytes to fill buffer...
+	Received 457 bytes successfully
+	Deleting file Gate.config...
+Date: 22-12-2014	Time: 16:30:48
+Info
+	File Gate.config was deleted successfully
+Date: 22-12-2014	Time: 16:30:48
+Info
+	File Gate.config has been written successfully
+Date: 22-12-2014	Time: 16:30:48
+Info
+	Receiving server code...
+	Received 104
+Date: 22-12-2014	Time: 16:30:58
+Info
+	Operating on new filters chained list...
+	Receiving 2 bytes as length...
+	Received 2 bytes successfully
+Date: 22-12-2014	Time: 16:30:58
+Info
+	Receiving 1 filters...
+	Receiving 2 bytes as length...
+	Received 2 bytes successfully
+	Receiving 4 bytes to fill buffer...
+	Received 4 bytes successfully
+	Received filter: Gate
+	Trying to stop the stream...
+VideoStream:	Date: 22-12-2014	Time: 16:30:58
+Info
+	Stream stopped
+	Stream stopped successfully
+FilterRun:	Date: 22-12-2014	Time: 16:30:58
+Info
+	Chained: Using the following filter for front camera:
+	Gate
+VideoStream:	Date: 22-12-2014	Time: 16:30:58
+Info
+	Stream continued
+Date: 22-12-2014	Time: 16:30:58
+Info
+	Chained filters list was changed successfully.
+VideoStream:	Date: 22-12-2014	Time: 16:30:58
+Info
+	Stream returned
+Date: 22-12-2014	Time: 16:30:58
+Info
+	Receiving server code...
+	Received 100
+Date: 22-12-2014	Time: 16:31:06
+Info
+	Changing config file...
+	Receiving 2 bytes as length...
+	Received 2 bytes successfully
+	Receiving 11 bytes to fill buffer...
+	Received 11 bytes successfully
+	Receiving 10 bytes as length...
+	Received 10 bytes successfully
+	Receiving 457 bytes to fill buffer...
+	Received 457 bytes successfully
+	Deleting file Gate.config...
+Date: 22-12-2014	Time: 16:31:06
+Info
+	File Gate.config was deleted successfully
+Date: 22-12-2014	Time: 16:31:06
+Info
+	File Gate.config has been written successfully
+Date: 22-12-2014	Time: 16:31:06
+Info
+	Receiving server code...
+	Received 103
+Date: 22-12-2014	Time: 16:31:15
+Info
+	Operating on new unordered list of filters...
+	Receiving 2 bytes as length...
+	Received 2 bytes successfully
+Date: 22-12-2014	Time: 16:31:15
+Info
+	Receiving 1 filters...
+	Receiving 2 bytes as length...
+	Received 2 bytes successfully
+	Receiving 4 bytes to fill buffer...
+	Received 4 bytes successfully
+	Received filter: Gate
+	Trying to stop the stream...
+VideoStream:	Date: 22-12-2014	Time: 16:31:15
+Info
+	Stream stopped
+	Stream stopped successfully
+FilterRun:	Date: 22-12-2014	Time: 16:31:15
+Info
+	Unordered: Using the following filter for front camera:
+	Gate
+VideoStream:	Date: 22-12-2014	Time: 16:31:15
+Info
+	Stream continued
+Date: 22-12-2014	Time: 16:31:15
+Info
+	Unordered filters list was changed successfully.
+VideoStream:	Date: 22-12-2014	Time: 16:31:15
+Info
+	Stream returned
+Date: 22-12-2014	Time: 16:31:15
+Info
+	Receiving server code...
+	Received 102
+Date: 22-12-2014	Time: 16:32:41
+Info
+	Closing video stream...
+VideoStream:	Date: 22-12-2014	Time: 16:32:41
+Info
+	Trying to kill the stream...
+VideoStream:	Date: 22-12-2014	Time: 16:32:41
+Info
+	Video stream has ended successfully
+VideoStream:	Date: 22-12-2014	Time: 16:32:41
+Info
+	Waiting for client...
+VideoStream:	Date: 22-12-2014	Time: 16:32:41
+Info
+	Stream killed successfully
+Date: 22-12-2014	Time: 16:32:41
+Info
+	Receiving server code...
+	Received 106
+Date: 22-12-2014	Time: 16:32:41
+Info
+	Ending contact with client...
+Date: 22-12-2014	Time: 16:32:41
+Info
+	Contact with client ended. Waiting for contact...
+Date: 22-12-2014	Time: 16:41:56
+Date: 22-12-2014	Time: 16:41:56
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 22-12-2014	Time: 16:41:56
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 22-12-2014	Time: 16:41:56
+Info
+	Loading created filters...
+FilterHandler:	Date: 22-12-2014	Time: 16:41:56
+Info
+	Done loading created filters
+Date: 22-12-2014	Time: 16:41:56
+Error
+	bind: Address already in use
+Date: 22-12-2014	Time: 16:41:56
+Info
+	Communication ended at: Date: 22-12-2014	Time: 16:41:56
+
+
+Date: 22-12-2014	Time: 16:42:03
+Date: 22-12-2014	Time: 16:42:03
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 22-12-2014	Time: 16:42:03
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 22-12-2014	Time: 16:42:03
+Info
+	Loading created filters...
+FilterHandler:	Date: 22-12-2014	Time: 16:42:03
+Info
+	Done loading created filters
+Date: 22-12-2014	Time: 16:42:03
+Error
+	bind: Address already in use
+Date: 22-12-2014	Time: 16:42:03
+Info
+	Communication ended at: Date: 22-12-2014	Time: 16:42:03
+
+
+Date: 22-12-2014	Time: 16:42:10
+Date: 22-12-2014	Time: 16:42:10
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 22-12-2014	Time: 16:42:10
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 22-12-2014	Time: 16:42:10
+Info
+	Loading created filters...
+FilterHandler:	Date: 22-12-2014	Time: 16:42:10
+Info
+	Done loading created filters
+Date: 22-12-2014	Time: 16:42:10
+Info
+	Waiting for client...
+	Connected to client
+Date: 22-12-2014	Time: 16:42:23
+Info
+	Sending list of filters in machine...
+	Number of filters: 6
+	Sending filter: Gate with length of: 4
+	Sending filter: blackGate with length of: 9
+	Sending filter: javiTest with length of: 8
+	Sending filter: path with length of: 4
+	Sending filter: torpedo with length of: 7
+	Sending filter: traffic with length of: 7
+VideoStream:	Date: 22-12-2014	Time: 16:42:23
+Info
+	checking the latest video file number
+	Latest video file number is: 0
+Date: 22-12-2014	Time: 16:42:23
+Info
+	Receiving server code...
+	Received 101
+Date: 22-12-2014	Time: 16:42:28
+Info
+	Starting video stream...
+	Receiving 10 bytes as length...
+	Received 10 bytes successfully
+	Receiving 11 bytes to fill buffer...
+	Received 11 bytes successfully
+Date: 22-12-2014	Time: 16:42:28
+Info
+	Trying to start a stream from video /dev/video0...
+Date: 22-12-2014	Time: 16:42:28
+Info
+	Video stream has started successfully
+Date: 22-12-2014	Time: 16:42:28
+Info
+	Receiving server code...
+VideoStream:	Date: 22-12-2014	Time: 16:42:28
+Info
+	Waiting for client...
+VideoStream:	Date: 22-12-2014	Time: 16:42:28
+Info
+	Starting stream...
+VideoStream:	Date: 22-12-2014	Time: 16:42:28
+Info
+	Streaming video: /dev/video0...
+VideoStream:	Date: 22-12-2014	Time: 16:42:28
+Error
+	Failed to open video file /dev/video0 killing thread...
+	Received 104
+Date: 22-12-2014	Time: 16:42:45
+Info
+	Operating on new filters chained list...
+	Receiving 2 bytes as length...
+	Received 2 bytes successfully
+Date: 22-12-2014	Time: 16:42:45
+Info
+	Receiving 1 filters...
+	Receiving 2 bytes as length...
+	Received 2 bytes successfully
+	Receiving 4 bytes to fill buffer...
+	Received 4 bytes successfully
+	Received filter: Gate
+	Trying to stop the stream...
+VideoStream:	Date: 22-12-2014	Time: 16:42:45
+Info
+	Stream stopped
+	Stream stopped successfully
+FilterRun:	Date: 22-12-2014	Time: 16:42:45
+Info
+	Chained: Using the following filter for front camera:
+	Gate
+VideoStream:	Date: 22-12-2014	Time: 16:42:45
+Info
+	Stream continued
+Date: 22-12-2014	Time: 16:42:45
+Info
+	Chained filters list was changed successfully.
+Date: 22-12-2014	Time: 16:42:45
+Info
+	Receiving server code...
+VideoStream:	Date: 22-12-2014	Time: 16:42:45
+Info
+	Stream returned
+	Received 103
+Date: 22-12-2014	Time: 16:43:15
+Info
+	Operating on new unordered list of filters...
+	Receiving 2 bytes as length...
+	Received 2 bytes successfully
+Date: 22-12-2014	Time: 16:43:15
+Info
+	Receiving 1 filters...
+	Receiving 2 bytes as length...
+	Received 2 bytes successfully
+	Receiving 4 bytes to fill buffer...
+	Received 4 bytes successfully
+	Received filter: Gate
+	Trying to stop the stream...
+	Stream stopped successfully
+FilterRun:	Date: 22-12-2014	Time: 16:43:15
+Info
+	Unordered: Using the following filter for front camera:
+	Gate
+VideoStream:	Date: 22-12-2014	Time: 16:43:15
+Info
+	Stream continued
+VideoStream:	Date: 22-12-2014	Time: 16:43:15
+Info
+	Stream stopped
+VideoStream:	Date: 22-12-2014	Time: 16:43:15
+Info
+	Stream returned
+Date: 22-12-2014	Time: 16:43:15
+Info
+	Unordered filters list was changed successfully.
+Date: 22-12-2014	Time: 16:43:15
+Info
+	Receiving server code...
