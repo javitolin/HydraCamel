@@ -141,10 +141,24 @@ void Erosion( int, void* )
 	imshow( "Erosion Demo", erosion_dst );
 }
 
-void abs(int, void*){
-	Mat bw;
-	cvtColor(src,bw, CV_RGB2GRAY);
+bool lineCompare(Vec2f line1, Vec2f line2){
+	float rho = line1[0], theta = line1[1];
+	double x1, x2;
+	double a = cos(theta), b = sin(theta);
+	double x0 = a*rho;
+	x1 = cvRound(x0 + 1000*(-b));
+	rho = line2[0];
+	theta = line2[1];
+	a = cos(theta);
+	b = sin(theta);
+	x0 = a*rho;
+	x2 = cvRound(x0 + 1000*(-b));
+	return x1<x2;
+}
 
+void abs(int, void*){
+	Mat bw, cont;
+	cvtColor(src,bw, CV_RGB2GRAY);
 	//int operation = morph_operator + 2;
 	int operation = 3;
 	int morph_size = max_kernel_size;
@@ -152,6 +166,8 @@ void abs(int, void*){
 	Mat dst;
 	/// Apply the specified morphology operation
 	morphologyEx( bw, dst, operation, element );
+
+
 
 	Mat edges, cedges;
 	//lowThreshold = 4;
@@ -161,28 +177,128 @@ void abs(int, void*){
 	vector<Vec2f> lines;
 	HoughLines(edges, lines, 1, CV_PI/180, 120, 0, 0 );
 
-	  for( size_t i = 0; i < lines.size(); i++ )
-	  {
-	     float rho = lines[i][0], theta = lines[i][1];
-	     Point pt1, pt2;
-	     double a = cos(theta), b = sin(theta);
-	     double x0 = a*rho, y0 = b*rho;
-	     pt1.x = cvRound(x0 + 1000*(-b));
-	     pt1.y = cvRound(y0 + 1000*(a));
-	     pt2.x = cvRound(x0 - 1000*(-b));
-	     pt2.y = cvRound(y0 - 1000*(a));
-	     if(abs(pt1.x - pt2.x) <= 5)
-	    	 line( cedges, pt1, pt2, Scalar(0,0,255), 3, CV_AA);
-	  }
-	  /*
-	vector<Vec4i> lines;
-	HoughLinesP(dst, lines, 1, CV_PI/180, 50, 50, 10 );
+	sort(lines, lineCompare);
+
+	int numOfLines = 0;
+	double groupMin, lastX = -1;
+	int currGroup = 1;
+
+	vector<Vec2f> group1 = vector<Vec2f>(), group2 = vector<Vec2f>();
+
 	for( size_t i = 0; i < lines.size(); i++ )
 	{
-		Vec4i l = lines[i];
-		line( cedges, Point(l[0], l[1]), Point(l[2], l[3]), Scalar(0,0,255), 3, CV_AA);
+		float rho = lines[i][0], theta = lines[i][1];
+		Point pt1, pt2;
+		double a = cos(theta), b = sin(theta);
+		double x0 = a*rho, y0 = b*rho;
+		pt1.x = cvRound(x0 + 1000*(-b));
+		pt1.y = cvRound(y0 + 1000*(a));
+		pt2.x = cvRound(x0 - 1000*(-b));
+		pt2.y = cvRound(y0 - 1000*(a));
+		if(abs(pt1.x - pt2.x) <= 5){
+			numOfLines++;
+			line( cedges, pt1, pt2, Scalar(0,0,255), 3, CV_AA);
+			printf("added red %d\n", pt1.x);
+		}
 	}
-	*/
+	groupMin = 0.2*numOfLines;
+	if(groupMin < 1) groupMin = 1;
+
+
+	printf("%d, %f\n", numOfLines, groupMin);
+
+	for( size_t i = 0; i < lines.size(); i++ )
+	{
+		float rho = lines[i][0], theta = lines[i][1];
+		double pt1, pt2;
+		double a = cos(theta), b = sin(theta);
+		double x0 = a*rho;
+		pt1 = cvRound(x0 + 1000*(-b));
+		pt2 = cvRound(x0 - 1000*(-b));
+		if(abs(pt1 - pt2) <= 5){
+			if(lastX == -1){
+				lastX = pt1;
+				Vec2f v = Vec2f(lines[i][0], lines[i][1]);
+				group1.push_back(v);
+				//printf("added to group1 %d\n", pt1.x);
+			}
+			else{
+				if(abs(pt1 - lastX) <= 20){ //add to current group
+					lastX = pt1;
+					Vec2f v = Vec2f(lines[i][0], lines[i][1]);
+					(currGroup == 1) ? (group1.push_back(v)) : (group2.push_back(v));
+					//printf("added to group%d %d\n", currGroup, pt1.x);
+				}
+				else{	//need to create a new group;
+					if(currGroup == 1){
+						//printf("%d, %d\n", lastX, pt1.x);
+						if(group1.size() >= groupMin){
+							currGroup++;
+							lastX = pt1;
+							Vec2f v = Vec2f(lines[i][0], lines[i][1]);
+							group2.push_back(v);
+							//printf("added to group2 %d\n", pt1.x);
+						}
+						else{
+							group1.clear();
+							lastX = pt1;
+							Vec2f v = Vec2f(lines[i][0], lines[i][1]);
+							group1.push_back(v);
+							//printf("added to group1 %d\n", pt1.x);
+						}
+					}
+					else{
+						if(group1.size() >= groupMin && group2.size() >=groupMin)
+							break;
+						else if(group1.size() >= groupMin){
+							group2.clear();
+							lastX = pt1;
+							Vec2f v = Vec2f(lines[i][0], lines[i][1]);
+							group2.push_back(v);
+							currGroup = 2;
+							//printf("added to group2 %d\n", pt1.x);
+						}
+						else if(group2.size() >= groupMin){
+							group1.clear();
+							group1.insert(group1.begin(), group2.begin(), group2.end());
+							group2.clear();
+							lastX = pt1;
+							Vec2f v = Vec2f(lines[i][0], lines[i][1]);
+							group2.push_back(v);
+							currGroup = 2;
+							//printf("added to group2 %d\n", pt1.x);
+						}
+					}
+				}
+			}
+		}
+	}
+
+	for( size_t i = 0; i < group1.size() || i < group2.size(); i++ ){
+		if(i < group1.size()){
+			float rho = group1[i][0], theta = group1[i][1];
+			Point pt1, pt2;
+			double a = cos(theta), b = sin(theta);
+			double x0 = a*rho, y0 = b*rho;
+			pt1.x = cvRound(x0 + 1000*(-b));
+			pt1.y = cvRound(y0 + 1000*(a));
+			pt2.x = cvRound(x0 - 1000*(-b));
+			pt2.y = cvRound(y0 - 1000*(a));
+			line( cedges, pt1, pt2, Scalar(255,0,0), 3, CV_AA);
+		}
+		if(i < group2.size()){
+			float rho = group2[i][0], theta = group2[i][1];
+			Point pt1, pt2;
+			double a = cos(theta), b = sin(theta);
+			double x0 = a*rho, y0 = b*rho;
+			pt1.x = cvRound(x0 + 1000*(-b));
+			pt1.y = cvRound(y0 + 1000*(a));
+			pt2.x = cvRound(x0 - 1000*(-b));
+			pt2.y = cvRound(y0 - 1000*(a));
+			line( cedges, pt1, pt2, Scalar(0,255,0), 3, CV_AA);
+		}
+	}
+
 
 	/// Using Canny's output as a mask, we display our result
 	Mat dst2;
