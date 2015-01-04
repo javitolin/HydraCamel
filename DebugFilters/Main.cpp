@@ -5,8 +5,8 @@
 #include <stdio.h>
 #include <iostream>
 #include <fstream>
-
-
+#include <dirent.h>
+#include <sys/types.h>
 using namespace cv;
 using namespace std;
 
@@ -31,24 +31,20 @@ int lowThreshold;
 int const max_lowThreshold = 100;
 int ratio = 3;
 int canny_kernel_size = 3;
+double groupsMinDiff = 0.2;
+Mat cedges;
+//For testing purposes
+int numberOfLinesFound = 0;
 
 /** Function Headers */
-void Erosion( int, void* );
-void Dilation( int, void* );
 void abs(int, void*);
-void saveDilation(int, void*);
-void saveErosion(int, void*);
 /** @function main */
 int main( int argc, char** argv )
 {
 	/// Load an image
-	src = imread( argv[1] );
-	picName = argv[1];
 
-	if( !src.data )
-	{ return -1; }
 
-	namedWindow( "Abs", CV_WINDOW_AUTOSIZE );
+	/*namedWindow( "Abs", CV_WINDOW_AUTOSIZE );
 	/// Create Trackbar to select Morphology operation
 	createTrackbar("Operator:\n 0: Opening - 1: Closing \n 2: Gradient - 3: Top Hat \n 4: Black Hat", "Abs", &morph_operator, max_operator, abs );
 
@@ -63,82 +59,49 @@ int main( int argc, char** argv )
 			abs );
 	/// Create a Trackbar for user to enter threshold
 	createTrackbar( "Min Threshold:", "Abs", &lowThreshold, max_lowThreshold, abs );
-	abs(0, 0);
+*/
 
-	/*/// Create windows
-	namedWindow( "Erosion Demo", CV_WINDOW_AUTOSIZE );
-	namedWindow( "Dilation Demo", CV_WINDOW_AUTOSIZE );
-	cvMoveWindow( "Dilation Demo", src.cols, 0 );
+	DIR *dp;
+	struct dirent *dirp;
+	if((dp  = opendir(".")) == NULL) {
+		cout << "Error: opening root folder" << endl;
+		return -1;
+	}
+	//To add a new picture:
+	//Copy the picture to the root folder with the name <numberOfRealLines><indexNumber>.png
+	Vector<string> filesToCheck = Vector<string>();
+	while ((dirp = readdir(dp)) != NULL) {
+		string currFile = string(dirp->d_name);
+		if(currFile.find(".") != string::npos){
+			if(currFile.substr(currFile.find_last_of(".")).compare(".png") == 0){
+				filesToCheck.push_back(currFile);
+			}
+		}
+	}
+	size_t i;
+	double successRate = 0;
+	for(i = 0; i < filesToCheck.size();i++){
+		string pic = filesToCheck[i];
+		int numberOfLinesInFile = (int)(pic[0]-'0');
+		src = imread( pic );
+		if( !src.data )
+		{ return -1; }
+		picName = pic;
+		abs(0, 0);
+		if(numberOfLinesInFile != numberOfLinesFound){
+			printf("We found %d lines instead of %d in file %s\n",numberOfLinesFound,numberOfLinesInFile,pic.c_str());
+			namedWindow(pic.c_str(), CV_WINDOW_AUTOSIZE );
+			imshow(pic.c_str(), cedges);
+		}
+		else
+			successRate++;
+	}
+	double percentageOfSuccess = (successRate/filesToCheck.size())*100;
+	printf("We were correct in %f of the cases\n",successRate);
+	printf("We were correct in %f%% of the cases\n",percentageOfSuccess);
 
-
-	/// Create Erosion Trackbar
-	createTrackbar( "Element:\n 0: Rect \n 1: Cross \n 2: Ellipse", "Erosion Demo",
-			&erosion_elem, max_elem,
-			Erosion );
-
-
-	createTrackbar( "Kernel size:\n 2n +1", "Erosion Demo",
-			&erosion_size, max_kernel_size,
-			Erosion );
-
-	createButton("Save Erosion", saveErosion, 0, CV_PUSH_BUTTON, 0);
-
-
-	/// Create Dilation Trackbar
-	createTrackbar( "Element:\n 0: Rect \n 1: Cross \n 2: Ellipse", "Dilation Demo",
-			&dilation_elem, max_elem,
-			Dilation );
-	createTrackbar( "Kernel size:\n 2n +1", "Dilation Demo",
-			&dilation_size, max_kernel_size,
-			Dilation );
-
-
-	createButton("Save Dilation", saveDilation, 0, CV_PUSH_BUTTON, 0);
-
-	/// Default start
-	Erosion( 0, 0 );
-	Dilation( 0, 0 );*/
 	waitKey(0);
 	return 0;
-}
-
-void saveDilation(int, void*){
-	string dCounterStr = static_cast<ostringstream*>(&(ostringstream() << dcounter))->str();
-	string name= picName + "_dilated" + (dCounterStr);
-	imwrite(name+".jpg", dilation_dst);
-	dcounter++;
-	FILE *myfile;
-	myfile = fopen((name + ".config").c_str(),"w");
-	fprintf(myfile, "Dilation elem: %d\nDilation size: %d", dilation_elem,dilation_size);
-	fclose(myfile);
-}
-
-void saveErosion(int, void*){
-	string eCounterStr = static_cast<ostringstream*>(&(ostringstream() << ecounter))->str();
-	string name= picName + "_eroded" + (eCounterStr);
-	imwrite(name+".jpg", erosion_dst);
-	ecounter++;
-	FILE *myfile;
-	myfile = fopen((name + ".config").c_str(),"w");
-	fprintf(myfile, "Erosion elem: %d\Erosion size: %d", erosion_elem,erosion_size);
-	fclose(myfile);
-}
-
-/**  @function Erosion  */
-void Erosion( int, void* )
-{
-	int erosion_type;
-	if( erosion_elem == 0 ){ erosion_type = MORPH_RECT; }
-	else if( erosion_elem == 1 ){ erosion_type = MORPH_CROSS; }
-	else if( erosion_elem == 2) { erosion_type = MORPH_ELLIPSE; }
-
-	Mat element = getStructuringElement( erosion_type,
-			Size( 2*erosion_size + 1, 2*erosion_size+1 ),
-			Point( erosion_size, erosion_size ) );
-
-	/// Apply the erosion operation
-	erode( src, erosion_dst, element );
-	imshow( "Erosion Demo", erosion_dst );
 }
 
 bool lineCompare(Vec2f line1, Vec2f line2){
@@ -157,6 +120,7 @@ bool lineCompare(Vec2f line1, Vec2f line2){
 }
 
 void abs(int, void*){
+	numberOfLinesFound = 0;
 	Mat bw, cont;
 	cvtColor(src,bw, CV_RGB2GRAY);
 	//int operation = morph_operator + 2;
@@ -167,18 +131,13 @@ void abs(int, void*){
 	/// Apply the specified morphology operation
 	morphologyEx( bw, dst, operation, element );
 
-
-
-	Mat edges, cedges;
-	//lowThreshold = 4;
+	Mat edges;
 	Canny( dst, edges, lowThreshold, lowThreshold*ratio, canny_kernel_size );
 	cvtColor(edges, cedges, CV_GRAY2BGR);
 
 	vector<Vec2f> lines;
 	HoughLines(edges, lines, 1, CV_PI/180, 120, 0, 0 );
-
 	sort(lines, lineCompare);
-
 	int numOfLines = 0;
 	double groupMin, lastX = -1;
 	int currGroup = 1;
@@ -198,14 +157,13 @@ void abs(int, void*){
 		if(abs(pt1.x - pt2.x) <= 5){
 			numOfLines++;
 			line( cedges, pt1, pt2, Scalar(0,0,255), 3, CV_AA);
-			printf("added red %d\n", pt1.x);
+			//printf("added red %d\n", pt1.x);
 		}
 	}
 	groupMin = 0.2*numOfLines;
 	if(groupMin < 1) groupMin = 1;
 
-
-	printf("%d, %f\n", numOfLines, groupMin);
+	//printf("%d, %f\n", numOfLines, groupMin);
 
 	for( size_t i = 0; i < lines.size(); i++ )
 	{
@@ -220,31 +178,26 @@ void abs(int, void*){
 				lastX = pt1;
 				Vec2f v = Vec2f(lines[i][0], lines[i][1]);
 				group1.push_back(v);
-				//printf("added to group1 %d\n", pt1.x);
 			}
 			else{
 				if(abs(pt1 - lastX) <= 20){ //add to current group
 					lastX = pt1;
 					Vec2f v = Vec2f(lines[i][0], lines[i][1]);
 					(currGroup == 1) ? (group1.push_back(v)) : (group2.push_back(v));
-					//printf("added to group%d %d\n", currGroup, pt1.x);
 				}
 				else{	//need to create a new group;
 					if(currGroup == 1){
-						//printf("%d, %d\n", lastX, pt1.x);
 						if(group1.size() >= groupMin){
 							currGroup++;
 							lastX = pt1;
 							Vec2f v = Vec2f(lines[i][0], lines[i][1]);
 							group2.push_back(v);
-							//printf("added to group2 %d\n", pt1.x);
 						}
 						else{
 							group1.clear();
 							lastX = pt1;
 							Vec2f v = Vec2f(lines[i][0], lines[i][1]);
 							group1.push_back(v);
-							//printf("added to group1 %d\n", pt1.x);
 						}
 					}
 					else{
@@ -256,7 +209,6 @@ void abs(int, void*){
 							Vec2f v = Vec2f(lines[i][0], lines[i][1]);
 							group2.push_back(v);
 							currGroup = 2;
-							//printf("added to group2 %d\n", pt1.x);
 						}
 						else if(group2.size() >= groupMin){
 							group1.clear();
@@ -266,7 +218,6 @@ void abs(int, void*){
 							Vec2f v = Vec2f(lines[i][0], lines[i][1]);
 							group2.push_back(v);
 							currGroup = 2;
-							//printf("added to group2 %d\n", pt1.x);
 						}
 					}
 				}
@@ -299,31 +250,24 @@ void abs(int, void*){
 		}
 	}
 
+	double totalLines = group1.size() + group2.size();
+	if(group1.size()/totalLines < groupsMinDiff)
+		group1.clear();
+	if(group2.size()/totalLines < groupsMinDiff){
+		group2.clear();
+	}
+
+	//if(abs(group1.size() - group2.size()) >
 
 	/// Using Canny's output as a mask, we display our result
 	Mat dst2;
 	dst2 = Scalar::all(0);
 
 	dst.copyTo( dst2, edges);
-
+	if(group1.size() > 0) numberOfLinesFound++;
+	if(group2.size() > 0) numberOfLinesFound++;
 	//Mat imgH;
 	//dst.convertTo(imgH, -1, 1.185, 10); //increase the contrast (double)
-	imshow( "Abs", dst );
-	imshow("Abs", cedges);
-}
-
-/** @function Dilation */
-void Dilation( int, void* )
-{
-	int dilation_type;
-	if( dilation_elem == 0 ){ dilation_type = MORPH_RECT; }
-	else if( dilation_elem == 1 ){ dilation_type = MORPH_CROSS; }
-	else if( dilation_elem == 2) { dilation_type = MORPH_ELLIPSE; }
-
-	Mat element = getStructuringElement( dilation_type,
-			Size( 2*dilation_size + 1, 2*dilation_size+1 ),
-			Point( dilation_size, dilation_size ) );
-	/// Apply the dilation operation
-	dilate( src, dilation_dst, element );
-	imshow( "Dilation Demo", dilation_dst );
+	//imshow("Abs",dst);
+	//imshow("Abs", cedges);
 }
