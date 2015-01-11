@@ -29,6 +29,8 @@ src/FilterRun.d: ../src/FilterRun.cpp ../src/../include/FilterRun.h \
  ../src/../include/../include/../Algos/Utils/Utils.h \
  ../src/../include/../include/../Algos/JaviTest/JaviTest.h \
  ../src/../include/../include/../Algos/JaviTest/../BaseAlgorithm.h \
+ ../src/../include/../include/../Algos/FirstTask/FirstTaskGate.h \
+ ../src/../include/../include/../Algos/FirstTask/../BaseAlgorithm.h \
  ../src/../include/../include/../include/Log.h \
  ../src/../include/../include/../include/CreatedFilter.h \
  ../src/../include/../include/../include/../Algos/BaseAlgorithm.h
@@ -94,6 +96,10 @@ src/FilterRun.d: ../src/FilterRun.cpp ../src/../include/FilterRun.h \
 ../src/../include/../include/../Algos/JaviTest/JaviTest.h:
 
 ../src/../include/../include/../Algos/JaviTest/../BaseAlgorithm.h:
+
+../src/../include/../include/../Algos/FirstTask/FirstTaskGate.h:
+
+../src/../include/../include/../Algos/FirstTask/../BaseAlgorithm.h:
 
 ../src/../include/../include/../include/Log.h:
 

@@ -37,6 +37,11 @@ FilterHandler::FilterHandler(Log* log)
 	_frontFilters["javiTest"]->Init(false);
 	//END JAVI ADDED
 
+	//First Task Added
+	_frontFilters["firstTaskGate"] = new FirstTaskGate();
+	_frontFilters["firstTaskGate"]->Init(false);
+
+
 	loadParameters(_frontFilters);
 	loadParameters(_bottomFilters);
 
@@ -217,6 +222,10 @@ map<string, BaseAlgorithm*> FilterHandler::instanceGenerator()
 	_frontFilters["Javi_Test"] = new JaviTest();
 	_frontFilters["Javi_Test"]->Init(false);
 	//END JAVI ADDED
+
+	//First Task Added
+	_frontFilters["firstTaskGate"] = new FirstTaskGate();
+	_frontFilters["firstTaskGate"]->Init(false);
 
 	loadParameters(_frontFilters);
 	loadParameters(_bottomFilters);
@@ -472,6 +481,10 @@ void FilterHandler::updateConfigs()
 	_frontFilters["Javi_Test"] = new JaviTest();
 	_frontFilters["Javi_Test"]->Init(false);
 	//END JAVI ADDED
+
+	//First Task Added
+	_frontFilters["firstTaskGate"] = new FirstTaskGate();
+	_frontFilters["firstTaskGate"]->Init(false);
 
 	loadParameters(_frontFilters);
 	loadParameters(_bottomFilters);

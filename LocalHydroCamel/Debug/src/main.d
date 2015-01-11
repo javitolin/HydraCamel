@@ -30,6 +30,8 @@ src/main.d: ../src/main.cpp ../src/../include/VideoStream.h \
  ../src/../include/../include/../include/../Algos/Utils/Utils.h \
  ../src/../include/../include/../include/../Algos/JaviTest/JaviTest.h \
  ../src/../include/../include/../include/../Algos/JaviTest/../BaseAlgorithm.h \
+ ../src/../include/../include/../include/../Algos/FirstTask/FirstTaskGate.h \
+ ../src/../include/../include/../include/../Algos/FirstTask/../BaseAlgorithm.h \
  ../src/../include/../include/../include/../include/Log.h \
  ../src/../include/../include/../include/../include/CreatedFilter.h \
  ../src/../include/../include/../include/../include/../Algos/BaseAlgorithm.h \
@@ -98,6 +100,10 @@ src/main.d: ../src/main.cpp ../src/../include/VideoStream.h \
 ../src/../include/../include/../include/../Algos/JaviTest/JaviTest.h:
 
 ../src/../include/../include/../include/../Algos/JaviTest/../BaseAlgorithm.h:
+
+../src/../include/../include/../include/../Algos/FirstTask/FirstTaskGate.h:
+
+../src/../include/../include/../include/../Algos/FirstTask/../BaseAlgorithm.h:
 
 ../src/../include/../include/../include/../include/Log.h:
 

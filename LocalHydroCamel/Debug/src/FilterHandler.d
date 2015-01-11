@@ -20,6 +20,8 @@ src/FilterHandler.d: ../src/FilterHandler.cpp \
  ../src/../include/../Algos/Utils/../MissionControlMessage.h \
  ../src/../include/../Algos/JaviTest/JaviTest.h \
  ../src/../include/../Algos/JaviTest/../BaseAlgorithm.h \
+ ../src/../include/../Algos/FirstTask/FirstTaskGate.h \
+ ../src/../include/../Algos/FirstTask/../BaseAlgorithm.h \
  ../src/../include/../include/Log.h \
  ../src/../include/../include/CreatedFilter.h \
  ../src/../include/../include/../Algos/BaseAlgorithm.h
@@ -65,6 +67,10 @@ src/FilterHandler.d: ../src/FilterHandler.cpp \
 ../src/../include/../Algos/JaviTest/JaviTest.h:
 
 ../src/../include/../Algos/JaviTest/../BaseAlgorithm.h:
+
+../src/../include/../Algos/FirstTask/FirstTaskGate.h:
+
+../src/../include/../Algos/FirstTask/../BaseAlgorithm.h:
 
 ../src/../include/../include/Log.h:
 

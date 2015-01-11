@@ -43051,3 +43051,326 @@ Info
 Date: 22-12-2014	Time: 16:43:15
 Info
 	Receiving server code...
+Date: 11-01-2015	Time: 16:18:30
+Date: 11-01-2015	Time: 16:18:30
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder SOFilters does not exist. Creating it...
+	Creating folder VideoLog...
+	Folder VideoLog does not exist. Creating it...
+	Creating folder CreatedFilters...
+	Folder CreatedFilters does not exist. Creating it...
+FilterHandler:	Date: 11-01-2015	Time: 16:18:30
+Error
+	problem in loading parameters of firstTaskGate:problem in loading parameters of firstTaskGate
+FilterHandler:	Date: 11-01-2015	Time: 16:18:30
+Error
+	firstTaskGate not working because failure in loading parameters
+Date: 11-01-2015	Time: 16:23:06
+Date: 11-01-2015	Time: 16:23:06
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 11-01-2015	Time: 16:23:06
+Error
+	problem in loading parameters of firstTaskGate:problem in loading parameters of firstTaskGate
+FilterHandler:	Date: 11-01-2015	Time: 16:23:06
+Error
+	firstTaskGate not working because failure in loading parameters
+Date: 11-01-2015	Time: 16:24:31
+Date: 11-01-2015	Time: 16:24:31
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 11-01-2015	Time: 16:24:31
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 11-01-2015	Time: 16:24:31
+Info
+	Loading created filters...
+FilterHandler:	Date: 11-01-2015	Time: 16:24:31
+Info
+	Done loading created filters
+Date: 11-01-2015	Time: 16:24:31
+Info
+	Waiting for client...
+	Connected to client
+Date: 11-01-2015	Time: 16:25:00
+Info
+	Sending list of filters in machine...
+	Number of filters: 7
+	Sending filter: Gate with length of: 4
+	Sending filter: blackGate with length of: 9
+	Sending filter: firstTaskGate with length of: 13
+	Sending filter: javiTest with length of: 8
+	Sending filter: path with length of: 4
+	Sending filter: torpedo with length of: 7
+	Sending filter: traffic with length of: 7
+VideoStream:	Date: 11-01-2015	Time: 16:25:00
+Info
+	checking the latest video file number
+	Latest video file number is: 0
+Date: 11-01-2015	Time: 16:25:00
+Info
+	Receiving server code...
+	Received 101
+Date: 11-01-2015	Time: 16:25:02
+Info
+	Starting video stream...
+	Receiving 10 bytes as length...
+	Received 10 bytes successfully
+	Receiving 11 bytes to fill buffer...
+	Received 11 bytes successfully
+Date: 11-01-2015	Time: 16:25:02
+Info
+	Trying to start a stream from video /dev/video0...
+Date: 11-01-2015	Time: 16:25:02
+Info
+	Video stream has started successfully
+Date: 11-01-2015	Time: 16:25:02
+Info
+	Receiving server code...
+VideoStream:	Date: 11-01-2015	Time: 16:25:02
+Info
+	Waiting for client...
+VideoStream:	Date: 11-01-2015	Time: 16:25:02
+Info
+	Starting stream...
+VideoStream:	Date: 11-01-2015	Time: 16:25:02
+Info
+	Streaming video: /dev/video0...
+VideoStream:	Date: 11-01-2015	Time: 16:25:02
+Error
+	Failed to open video file /dev/video0 killing thread...
+	Received 104
+Date: 11-01-2015	Time: 16:25:32
+Info
+	Operating on new filters chained list...
+	Receiving 2 bytes as length...
+	Received 2 bytes successfully
+Date: 11-01-2015	Time: 16:25:32
+Info
+	Receiving 1 filters...
+	Receiving 2 bytes as length...
+	Received 2 bytes successfully
+	Receiving 13 bytes to fill buffer...
+	Received 13 bytes successfully
+	Received filter: firstTaskGate
+	Trying to stop the stream...
+	Stream stopped successfully
+FilterRun:	Date: 11-01-2015	Time: 16:25:32
+Info
+	Chained: Using the following filter for front camera:
+	firstTaskGate
+VideoStream:	Date: 11-01-2015	Time: 16:25:32
+Info
+	Stream continued
+Date: 11-01-2015	Time: 16:25:32
+Info
+	Chained filters list was changed successfully.
+Date: 11-01-2015	Time: 16:25:32
+Info
+	Receiving server code...
+VideoStream:	Date: 11-01-2015	Time: 16:25:32
+Info
+	Stream stopped
+VideoStream:	Date: 11-01-2015	Time: 16:25:32
+Info
+	Stream returned
+	Received 104
+Date: 11-01-2015	Time: 16:25:53
+Info
+	Operating on new filters chained list...
+	Receiving 2 bytes as length...
+	Received 2 bytes successfully
+Date: 11-01-2015	Time: 16:25:53
+Info
+	Receiving 1 filters...
+	Receiving 2 bytes as length...
+	Received 2 bytes successfully
+	Receiving 13 bytes to fill buffer...
+	Received 13 bytes successfully
+	Received filter: firstTaskGate
+	Trying to stop the stream...
+VideoStream:	Date: 11-01-2015	Time: 16:25:53
+Info
+	Stream stopped
+	Stream stopped successfully
+FilterRun:	Date: 11-01-2015	Time: 16:25:53
+Info
+	Chained: Using the following filter for front camera:
+	firstTaskGate
+VideoStream:	Date: 11-01-2015	Time: 16:25:53
+Info
+	Stream continued
+Date: 11-01-2015	Time: 16:25:53
+Info
+	Chained filters list was changed successfully.
+VideoStream:	Date: 11-01-2015	Time: 16:25:53
+Info
+	Stream returned
+Date: 11-01-2015	Time: 16:25:53
+Info
+	Receiving server code...
+	Received 115
+Date: 11-01-2015	Time: 16:25:53
+Info
+	Receiving image to filter
+	Receiving 10 bytes as length...
+	Received 10 bytes successfully
+	Receiving 50 bytes to fill buffer...
+	Received 50 bytes successfully
+FilterRun:	Date: 11-01-2015	Time: 16:25:53
+Info
+	Chained mode
+	Filtered image is good
+Date: 11-01-2015	Time: 16:25:53
+Info
+	Sending number of filters that filtered the image...
+	Number of filters: 1
+Date: 11-01-2015	Time: 16:25:53
+Info
+	Sending the images...
+Date: 11-01-2015	Time: 16:25:53
+Info
+	Sending image size: 0000038698...
+	Sending image...
+	Sent 38698 bytes successfully
+Date: 11-01-2015	Time: 16:25:53
+Info
+	Receiving server code...
+	Received 104
+Date: 11-01-2015	Time: 16:26:03
+Info
+	Operating on new filters chained list...
+	Receiving 2 bytes as length...
+	Received 2 bytes successfully
+Date: 11-01-2015	Time: 16:26:03
+Info
+	Receiving 1 filters...
+	Receiving 2 bytes as length...
+	Received 2 bytes successfully
+	Receiving 13 bytes to fill buffer...
+	Received 13 bytes successfully
+	Received filter: firstTaskGate
+	Trying to stop the stream...
+	Stream stopped successfully
+VideoStream:	Date: 11-01-2015	Time: 16:26:03
+Info
+	Stream stopped
+FilterRun:	Date: 11-01-2015	Time: 16:26:03
+Info
+	Chained: Using the following filter for front camera:
+	firstTaskGate
+VideoStream:	Date: 11-01-2015	Time: 16:26:03
+Info
+	Stream continued
+Date: 11-01-2015	Time: 16:26:03
+Info
+	Chained filters list was changed successfully.
+VideoStream:	Date: 11-01-2015	Time: 16:26:03
+Info
+	Stream returned
+Date: 11-01-2015	Time: 16:26:03
+Info
+	Receiving server code...
+	Received 115
+Date: 11-01-2015	Time: 16:26:03
+Info
+	Receiving image to filter
+	Receiving 10 bytes as length...
+	Received 10 bytes successfully
+	Receiving 50 bytes to fill buffer...
+	Received 50 bytes successfully
+FilterRun:	Date: 11-01-2015	Time: 16:26:03
+Info
+	Chained mode
+	Filtered image is good
+Date: 11-01-2015	Time: 16:26:03
+Info
+	Sending number of filters that filtered the image...
+	Number of filters: 1
+Date: 11-01-2015	Time: 16:26:03
+Info
+	Sending the images...
+Date: 11-01-2015	Time: 16:26:03
+Info
+	Sending image size: 0000038698...
+	Sending image...
+	Sent 38698 bytes successfully
+Date: 11-01-2015	Time: 16:26:03
+Info
+	Receiving server code...
+	Received 104
+Date: 11-01-2015	Time: 16:26:08
+Info
+	Operating on new filters chained list...
+	Receiving 2 bytes as length...
+	Received 2 bytes successfully
+Date: 11-01-2015	Time: 16:26:08
+Info
+	Receiving 1 filters...
+	Receiving 2 bytes as length...
+	Received 2 bytes successfully
+	Receiving 13 bytes to fill buffer...
+	Received 13 bytes successfully
+	Received filter: firstTaskGate
+	Trying to stop the stream...
+VideoStream:	Date: 11-01-2015	Time: 16:26:08
+Info
+	Stream stopped
+	Stream stopped successfully
+FilterRun:	Date: 11-01-2015	Time: 16:26:08
+Info
+	Chained: Using the following filter for front camera:
+	firstTaskGate
+VideoStream:	Date: 11-01-2015	Time: 16:26:08
+Info
+	Stream continued
+Date: 11-01-2015	Time: 16:26:08
+Info
+	Chained filters list was changed successfully.
+VideoStream:	Date: 11-01-2015	Time: 16:26:08
+Info
+	Stream returned
+Date: 11-01-2015	Time: 16:26:08
+Info
+	Receiving server code...
+	Received 102
+Date: 11-01-2015	Time: 16:26:13
+Info
+	Closing video stream...
+VideoStream:	Date: 11-01-2015	Time: 16:26:13
+Info
+	Trying to kill the stream...
+VideoStream:	Date: 11-01-2015	Time: 16:26:13
+Info
+	Video stream has ended successfully
+VideoStream:	Date: 11-01-2015	Time: 16:26:13
+Info
+	Waiting for client...
+VideoStream:	Date: 11-01-2015	Time: 16:26:13
+Info
+	Stream killed successfully
+Date: 11-01-2015	Time: 16:26:13
+Info
+	Receiving server code...
+	Received 106
+Date: 11-01-2015	Time: 16:26:13
+Info
+	Ending contact with client...
+Date: 11-01-2015	Time: 16:26:13
+Info
+	Contact with client ended. Waiting for contact...

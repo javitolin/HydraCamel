@@ -4,13 +4,16 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../Main.cpp 
+../BaseAlgorithm.cpp \
+../GateDebugAlgorithm.cpp 
 
 OBJS += \
-./Main.o 
+./BaseAlgorithm.o \
+./GateDebugAlgorithm.o 
 
 CPP_DEPS += \
-./Main.d 
+./BaseAlgorithm.d \
+./GateDebugAlgorithm.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
