@@ -21,16 +21,10 @@ using namespace cv;
 using namespace std;
 
 /// Global variables
-Mat src, erosion_dst, dilation_dst, drawedImage;
-int erosion_elem = 0;
-int erosion_size = 0;
-int dilation_elem = 0;
-int dilation_size = 0;
+Mat drawedImage;
 int const max_elem = 2;
 int const max_kernel_size = 21;
 string picName;
-int dcounter = 1;
-int ecounter = 1;
 int morph_elem = 0;
 int morph_size = 0;
 int morph_operator = 0;
@@ -41,7 +35,7 @@ int const max_lowThreshold = 100;
 int ratio = 3;
 int canny_kernel_size = 3;
 double groupsMinDiff = 0.2;
-Mat cedges;
+double groupMinPercentage = 0.2;
 //For testing purposes
 int numberOfLinesFound = 0;
 bool lineCompare(Vec2f, Vec2f);
@@ -63,7 +57,7 @@ void FirstTaskGate::Run(Mat& mat){
 	/// Apply the specified morphology operation
 	morphologyEx( bw, dst, operation, element );
 
-	Mat edges;
+	Mat edges, cedges;
 	Canny( dst, edges, lowThreshold, lowThreshold*ratio, canny_kernel_size );
 	cvtColor(edges, cedges, CV_GRAY2BGR);
 
@@ -88,11 +82,11 @@ void FirstTaskGate::Run(Mat& mat){
 		pt2.y = cvRound(y0 - 1000*(a));
 		if(abs(pt1.x - pt2.x) <= 5){
 			numOfLines++;
-			line( cedges, pt1, pt2, Scalar(0,0,255), 3, CV_AA);
+			//line( cedges, pt1, pt2, Scalar(0,0,255), 3, CV_AA);
 			//printf("added red %d\n", pt1.x);
 		}
 	}
-	groupMin = 0.2*numOfLines;
+	groupMin = groupMinPercentage*numOfLines;
 	if(groupMin < 1) groupMin = 1;
 
 	//printf("%d, %f\n", numOfLines, groupMin);
@@ -156,6 +150,12 @@ void FirstTaskGate::Run(Mat& mat){
 			}
 		}
 	}
+	double totalLines = group1.size() + group2.size();
+		if(group1.size()/totalLines < groupsMinDiff)
+			group1.clear();
+		if(group2.size()/totalLines < groupsMinDiff){
+			group2.clear();
+		}
 
 	for( size_t i = 0; i < group1.size() || i < group2.size(); i++ ){
 		if(i < group1.size()){
@@ -167,7 +167,7 @@ void FirstTaskGate::Run(Mat& mat){
 			pt1.y = cvRound(y0 + 1000*(a));
 			pt2.x = cvRound(x0 - 1000*(-b));
 			pt2.y = cvRound(y0 - 1000*(a));
-			line( cedges, pt1, pt2, Scalar(255,0,0), 3, CV_AA);
+			line( cedges, pt1, pt2, Scalar(255,0,0), 2, CV_AA);
 		}
 		if(i < group2.size()){
 			float rho = group2[i][0], theta = group2[i][1];
@@ -178,41 +178,24 @@ void FirstTaskGate::Run(Mat& mat){
 			pt1.y = cvRound(y0 + 1000*(a));
 			pt2.x = cvRound(x0 - 1000*(-b));
 			pt2.y = cvRound(y0 - 1000*(a));
-			line( cedges, pt1, pt2, Scalar(0,255,0), 3, CV_AA);
+			line( cedges, pt1, pt2, Scalar(0,255,0), 2, CV_AA);
 		}
 	}
-
-	double totalLines = group1.size() + group2.size();
-	if(group1.size()/totalLines < groupsMinDiff)
-		group1.clear();
-	if(group2.size()/totalLines < groupsMinDiff){
-		group2.clear();
-	}
-
-	/// Using Canny's output as a mask, we display our result
-	Mat dst2;
-	dst2 = Scalar::all(0);
-	drawedImage = Scalar::all(0);
-	dst.copyTo(dst2, edges);
-	dst.copyTo(mat, edges);
-	dst.copyTo(drawedImage,edges);
+	cedges.copyTo(mat);
+	cedges.copyTo(drawedImage);
 	if(group1.size() > 0) numberOfLinesFound++;
 	if(group2.size() > 0) numberOfLinesFound++;
 }
 void FirstTaskGate::Load(map<string, string>& params){
-	ParamUtils::setParam(params, "erosion_elem", erosion_elem);
-	ParamUtils::setParam(params, "erosion_size", erosion_size);
-	ParamUtils::setParam(params, "dilation_elem", dilation_elem);
-	ParamUtils::setParam(params, "dilation_size", dilation_size);
-	ParamUtils::setParam(params, "dcounter", dcounter);
-	ParamUtils::setParam(params, "ecounter", ecounter);
 	ParamUtils::setParam(params, "morph_elem", morph_elem);
 	ParamUtils::setParam(params, "morph_size", morph_size);
 	ParamUtils::setParam(params, "morph_operator", morph_operator);
 	ParamUtils::setParam(params, "edgeThresh", edgeThresh);
 	ParamUtils::setParam(params, "ratio", ratio);
 	ParamUtils::setParam(params, "canny_kernel_size", canny_kernel_size);
-	ParamUtils::setParam(params, "groupsMinDiff", groupsMinDiff);
+	ParamUtils::setParamPercent(params, "groupsMinDiff", groupsMinDiff);
+	ParamUtils::setParamPercent(params, "groupMinPercentage", groupMinPercentage);
+
 }
 void FirstTaskGate::ToMesseges(vector<MissionControlMessage>& res){
 	MissionControlMessage msg;
@@ -223,12 +206,6 @@ void FirstTaskGate::ClearProcessData(){
 	//TODO
 }
 void FirstTaskGate::SetDefaultParams(){
-	erosion_elem = 0;
-	erosion_size = 0;
-	dilation_elem = 0;
-	dilation_size = 0;
-	dcounter = 1;
-	ecounter = 1;
 	morph_elem = 0;
 	morph_size = 0;
 	morph_operator = 0;
@@ -236,6 +213,7 @@ void FirstTaskGate::SetDefaultParams(){
 	ratio = 3;
 	canny_kernel_size = 3;
 	groupsMinDiff = 0.2;
+	groupMinPercentage = 0.2;
 	numberOfLinesFound = 0;
 }
 void FirstTaskGate::Draw(Mat& draw){

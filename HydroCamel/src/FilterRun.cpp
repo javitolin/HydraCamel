@@ -233,6 +233,7 @@ map<string, Mat*> FilterRun::runFrontCameraChainedFilters(Mat& image)
 			if( _filterHandler->isEnabled(*it) )
 			{
 				_filterHandler->getFilter(*it)->MakeCopyAndRun(*mat);
+				//_filterHandler->getFilter(*it)->ToMesseges()
 				_filterHandler->getFilter(*it)->Draw(*mat);
 
 				//Making a new copy for every result up-to this filter

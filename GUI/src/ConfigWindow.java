@@ -6,10 +6,25 @@ import java.awt.Font;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.*;
+import java.io.BufferedInputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
 import java.util.Scanner;
+import java.util.Vector;
 
-import javax.swing.*;
+import javax.swing.BoxLayout;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JSlider;
+import javax.swing.JTextField;
+import javax.swing.SwingConstants;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
@@ -113,16 +128,25 @@ public class ConfigWindow extends JFrame {
 	private int readConfigFile(String filename) throws IOException {
 		int count = count(filename);
 		Scanner sc = new Scanner(new File(filename));
-		defaultProperties = new String[count];
-		defaultValues = new int[count];
+		Vector<String> dpVector = new Vector<String>();
+		Vector<Integer> dvVector = new Vector<Integer>();
 		int k = 0;
 		while(sc.hasNext())
 		{
 			String[] strings = sc.nextLine().split(" ");
-			defaultProperties[k] = strings[0];
-			defaultValues[k] = Integer.parseInt(strings[1]);
+			dpVector.add(strings[0]);
+			dvVector.add(new Integer(strings[1]));
+			/*defaultProperties[k] = strings[0];
+			defaultValues[k] = new Integer (strings[1]);*/
 			k++;
 		}
+		defaultProperties = new String[dpVector.size()];
+		defaultValues = new int[dpVector.size()];
+		for(int i = 0; i<defaultValues.length; i++){
+			defaultValues[i] = dvVector.get(i).intValue();
+			defaultProperties[i] = dpVector.get(i);
+		}
+				
 
 		sc.close();
 		return count;
