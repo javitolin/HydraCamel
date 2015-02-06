@@ -31,6 +31,15 @@ Algos/Torpedo \
 Algos/Shadow \
 Algos/Path \
 Algos/Gate \
+Algos/Debug/blackGate2 \
+Algos/Debug/Utils \
+Algos/Debug/Traffic \
+Algos/Debug/Torpedo \
+Algos/Debug/Shadow \
+Algos/Debug/Path \
+Algos/Debug/Gate \
+Algos/Debug \
+Algos/Debug/Balls \
 Algos \
 Algos/Balls \
 

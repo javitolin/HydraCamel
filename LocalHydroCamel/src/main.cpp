@@ -264,7 +264,7 @@ void initNetwork()
 	}
 }
 
-void init()
+void init(int argc, char **argv)
 {
 	_log = new Log();
 	_log->printLog("", "Initiating...", "Info");
@@ -273,7 +273,7 @@ void init()
 //	stream_initiated = false;
 	filter_handler = new FilterHandler(_log);
 	filter_run = new FilterRun(filter_handler, _log);
-	initNetwork();
+	//initNetwork();
 }
 
 void releaseMem()
@@ -910,9 +910,10 @@ void filterAndSendImage()
 	}
 }
 
-int main()
+int main(int argc, char **argv)
 {
-	init();
+	init(argc,argv);
+
 	/*
 	 * When a client wants to do something, first of all it sends 3 bytes representing the server code.
 	 * Then, every feature has different step the client has to follow in order to complete the operation successfully.

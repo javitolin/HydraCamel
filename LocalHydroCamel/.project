@@ -3,6 +3,7 @@
 	<name>LocalHydroCamel</name>
 	<comment></comment>
 	<projects>
+		<project>hc_server@hc_server</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

@@ -16,6 +16,15 @@ RM := rm -rf
 -include Algos/Shadow/subdir.mk
 -include Algos/Path/subdir.mk
 -include Algos/Gate/subdir.mk
+-include Algos/Debug/blackGate2/subdir.mk
+-include Algos/Debug/Utils/subdir.mk
+-include Algos/Debug/Traffic/subdir.mk
+-include Algos/Debug/Torpedo/subdir.mk
+-include Algos/Debug/Shadow/subdir.mk
+-include Algos/Debug/Path/subdir.mk
+-include Algos/Debug/Gate/subdir.mk
+-include Algos/Debug/Balls/subdir.mk
+-include Algos/Debug/subdir.mk
 -include Algos/Balls/subdir.mk
 -include Algos/subdir.mk
 -include subdir.mk

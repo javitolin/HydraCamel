@@ -55,7 +55,7 @@ all: LocalHydroCamel
 LocalHydroCamel: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GCC C++ Linker'
-	g++ -L/usr/local/lib -o "LocalHydroCamel" $(OBJS) $(USER_OBJS) $(LIBS)
+	g++ -L/usr/local/lib -L"/home/jdorfsman/ROS_ws/src/hc_server" -o "LocalHydroCamel" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
