@@ -1,0 +1,2 @@
+camera_input:hc_vision
+-DCATKIN_DEVEL_PREFIX=/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel -DCMAKE_INSTALL_PREFIX=/home/jdorfsman/git/HydraCamel/ROS_PROJECT/install -G Unix Makefiles

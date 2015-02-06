@@ -1,0 +1,8 @@
+prefix=/home/jdorfsman/git/HydraCamel/ROS_PROJECT/install
+
+Name: hc_vision
+Description: Description of hc_vision
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/jdorfsman/git/HydraCamel/ROS_PROJECT/install/lib 
+Requires: 

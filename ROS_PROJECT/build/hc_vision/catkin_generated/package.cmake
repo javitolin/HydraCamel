@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "hc_vision")
+set(hc_vision_MAINTAINER "jdorfsman <jdorfsman@todo.todo>")
+set(hc_vision_DEPRECATED "")
+set(hc_vision_VERSION "0.0.0")
+set(hc_vision_BUILD_DEPENDS "roscpp" "rospy" "std_msgs")
+set(hc_vision_RUN_DEPENDS "roscpp" "rospy" "std_msgs")
+set(hc_vision_BUILDTOOL_DEPENDS "catkin")
