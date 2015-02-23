@@ -1,8 +1,0 @@
-prefix=/home/jdorfsman/git/HydraCamel/ROS_PROJECT/install
-
-Name: camera_input
-Description: Description of camera_input
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/jdorfsman/git/HydraCamel/ROS_PROJECT/install/lib 
-Requires: 

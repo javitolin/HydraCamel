@@ -5,5 +5,5 @@
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 SUBDIRS(gtest)
-SUBDIRS(camera_input)
+SUBDIRS(camera_driver)
 SUBDIRS(hc_vision)

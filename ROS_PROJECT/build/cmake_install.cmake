@@ -125,7 +125,7 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unsp
 IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   INCLUDE("/home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/gtest/cmake_install.cmake")
-  INCLUDE("/home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/camera_input/cmake_install.cmake")
+  INCLUDE("/home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/camera_driver/cmake_install.cmake")
   INCLUDE("/home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/hc_vision/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)

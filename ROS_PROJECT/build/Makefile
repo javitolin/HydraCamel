@@ -240,21 +240,21 @@ camera_driver_receiver: cmake_check_build_system
 
 # fast build rule for target.
 camera_driver_receiver/fast:
-	$(MAKE) -f camera_input/CMakeFiles/camera_driver_receiver.dir/build.make camera_input/CMakeFiles/camera_driver_receiver.dir/build
+	$(MAKE) -f camera_driver/CMakeFiles/camera_driver_receiver.dir/build.make camera_driver/CMakeFiles/camera_driver_receiver.dir/build
 .PHONY : camera_driver_receiver/fast
 
 #=============================================================================
-# Target rules for targets named camera_driver_run
+# Target rules for targets named camera_driver_sender
 
 # Build rule for target.
-camera_driver_run: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 camera_driver_run
-.PHONY : camera_driver_run
+camera_driver_sender: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 camera_driver_sender
+.PHONY : camera_driver_sender
 
 # fast build rule for target.
-camera_driver_run/fast:
-	$(MAKE) -f camera_input/CMakeFiles/camera_driver_run.dir/build.make camera_input/CMakeFiles/camera_driver_run.dir/build
-.PHONY : camera_driver_run/fast
+camera_driver_sender/fast:
+	$(MAKE) -f camera_driver/CMakeFiles/camera_driver_sender.dir/build.make camera_driver/CMakeFiles/camera_driver_sender.dir/build
+.PHONY : camera_driver_sender/fast
 
 #=============================================================================
 # Target rules for targets named geometry_msgs_generate_messages_cpp
@@ -266,7 +266,7 @@ geometry_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 geometry_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f camera_input/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make camera_input/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f camera_driver/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make camera_driver/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
 .PHONY : geometry_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -279,7 +279,7 @@ geometry_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 geometry_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f camera_input/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make camera_input/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f camera_driver/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make camera_driver/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
 .PHONY : geometry_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -292,7 +292,7 @@ geometry_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 geometry_msgs_generate_messages_py/fast:
-	$(MAKE) -f camera_input/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make camera_input/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
+	$(MAKE) -f camera_driver/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make camera_driver/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
 .PHONY : geometry_msgs_generate_messages_py/fast
 
 #=============================================================================
@@ -305,7 +305,7 @@ roscpp_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_cpp/fast:
-	$(MAKE) -f camera_input/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make camera_input/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+	$(MAKE) -f camera_driver/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make camera_driver/CMakeFiles/roscpp_generate_messages_cpp.dir/build
 .PHONY : roscpp_generate_messages_cpp/fast
 
 #=============================================================================
@@ -318,7 +318,7 @@ roscpp_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_lisp/fast:
-	$(MAKE) -f camera_input/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make camera_input/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+	$(MAKE) -f camera_driver/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make camera_driver/CMakeFiles/roscpp_generate_messages_lisp.dir/build
 .PHONY : roscpp_generate_messages_lisp/fast
 
 #=============================================================================
@@ -331,7 +331,7 @@ roscpp_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_py/fast:
-	$(MAKE) -f camera_input/CMakeFiles/roscpp_generate_messages_py.dir/build.make camera_input/CMakeFiles/roscpp_generate_messages_py.dir/build
+	$(MAKE) -f camera_driver/CMakeFiles/roscpp_generate_messages_py.dir/build.make camera_driver/CMakeFiles/roscpp_generate_messages_py.dir/build
 .PHONY : roscpp_generate_messages_py/fast
 
 #=============================================================================
@@ -344,7 +344,7 @@ rosgraph_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f camera_input/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make camera_input/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f camera_driver/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make camera_driver/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -357,7 +357,7 @@ rosgraph_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f camera_input/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make camera_input/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f camera_driver/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make camera_driver/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -370,7 +370,7 @@ rosgraph_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_py/fast:
-	$(MAKE) -f camera_input/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make camera_input/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+	$(MAKE) -f camera_driver/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make camera_driver/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 .PHONY : rosgraph_msgs_generate_messages_py/fast
 
 #=============================================================================
@@ -383,7 +383,7 @@ sensor_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 sensor_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f camera_input/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make camera_input/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f camera_driver/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make camera_driver/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
 .PHONY : sensor_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -396,7 +396,7 @@ sensor_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 sensor_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f camera_input/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make camera_input/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f camera_driver/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make camera_driver/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
 .PHONY : sensor_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -409,7 +409,7 @@ sensor_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 sensor_msgs_generate_messages_py/fast:
-	$(MAKE) -f camera_input/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make camera_input/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+	$(MAKE) -f camera_driver/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make camera_driver/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
 .PHONY : sensor_msgs_generate_messages_py/fast
 
 #=============================================================================
@@ -422,7 +422,7 @@ std_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f camera_input/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make camera_input/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f camera_driver/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make camera_driver/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
 .PHONY : std_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -435,7 +435,7 @@ std_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f camera_input/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make camera_input/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f camera_driver/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make camera_driver/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
 .PHONY : std_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -448,7 +448,7 @@ std_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_py/fast:
-	$(MAKE) -f camera_input/CMakeFiles/std_msgs_generate_messages_py.dir/build.make camera_input/CMakeFiles/std_msgs_generate_messages_py.dir/build
+	$(MAKE) -f camera_driver/CMakeFiles/std_msgs_generate_messages_py.dir/build.make camera_driver/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
 
 #=============================================================================
@@ -484,7 +484,7 @@ help:
 	@echo "... gtest"
 	@echo "... gtest_main"
 	@echo "... camera_driver_receiver"
-	@echo "... camera_driver_run"
+	@echo "... camera_driver_sender"
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_py"

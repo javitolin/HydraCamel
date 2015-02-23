@@ -299,10 +299,10 @@ _CATKIN_GTEST_INCLUDE:FILEPATH=/usr/include/gtest/gtest.h
 _CATKIN_GTEST_SRC:FILEPATH=/usr/src/gtest/src/gtest.cc
 
 //Value Computed by CMake
-camera_input_BINARY_DIR:STATIC=/home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/camera_input
+camera_driver_BINARY_DIR:STATIC=/home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/camera_driver
 
 //Value Computed by CMake
-camera_input_SOURCE_DIR:STATIC=/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/camera_input
+camera_driver_SOURCE_DIR:STATIC=/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/camera_driver
 
 //The directory containing a CMake configuration file for catkin.
 catkin_DIR:PATH=/opt/ros/indigo/share/catkin/cmake

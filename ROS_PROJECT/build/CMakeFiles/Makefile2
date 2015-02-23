@@ -258,570 +258,570 @@ clean: gtest/CMakeFiles/gtest_main.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory camera_input
+# Directory level rules for directory camera_driver
 
 # Convenience name for "all" pass in the directory.
-camera_input/all: camera_input/CMakeFiles/camera_driver_receiver.dir/all
-camera_input/all: camera_input/CMakeFiles/camera_driver_run.dir/all
-.PHONY : camera_input/all
+camera_driver/all: camera_driver/CMakeFiles/camera_driver_receiver.dir/all
+camera_driver/all: camera_driver/CMakeFiles/camera_driver_sender.dir/all
+.PHONY : camera_driver/all
 
 # Convenience name for "clean" pass in the directory.
-camera_input/clean: camera_input/CMakeFiles/camera_driver_receiver.dir/clean
-camera_input/clean: camera_input/CMakeFiles/camera_driver_run.dir/clean
-camera_input/clean: camera_input/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
-camera_input/clean: camera_input/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
-camera_input/clean: camera_input/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
-camera_input/clean: camera_input/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
-camera_input/clean: camera_input/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
-camera_input/clean: camera_input/CMakeFiles/roscpp_generate_messages_py.dir/clean
-camera_input/clean: camera_input/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
-camera_input/clean: camera_input/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
-camera_input/clean: camera_input/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
-camera_input/clean: camera_input/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
-camera_input/clean: camera_input/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
-camera_input/clean: camera_input/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
-camera_input/clean: camera_input/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
-camera_input/clean: camera_input/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
-camera_input/clean: camera_input/CMakeFiles/std_msgs_generate_messages_py.dir/clean
-.PHONY : camera_input/clean
+camera_driver/clean: camera_driver/CMakeFiles/camera_driver_receiver.dir/clean
+camera_driver/clean: camera_driver/CMakeFiles/camera_driver_sender.dir/clean
+camera_driver/clean: camera_driver/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
+camera_driver/clean: camera_driver/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
+camera_driver/clean: camera_driver/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
+camera_driver/clean: camera_driver/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+camera_driver/clean: camera_driver/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
+camera_driver/clean: camera_driver/CMakeFiles/roscpp_generate_messages_py.dir/clean
+camera_driver/clean: camera_driver/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+camera_driver/clean: camera_driver/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+camera_driver/clean: camera_driver/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+camera_driver/clean: camera_driver/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
+camera_driver/clean: camera_driver/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
+camera_driver/clean: camera_driver/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
+camera_driver/clean: camera_driver/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+camera_driver/clean: camera_driver/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+camera_driver/clean: camera_driver/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+.PHONY : camera_driver/clean
 
 # Convenience name for "preinstall" pass in the directory.
-camera_input/preinstall:
-.PHONY : camera_input/preinstall
+camera_driver/preinstall:
+.PHONY : camera_driver/preinstall
 
 #=============================================================================
-# Target rules for target camera_input/CMakeFiles/camera_driver_receiver.dir
+# Target rules for target camera_driver/CMakeFiles/camera_driver_receiver.dir
 
 # All Build rule for target.
-camera_input/CMakeFiles/camera_driver_receiver.dir/all:
-	$(MAKE) -f camera_input/CMakeFiles/camera_driver_receiver.dir/build.make camera_input/CMakeFiles/camera_driver_receiver.dir/depend
-	$(MAKE) -f camera_input/CMakeFiles/camera_driver_receiver.dir/build.make camera_input/CMakeFiles/camera_driver_receiver.dir/build
+camera_driver/CMakeFiles/camera_driver_receiver.dir/all:
+	$(MAKE) -f camera_driver/CMakeFiles/camera_driver_receiver.dir/build.make camera_driver/CMakeFiles/camera_driver_receiver.dir/depend
+	$(MAKE) -f camera_driver/CMakeFiles/camera_driver_receiver.dir/build.make camera_driver/CMakeFiles/camera_driver_receiver.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles  1
 	@echo "Built target camera_driver_receiver"
-.PHONY : camera_input/CMakeFiles/camera_driver_receiver.dir/all
+.PHONY : camera_driver/CMakeFiles/camera_driver_receiver.dir/all
 
 # Include target in all.
-all: camera_input/CMakeFiles/camera_driver_receiver.dir/all
+all: camera_driver/CMakeFiles/camera_driver_receiver.dir/all
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-camera_input/CMakeFiles/camera_driver_receiver.dir/rule: cmake_check_build_system
+camera_driver/CMakeFiles/camera_driver_receiver.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles 1
-	$(MAKE) -f CMakeFiles/Makefile2 camera_input/CMakeFiles/camera_driver_receiver.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 camera_driver/CMakeFiles/camera_driver_receiver.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles 0
-.PHONY : camera_input/CMakeFiles/camera_driver_receiver.dir/rule
+.PHONY : camera_driver/CMakeFiles/camera_driver_receiver.dir/rule
 
 # Convenience name for target.
-camera_driver_receiver: camera_input/CMakeFiles/camera_driver_receiver.dir/rule
+camera_driver_receiver: camera_driver/CMakeFiles/camera_driver_receiver.dir/rule
 .PHONY : camera_driver_receiver
 
 # clean rule for target.
-camera_input/CMakeFiles/camera_driver_receiver.dir/clean:
-	$(MAKE) -f camera_input/CMakeFiles/camera_driver_receiver.dir/build.make camera_input/CMakeFiles/camera_driver_receiver.dir/clean
-.PHONY : camera_input/CMakeFiles/camera_driver_receiver.dir/clean
+camera_driver/CMakeFiles/camera_driver_receiver.dir/clean:
+	$(MAKE) -f camera_driver/CMakeFiles/camera_driver_receiver.dir/build.make camera_driver/CMakeFiles/camera_driver_receiver.dir/clean
+.PHONY : camera_driver/CMakeFiles/camera_driver_receiver.dir/clean
 
 # clean rule for target.
-clean: camera_input/CMakeFiles/camera_driver_receiver.dir/clean
+clean: camera_driver/CMakeFiles/camera_driver_receiver.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target camera_input/CMakeFiles/camera_driver_run.dir
+# Target rules for target camera_driver/CMakeFiles/camera_driver_sender.dir
 
 # All Build rule for target.
-camera_input/CMakeFiles/camera_driver_run.dir/all:
-	$(MAKE) -f camera_input/CMakeFiles/camera_driver_run.dir/build.make camera_input/CMakeFiles/camera_driver_run.dir/depend
-	$(MAKE) -f camera_input/CMakeFiles/camera_driver_run.dir/build.make camera_input/CMakeFiles/camera_driver_run.dir/build
+camera_driver/CMakeFiles/camera_driver_sender.dir/all:
+	$(MAKE) -f camera_driver/CMakeFiles/camera_driver_sender.dir/build.make camera_driver/CMakeFiles/camera_driver_sender.dir/depend
+	$(MAKE) -f camera_driver/CMakeFiles/camera_driver_sender.dir/build.make camera_driver/CMakeFiles/camera_driver_sender.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles  2
-	@echo "Built target camera_driver_run"
-.PHONY : camera_input/CMakeFiles/camera_driver_run.dir/all
+	@echo "Built target camera_driver_sender"
+.PHONY : camera_driver/CMakeFiles/camera_driver_sender.dir/all
 
 # Include target in all.
-all: camera_input/CMakeFiles/camera_driver_run.dir/all
+all: camera_driver/CMakeFiles/camera_driver_sender.dir/all
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-camera_input/CMakeFiles/camera_driver_run.dir/rule: cmake_check_build_system
+camera_driver/CMakeFiles/camera_driver_sender.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles 1
-	$(MAKE) -f CMakeFiles/Makefile2 camera_input/CMakeFiles/camera_driver_run.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 camera_driver/CMakeFiles/camera_driver_sender.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles 0
-.PHONY : camera_input/CMakeFiles/camera_driver_run.dir/rule
+.PHONY : camera_driver/CMakeFiles/camera_driver_sender.dir/rule
 
 # Convenience name for target.
-camera_driver_run: camera_input/CMakeFiles/camera_driver_run.dir/rule
-.PHONY : camera_driver_run
+camera_driver_sender: camera_driver/CMakeFiles/camera_driver_sender.dir/rule
+.PHONY : camera_driver_sender
 
 # clean rule for target.
-camera_input/CMakeFiles/camera_driver_run.dir/clean:
-	$(MAKE) -f camera_input/CMakeFiles/camera_driver_run.dir/build.make camera_input/CMakeFiles/camera_driver_run.dir/clean
-.PHONY : camera_input/CMakeFiles/camera_driver_run.dir/clean
+camera_driver/CMakeFiles/camera_driver_sender.dir/clean:
+	$(MAKE) -f camera_driver/CMakeFiles/camera_driver_sender.dir/build.make camera_driver/CMakeFiles/camera_driver_sender.dir/clean
+.PHONY : camera_driver/CMakeFiles/camera_driver_sender.dir/clean
 
 # clean rule for target.
-clean: camera_input/CMakeFiles/camera_driver_run.dir/clean
+clean: camera_driver/CMakeFiles/camera_driver_sender.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target camera_input/CMakeFiles/geometry_msgs_generate_messages_cpp.dir
+# Target rules for target camera_driver/CMakeFiles/geometry_msgs_generate_messages_cpp.dir
 
 # All Build rule for target.
-camera_input/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all:
-	$(MAKE) -f camera_input/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make camera_input/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/depend
-	$(MAKE) -f camera_input/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make camera_input/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
+camera_driver/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f camera_driver/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make camera_driver/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f camera_driver/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make camera_driver/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles 
 	@echo "Built target geometry_msgs_generate_messages_cpp"
-.PHONY : camera_input/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+.PHONY : camera_driver/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
-camera_input/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+camera_driver/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 camera_input/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 camera_driver/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles 0
-.PHONY : camera_input/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+.PHONY : camera_driver/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-geometry_msgs_generate_messages_cpp: camera_input/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+geometry_msgs_generate_messages_cpp: camera_driver/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
 .PHONY : geometry_msgs_generate_messages_cpp
 
 # clean rule for target.
-camera_input/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean:
-	$(MAKE) -f camera_input/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make camera_input/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
-.PHONY : camera_input/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
+camera_driver/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f camera_driver/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make camera_driver/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
+.PHONY : camera_driver/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
 
 # clean rule for target.
-clean: camera_input/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
+clean: camera_driver/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target camera_input/CMakeFiles/geometry_msgs_generate_messages_lisp.dir
+# Target rules for target camera_driver/CMakeFiles/geometry_msgs_generate_messages_lisp.dir
 
 # All Build rule for target.
-camera_input/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all:
-	$(MAKE) -f camera_input/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make camera_input/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/depend
-	$(MAKE) -f camera_input/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make camera_input/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
+camera_driver/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f camera_driver/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make camera_driver/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f camera_driver/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make camera_driver/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles 
 	@echo "Built target geometry_msgs_generate_messages_lisp"
-.PHONY : camera_input/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+.PHONY : camera_driver/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
-camera_input/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+camera_driver/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 camera_input/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 camera_driver/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles 0
-.PHONY : camera_input/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+.PHONY : camera_driver/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-geometry_msgs_generate_messages_lisp: camera_input/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+geometry_msgs_generate_messages_lisp: camera_driver/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
 .PHONY : geometry_msgs_generate_messages_lisp
 
 # clean rule for target.
-camera_input/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean:
-	$(MAKE) -f camera_input/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make camera_input/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
-.PHONY : camera_input/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
+camera_driver/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f camera_driver/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make camera_driver/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
+.PHONY : camera_driver/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
 
 # clean rule for target.
-clean: camera_input/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
+clean: camera_driver/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target camera_input/CMakeFiles/geometry_msgs_generate_messages_py.dir
+# Target rules for target camera_driver/CMakeFiles/geometry_msgs_generate_messages_py.dir
 
 # All Build rule for target.
-camera_input/CMakeFiles/geometry_msgs_generate_messages_py.dir/all:
-	$(MAKE) -f camera_input/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make camera_input/CMakeFiles/geometry_msgs_generate_messages_py.dir/depend
-	$(MAKE) -f camera_input/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make camera_input/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
+camera_driver/CMakeFiles/geometry_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f camera_driver/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make camera_driver/CMakeFiles/geometry_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f camera_driver/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make camera_driver/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles 
 	@echo "Built target geometry_msgs_generate_messages_py"
-.PHONY : camera_input/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+.PHONY : camera_driver/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
-camera_input/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+camera_driver/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 camera_input/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 camera_driver/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles 0
-.PHONY : camera_input/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+.PHONY : camera_driver/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
-geometry_msgs_generate_messages_py: camera_input/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+geometry_msgs_generate_messages_py: camera_driver/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
 .PHONY : geometry_msgs_generate_messages_py
 
 # clean rule for target.
-camera_input/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean:
-	$(MAKE) -f camera_input/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make camera_input/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
-.PHONY : camera_input/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
+camera_driver/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f camera_driver/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make camera_driver/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
+.PHONY : camera_driver/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
 
 # clean rule for target.
-clean: camera_input/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
+clean: camera_driver/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target camera_input/CMakeFiles/roscpp_generate_messages_cpp.dir
+# Target rules for target camera_driver/CMakeFiles/roscpp_generate_messages_cpp.dir
 
 # All Build rule for target.
-camera_input/CMakeFiles/roscpp_generate_messages_cpp.dir/all:
-	$(MAKE) -f camera_input/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make camera_input/CMakeFiles/roscpp_generate_messages_cpp.dir/depend
-	$(MAKE) -f camera_input/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make camera_input/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+camera_driver/CMakeFiles/roscpp_generate_messages_cpp.dir/all:
+	$(MAKE) -f camera_driver/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make camera_driver/CMakeFiles/roscpp_generate_messages_cpp.dir/depend
+	$(MAKE) -f camera_driver/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make camera_driver/CMakeFiles/roscpp_generate_messages_cpp.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles 
 	@echo "Built target roscpp_generate_messages_cpp"
-.PHONY : camera_input/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+.PHONY : camera_driver/CMakeFiles/roscpp_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
-camera_input/CMakeFiles/roscpp_generate_messages_cpp.dir/rule: cmake_check_build_system
+camera_driver/CMakeFiles/roscpp_generate_messages_cpp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 camera_input/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 camera_driver/CMakeFiles/roscpp_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles 0
-.PHONY : camera_input/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+.PHONY : camera_driver/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_cpp: camera_input/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+roscpp_generate_messages_cpp: camera_driver/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 .PHONY : roscpp_generate_messages_cpp
 
 # clean rule for target.
-camera_input/CMakeFiles/roscpp_generate_messages_cpp.dir/clean:
-	$(MAKE) -f camera_input/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make camera_input/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
-.PHONY : camera_input/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+camera_driver/CMakeFiles/roscpp_generate_messages_cpp.dir/clean:
+	$(MAKE) -f camera_driver/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make camera_driver/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+.PHONY : camera_driver/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
 
 # clean rule for target.
-clean: camera_input/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+clean: camera_driver/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target camera_input/CMakeFiles/roscpp_generate_messages_lisp.dir
+# Target rules for target camera_driver/CMakeFiles/roscpp_generate_messages_lisp.dir
 
 # All Build rule for target.
-camera_input/CMakeFiles/roscpp_generate_messages_lisp.dir/all:
-	$(MAKE) -f camera_input/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make camera_input/CMakeFiles/roscpp_generate_messages_lisp.dir/depend
-	$(MAKE) -f camera_input/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make camera_input/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+camera_driver/CMakeFiles/roscpp_generate_messages_lisp.dir/all:
+	$(MAKE) -f camera_driver/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make camera_driver/CMakeFiles/roscpp_generate_messages_lisp.dir/depend
+	$(MAKE) -f camera_driver/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make camera_driver/CMakeFiles/roscpp_generate_messages_lisp.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles 
 	@echo "Built target roscpp_generate_messages_lisp"
-.PHONY : camera_input/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+.PHONY : camera_driver/CMakeFiles/roscpp_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
-camera_input/CMakeFiles/roscpp_generate_messages_lisp.dir/rule: cmake_check_build_system
+camera_driver/CMakeFiles/roscpp_generate_messages_lisp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 camera_input/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 camera_driver/CMakeFiles/roscpp_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles 0
-.PHONY : camera_input/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+.PHONY : camera_driver/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_lisp: camera_input/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+roscpp_generate_messages_lisp: camera_driver/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 .PHONY : roscpp_generate_messages_lisp
 
 # clean rule for target.
-camera_input/CMakeFiles/roscpp_generate_messages_lisp.dir/clean:
-	$(MAKE) -f camera_input/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make camera_input/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
-.PHONY : camera_input/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
+camera_driver/CMakeFiles/roscpp_generate_messages_lisp.dir/clean:
+	$(MAKE) -f camera_driver/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make camera_driver/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
+.PHONY : camera_driver/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
 
 # clean rule for target.
-clean: camera_input/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
+clean: camera_driver/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target camera_input/CMakeFiles/roscpp_generate_messages_py.dir
+# Target rules for target camera_driver/CMakeFiles/roscpp_generate_messages_py.dir
 
 # All Build rule for target.
-camera_input/CMakeFiles/roscpp_generate_messages_py.dir/all:
-	$(MAKE) -f camera_input/CMakeFiles/roscpp_generate_messages_py.dir/build.make camera_input/CMakeFiles/roscpp_generate_messages_py.dir/depend
-	$(MAKE) -f camera_input/CMakeFiles/roscpp_generate_messages_py.dir/build.make camera_input/CMakeFiles/roscpp_generate_messages_py.dir/build
+camera_driver/CMakeFiles/roscpp_generate_messages_py.dir/all:
+	$(MAKE) -f camera_driver/CMakeFiles/roscpp_generate_messages_py.dir/build.make camera_driver/CMakeFiles/roscpp_generate_messages_py.dir/depend
+	$(MAKE) -f camera_driver/CMakeFiles/roscpp_generate_messages_py.dir/build.make camera_driver/CMakeFiles/roscpp_generate_messages_py.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles 
 	@echo "Built target roscpp_generate_messages_py"
-.PHONY : camera_input/CMakeFiles/roscpp_generate_messages_py.dir/all
+.PHONY : camera_driver/CMakeFiles/roscpp_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
-camera_input/CMakeFiles/roscpp_generate_messages_py.dir/rule: cmake_check_build_system
+camera_driver/CMakeFiles/roscpp_generate_messages_py.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 camera_input/CMakeFiles/roscpp_generate_messages_py.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 camera_driver/CMakeFiles/roscpp_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles 0
-.PHONY : camera_input/CMakeFiles/roscpp_generate_messages_py.dir/rule
+.PHONY : camera_driver/CMakeFiles/roscpp_generate_messages_py.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_py: camera_input/CMakeFiles/roscpp_generate_messages_py.dir/rule
+roscpp_generate_messages_py: camera_driver/CMakeFiles/roscpp_generate_messages_py.dir/rule
 .PHONY : roscpp_generate_messages_py
 
 # clean rule for target.
-camera_input/CMakeFiles/roscpp_generate_messages_py.dir/clean:
-	$(MAKE) -f camera_input/CMakeFiles/roscpp_generate_messages_py.dir/build.make camera_input/CMakeFiles/roscpp_generate_messages_py.dir/clean
-.PHONY : camera_input/CMakeFiles/roscpp_generate_messages_py.dir/clean
+camera_driver/CMakeFiles/roscpp_generate_messages_py.dir/clean:
+	$(MAKE) -f camera_driver/CMakeFiles/roscpp_generate_messages_py.dir/build.make camera_driver/CMakeFiles/roscpp_generate_messages_py.dir/clean
+.PHONY : camera_driver/CMakeFiles/roscpp_generate_messages_py.dir/clean
 
 # clean rule for target.
-clean: camera_input/CMakeFiles/roscpp_generate_messages_py.dir/clean
+clean: camera_driver/CMakeFiles/roscpp_generate_messages_py.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target camera_input/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir
+# Target rules for target camera_driver/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir
 
 # All Build rule for target.
-camera_input/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all:
-	$(MAKE) -f camera_input/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make camera_input/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/depend
-	$(MAKE) -f camera_input/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make camera_input/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+camera_driver/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f camera_driver/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make camera_driver/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f camera_driver/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make camera_driver/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles 
 	@echo "Built target rosgraph_msgs_generate_messages_cpp"
-.PHONY : camera_input/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+.PHONY : camera_driver/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
-camera_input/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+camera_driver/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 camera_input/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 camera_driver/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles 0
-.PHONY : camera_input/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+.PHONY : camera_driver/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_cpp: camera_input/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+rosgraph_msgs_generate_messages_cpp: camera_driver/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 .PHONY : rosgraph_msgs_generate_messages_cpp
 
 # clean rule for target.
-camera_input/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean:
-	$(MAKE) -f camera_input/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make camera_input/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
-.PHONY : camera_input/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+camera_driver/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f camera_driver/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make camera_driver/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+.PHONY : camera_driver/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
 
 # clean rule for target.
-clean: camera_input/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+clean: camera_driver/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target camera_input/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir
+# Target rules for target camera_driver/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir
 
 # All Build rule for target.
-camera_input/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all:
-	$(MAKE) -f camera_input/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make camera_input/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/depend
-	$(MAKE) -f camera_input/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make camera_input/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+camera_driver/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f camera_driver/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make camera_driver/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f camera_driver/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make camera_driver/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles 
 	@echo "Built target rosgraph_msgs_generate_messages_lisp"
-.PHONY : camera_input/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+.PHONY : camera_driver/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
-camera_input/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+camera_driver/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 camera_input/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 camera_driver/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles 0
-.PHONY : camera_input/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+.PHONY : camera_driver/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_lisp: camera_input/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+rosgraph_msgs_generate_messages_lisp: camera_driver/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 .PHONY : rosgraph_msgs_generate_messages_lisp
 
 # clean rule for target.
-camera_input/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean:
-	$(MAKE) -f camera_input/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make camera_input/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
-.PHONY : camera_input/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+camera_driver/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f camera_driver/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make camera_driver/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+.PHONY : camera_driver/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
 
 # clean rule for target.
-clean: camera_input/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+clean: camera_driver/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target camera_input/CMakeFiles/rosgraph_msgs_generate_messages_py.dir
+# Target rules for target camera_driver/CMakeFiles/rosgraph_msgs_generate_messages_py.dir
 
 # All Build rule for target.
-camera_input/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all:
-	$(MAKE) -f camera_input/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make camera_input/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/depend
-	$(MAKE) -f camera_input/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make camera_input/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+camera_driver/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f camera_driver/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make camera_driver/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f camera_driver/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make camera_driver/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles 
 	@echo "Built target rosgraph_msgs_generate_messages_py"
-.PHONY : camera_input/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+.PHONY : camera_driver/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
-camera_input/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+camera_driver/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 camera_input/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 camera_driver/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles 0
-.PHONY : camera_input/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+.PHONY : camera_driver/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_py: camera_input/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+rosgraph_msgs_generate_messages_py: camera_driver/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 .PHONY : rosgraph_msgs_generate_messages_py
 
 # clean rule for target.
-camera_input/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean:
-	$(MAKE) -f camera_input/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make camera_input/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
-.PHONY : camera_input/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+camera_driver/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f camera_driver/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make camera_driver/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+.PHONY : camera_driver/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 
 # clean rule for target.
-clean: camera_input/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+clean: camera_driver/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target camera_input/CMakeFiles/sensor_msgs_generate_messages_cpp.dir
+# Target rules for target camera_driver/CMakeFiles/sensor_msgs_generate_messages_cpp.dir
 
 # All Build rule for target.
-camera_input/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all:
-	$(MAKE) -f camera_input/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make camera_input/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/depend
-	$(MAKE) -f camera_input/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make camera_input/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
+camera_driver/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f camera_driver/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make camera_driver/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f camera_driver/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make camera_driver/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles 
 	@echo "Built target sensor_msgs_generate_messages_cpp"
-.PHONY : camera_input/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+.PHONY : camera_driver/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
-camera_input/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+camera_driver/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 camera_input/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 camera_driver/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles 0
-.PHONY : camera_input/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+.PHONY : camera_driver/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-sensor_msgs_generate_messages_cpp: camera_input/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+sensor_msgs_generate_messages_cpp: camera_driver/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
 .PHONY : sensor_msgs_generate_messages_cpp
 
 # clean rule for target.
-camera_input/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean:
-	$(MAKE) -f camera_input/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make camera_input/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
-.PHONY : camera_input/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
+camera_driver/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f camera_driver/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make camera_driver/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
+.PHONY : camera_driver/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
 
 # clean rule for target.
-clean: camera_input/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
+clean: camera_driver/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target camera_input/CMakeFiles/sensor_msgs_generate_messages_lisp.dir
+# Target rules for target camera_driver/CMakeFiles/sensor_msgs_generate_messages_lisp.dir
 
 # All Build rule for target.
-camera_input/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all:
-	$(MAKE) -f camera_input/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make camera_input/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/depend
-	$(MAKE) -f camera_input/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make camera_input/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+camera_driver/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f camera_driver/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make camera_driver/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f camera_driver/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make camera_driver/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles 
 	@echo "Built target sensor_msgs_generate_messages_lisp"
-.PHONY : camera_input/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
+.PHONY : camera_driver/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
-camera_input/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+camera_driver/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 camera_input/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 camera_driver/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles 0
-.PHONY : camera_input/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+.PHONY : camera_driver/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-sensor_msgs_generate_messages_lisp: camera_input/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+sensor_msgs_generate_messages_lisp: camera_driver/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
 .PHONY : sensor_msgs_generate_messages_lisp
 
 # clean rule for target.
-camera_input/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean:
-	$(MAKE) -f camera_input/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make camera_input/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
-.PHONY : camera_input/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
+camera_driver/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f camera_driver/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make camera_driver/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
+.PHONY : camera_driver/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
 
 # clean rule for target.
-clean: camera_input/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
+clean: camera_driver/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target camera_input/CMakeFiles/sensor_msgs_generate_messages_py.dir
+# Target rules for target camera_driver/CMakeFiles/sensor_msgs_generate_messages_py.dir
 
 # All Build rule for target.
-camera_input/CMakeFiles/sensor_msgs_generate_messages_py.dir/all:
-	$(MAKE) -f camera_input/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make camera_input/CMakeFiles/sensor_msgs_generate_messages_py.dir/depend
-	$(MAKE) -f camera_input/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make camera_input/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+camera_driver/CMakeFiles/sensor_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f camera_driver/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make camera_driver/CMakeFiles/sensor_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f camera_driver/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make camera_driver/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles 
 	@echo "Built target sensor_msgs_generate_messages_py"
-.PHONY : camera_input/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
+.PHONY : camera_driver/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
-camera_input/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+camera_driver/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 camera_input/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 camera_driver/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles 0
-.PHONY : camera_input/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+.PHONY : camera_driver/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
-sensor_msgs_generate_messages_py: camera_input/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+sensor_msgs_generate_messages_py: camera_driver/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
 .PHONY : sensor_msgs_generate_messages_py
 
 # clean rule for target.
-camera_input/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean:
-	$(MAKE) -f camera_input/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make camera_input/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
-.PHONY : camera_input/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
+camera_driver/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f camera_driver/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make camera_driver/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
+.PHONY : camera_driver/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
 
 # clean rule for target.
-clean: camera_input/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
+clean: camera_driver/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target camera_input/CMakeFiles/std_msgs_generate_messages_cpp.dir
+# Target rules for target camera_driver/CMakeFiles/std_msgs_generate_messages_cpp.dir
 
 # All Build rule for target.
-camera_input/CMakeFiles/std_msgs_generate_messages_cpp.dir/all:
-	$(MAKE) -f camera_input/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make camera_input/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
-	$(MAKE) -f camera_input/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make camera_input/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+camera_driver/CMakeFiles/std_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f camera_driver/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make camera_driver/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f camera_driver/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make camera_driver/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles 
 	@echo "Built target std_msgs_generate_messages_cpp"
-.PHONY : camera_input/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+.PHONY : camera_driver/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
-camera_input/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+camera_driver/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 camera_input/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 camera_driver/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles 0
-.PHONY : camera_input/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+.PHONY : camera_driver/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_cpp: camera_input/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+std_msgs_generate_messages_cpp: camera_driver/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
 .PHONY : std_msgs_generate_messages_cpp
 
 # clean rule for target.
-camera_input/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean:
-	$(MAKE) -f camera_input/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make camera_input/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
-.PHONY : camera_input/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+camera_driver/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f camera_driver/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make camera_driver/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+.PHONY : camera_driver/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
 
 # clean rule for target.
-clean: camera_input/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+clean: camera_driver/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target camera_input/CMakeFiles/std_msgs_generate_messages_lisp.dir
+# Target rules for target camera_driver/CMakeFiles/std_msgs_generate_messages_lisp.dir
 
 # All Build rule for target.
-camera_input/CMakeFiles/std_msgs_generate_messages_lisp.dir/all:
-	$(MAKE) -f camera_input/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make camera_input/CMakeFiles/std_msgs_generate_messages_lisp.dir/depend
-	$(MAKE) -f camera_input/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make camera_input/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+camera_driver/CMakeFiles/std_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f camera_driver/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make camera_driver/CMakeFiles/std_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f camera_driver/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make camera_driver/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles 
 	@echo "Built target std_msgs_generate_messages_lisp"
-.PHONY : camera_input/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+.PHONY : camera_driver/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
-camera_input/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+camera_driver/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 camera_input/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 camera_driver/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles 0
-.PHONY : camera_input/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+.PHONY : camera_driver/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_lisp: camera_input/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+std_msgs_generate_messages_lisp: camera_driver/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
 .PHONY : std_msgs_generate_messages_lisp
 
 # clean rule for target.
-camera_input/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean:
-	$(MAKE) -f camera_input/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make camera_input/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
-.PHONY : camera_input/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+camera_driver/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f camera_driver/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make camera_driver/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+.PHONY : camera_driver/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
 
 # clean rule for target.
-clean: camera_input/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+clean: camera_driver/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target camera_input/CMakeFiles/std_msgs_generate_messages_py.dir
+# Target rules for target camera_driver/CMakeFiles/std_msgs_generate_messages_py.dir
 
 # All Build rule for target.
-camera_input/CMakeFiles/std_msgs_generate_messages_py.dir/all:
-	$(MAKE) -f camera_input/CMakeFiles/std_msgs_generate_messages_py.dir/build.make camera_input/CMakeFiles/std_msgs_generate_messages_py.dir/depend
-	$(MAKE) -f camera_input/CMakeFiles/std_msgs_generate_messages_py.dir/build.make camera_input/CMakeFiles/std_msgs_generate_messages_py.dir/build
+camera_driver/CMakeFiles/std_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f camera_driver/CMakeFiles/std_msgs_generate_messages_py.dir/build.make camera_driver/CMakeFiles/std_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f camera_driver/CMakeFiles/std_msgs_generate_messages_py.dir/build.make camera_driver/CMakeFiles/std_msgs_generate_messages_py.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles 
 	@echo "Built target std_msgs_generate_messages_py"
-.PHONY : camera_input/CMakeFiles/std_msgs_generate_messages_py.dir/all
+.PHONY : camera_driver/CMakeFiles/std_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
-camera_input/CMakeFiles/std_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+camera_driver/CMakeFiles/std_msgs_generate_messages_py.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 camera_input/CMakeFiles/std_msgs_generate_messages_py.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 camera_driver/CMakeFiles/std_msgs_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles 0
-.PHONY : camera_input/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+.PHONY : camera_driver/CMakeFiles/std_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_py: camera_input/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+std_msgs_generate_messages_py: camera_driver/CMakeFiles/std_msgs_generate_messages_py.dir/rule
 .PHONY : std_msgs_generate_messages_py
 
 # clean rule for target.
-camera_input/CMakeFiles/std_msgs_generate_messages_py.dir/clean:
-	$(MAKE) -f camera_input/CMakeFiles/std_msgs_generate_messages_py.dir/build.make camera_input/CMakeFiles/std_msgs_generate_messages_py.dir/clean
-.PHONY : camera_input/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+camera_driver/CMakeFiles/std_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f camera_driver/CMakeFiles/std_msgs_generate_messages_py.dir/build.make camera_driver/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+.PHONY : camera_driver/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 
 # clean rule for target.
-clean: camera_input/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+clean: camera_driver/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 .PHONY : clean
 
 #=============================================================================
