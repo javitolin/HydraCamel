@@ -55,27 +55,6 @@ VideoStream::~VideoStream()
 		delete _bottomUnfiltered;
 }
 
-/*
-void VideoStream::initCameras()
-{
-	_cameraControl.Init();
-	map<CameraType, CameraStatus> stat = _cameraControl.GetStatus();
-	if(stat[Left] == NotWorking)
-	{
-		_log->printLog("VideoStream", "Left camera not working", "Error");
-		_leftCameraWorking = false;
-	}
-	if(stat[Right] == NotWorking)
-	{
-		_log->printLog("VideoStream", "Right camera not working", "Error");
-		_rightCameraWorking = false;
-	}
-	if(stat[Bottom] == NotWorking)
-	{
-		_log->printLog("VideoStream", "Bottom camera not working", "Error");
-		_bottomCameraWorking = false;
-	}
-}*/
 
 /*
  * Return the last number used for the videos in the VideoLog folder. We call this function so we will know what's the next
@@ -197,28 +176,7 @@ void VideoStream::runFront()
 			_stopedStreamingFront = false;
 		}
 		Mat frame;
-//		Mat *left, *right;
-		//get a new frame from camera.
 		cap >> frame;
-		/*
-		try{
-			left = _cameraControl.Read(Left);
-		} catch(CamerasException& ex){
-			left = NULL;
-		}
-		try{
-			right = _cameraControl.Read(Right);
-		} catch(CamerasException& ex){
-			right = NULL;
-		}
-
-		if(_leftCameraWorking && left != NULL)
-			frame = *left;
-		else if(right != NULL)
-			frame = *right;
-		else
-			continue; //What to do ?!
-		 */
 		if(_recordUnfilteredFront)
 			recordUnfiltered(frame, true);
 

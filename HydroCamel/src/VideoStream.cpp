@@ -175,12 +175,6 @@ void VideoStream::runFront()
 		return;
 	}
 
-	//	if(!_leftCameraWorking && !_rightCameraWorking)
-	//	{
-	//		_log->printLog("VideoStream", "Front camera not working. Killing thread...", "Error");
-	//		return;
-	//	}
-
 	while( !_killStream )
 	{
 		if( _requestToStopStream ) //If the client has requested to stop the stream
@@ -200,25 +194,6 @@ void VideoStream::runFront()
 //		Mat *left, *right;
 		//get a new frame from camera.
 		cap >> frame;
-		/*
-		try{
-			left = _cameraControl.Read(Left);
-		} catch(CamerasException& ex){
-			left = NULL;
-		}
-		try{
-			right = _cameraControl.Read(Right);
-		} catch(CamerasException& ex){
-			right = NULL;
-		}
-
-		if(_leftCameraWorking && left != NULL)
-			frame = *left;
-		else if(right != NULL)
-			frame = *right;
-		else
-			continue; //What to do ?!
-		 */
 		if(_recordUnfilteredFront)
 			recordUnfiltered(frame, true);
 
@@ -227,6 +202,9 @@ void VideoStream::runFront()
 
 		//Run the front filters on the given image
 		map<string, Mat*> front_filtered_mats = _filterRun->runFront(image);
+		/* MULTITHREAD IMPLEMENTATION */
+		boost::thread filterThread(_filterRun->runFront,image);
+		/* END */
 		//stream original image
 		streamImage(frame, 0, 9, 9);
 		preStreamFront(front_filtered_mats);

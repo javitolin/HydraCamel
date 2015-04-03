@@ -37,9 +37,13 @@ private:
     Log* _log;
     map<std::string, cv::Mat*> runFrontCameraUnorderedFilters(cv::Mat&);
     map<std::string, cv::Mat*> runBottomCameraUnorderedFilters(cv::Mat&);
+    void runFrontCameraUnorderedFiltersThread(cv::Mat&);
+    void runBottomCameraUnorderedFiltersThread(cv::Mat&);
     map<string, cv::Mat*> runFrontCameraChainedFilters(cv::Mat&);
     map<string, cv::Mat*> runBottomCameraChainedFilters(cv::Mat&);
     cv::Mat* runCreatedFilter(const std::string&, cv::Mat&);
+    void sendMessagesToRos(vector<MissionControlMessage>);
+    void sendImageToRos(cv::Mat*);
 
 public:
     FilterRun(FilterHandler*, Log*);
@@ -52,5 +56,7 @@ public:
     std::vector<std::string> getBottomFilters();
     bool filterIsInUse(const std::string&);
     void clearLists();
+    void runFilterThread(cv::Mat*, bool);
+    void runFrontCameraThread(cv::Mat*, bool);
 };
 #endif
