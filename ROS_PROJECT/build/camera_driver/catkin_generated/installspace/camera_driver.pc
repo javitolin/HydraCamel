@@ -1,0 +1,8 @@
+prefix=/home/jdorfsman/git/HydraCamel/ROS_PROJECT/install
+
+Name: camera_driver
+Description: Description of camera_driver
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/jdorfsman/git/HydraCamel/ROS_PROJECT/install/lib 
+Requires: 

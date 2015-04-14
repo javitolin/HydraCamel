@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "camera_driver")
+set(camera_driver_MAINTAINER "jdorfsman <jdorfsman@todo.todo>")
+set(camera_driver_DEPRECATED "")
+set(camera_driver_VERSION "0.0.0")
+set(camera_driver_BUILD_DEPENDS "roscpp" "rospy" "std_msgs")
+set(camera_driver_RUN_DEPENDS "roscpp" "rospy" "std_msgs")
+set(camera_driver_BUILDTOOL_DEPENDS "catkin")

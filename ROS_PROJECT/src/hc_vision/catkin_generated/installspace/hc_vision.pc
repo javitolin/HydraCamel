@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: hc_vision
+Description: Description of hc_vision
+Version: 0.0.0
+Cflags: 
+Libs: -L/usr/local/lib 
+Requires: 
