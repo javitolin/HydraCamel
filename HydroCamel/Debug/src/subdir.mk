@@ -10,6 +10,7 @@ CPP_SRCS += \
 ../src/FilterRun.cpp \
 ../src/FrontCamera.cpp \
 ../src/Log.cpp \
+../src/RosNetwork.cpp \
 ../src/VideoStream.cpp \
 ../src/main.cpp 
 
@@ -20,6 +21,7 @@ OBJS += \
 ./src/FilterRun.o \
 ./src/FrontCamera.o \
 ./src/Log.o \
+./src/RosNetwork.o \
 ./src/VideoStream.o \
 ./src/main.o 
 
@@ -30,6 +32,7 @@ CPP_DEPS += \
 ./src/FilterRun.d \
 ./src/FrontCamera.d \
 ./src/Log.d \
+./src/RosNetwork.d \
 ./src/VideoStream.d \
 ./src/main.d 
 

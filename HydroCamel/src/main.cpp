@@ -8,7 +8,7 @@
  */
 #include <boost/asio.hpp>
 #include <boost/array.hpp>
-#include <boost/.hpp>
+#include <boost/thread.hpp>
 #include <boost/filesystem.hpp>
 #include <iostream>
 #include <stdio.h>
@@ -21,7 +21,7 @@
 #include "../include/FilterRun.h"
 using namespace std;
 using boost::asio::ip::tcp;
-
+RosNetwork rosN;
 map<string,int> server_codes;
 VideoStream* video_stream;
 FilterHandler* filter_handler;
@@ -290,7 +290,7 @@ void init()
 	initCodes();
 	//	stream_initiated = false;
 	filter_handler = new FilterHandler(_log);
-	filter_run = new FilterRun(filter_handler, _log);
+	filter_run = new FilterRun(filter_handler, _log,rosN);
 	initNetwork();
 }
 
@@ -947,8 +947,9 @@ void recordUnfiltered(bool start)
 		video_stream->stopRecordUnfiltered(use_front_camera);
 }
 
-int main()
+int main(int argc, char* argv[])
 {
+	rosN = new RosNetwork(argc,argv);
 	init();
 	/*
 	 * When a client wants to do something, first of all it sends 3 bytes representing the server code.

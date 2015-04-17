@@ -11,12 +11,14 @@
 using namespace cv;
 using namespace std;
 
-FilterRun::FilterRun(FilterHandler* filterHandler, Log* log)
+FilterRun::FilterRun(FilterHandler* filterHandler, Log* log,RosNetwork r)
 {
 	_useUnorderedListFront = true;
 	_useUnorderedListBottom = true;
 	_filterHandler = filterHandler;
 	_log = log;
+	_ros = r;
+	_filterNumber = 0;
 }
 
 FilterRun::~FilterRun()
@@ -25,7 +27,7 @@ FilterRun::~FilterRun()
 /*
  * Running the given Created filter on the given image
  */
-Mat* FilterRun::runCreatedFilter(const string& filter_name, Mat& image)
+Mat* FilterRun::runCreatedFilter(const string& filter_name, Mat& image,int num)
 {
 	vector<MissionControlMessage> vec;
 	CreatedFilter* created_filter = _filterHandler->getCreatedFilter(filter_name);
@@ -44,9 +46,9 @@ Mat* FilterRun::runCreatedFilter(const string& filter_name, Mat& image)
 		(*it)->MakeCopyAndRun(*mat);
 		(*it)->Draw(*mat);
 		(*it)->ToMesseges(vec);
-		sendMessagesToRos(vec);
+		sendMessagesToRos(vec,num);
 	}
-	sendImageToRos(mat);
+	sendImageToRos(mat,num);
 	return mat;
 }
 
@@ -123,7 +125,7 @@ void FilterRun::useChainFilterList(const vector<string>& filters, bool frontCame
  * Iterating over every front-camera filter and running it with the given image.
  * returns map data-structure which holds for every filter its result
  */
-map<string, Mat*> FilterRun::runFrontCameraUnorderedFilters(Mat& image)
+map<string, Mat*> FilterRun::runFrontCameraUnorderedFilters(Mat& image,int num)
 {
 	boost::thread_group g;
 	map<string, Mat*> front_filters_result;
@@ -151,9 +153,9 @@ map<string, Mat*> FilterRun::runFrontCameraUnorderedFilters(Mat& image)
 		}
 		else //Using created filter
 		{
-			Mat* mat = runCreatedFilter(*it, image);
+			Mat* mat = runCreatedFilter(*it, image,num);
 			if(!mat->empty())
-				front_filters_result[*it] = runCreatedFilter(*it, image);
+				front_filters_result[*it] = runCreatedFilter(*it, image,num);
 			else
 			{
 				//What to do?!
@@ -176,7 +178,7 @@ map<string, Mat*> FilterRun::runFrontCameraUnorderedFilters(Mat& image)
  * Iterating over every bottom-camera filter and running it with the given image.
  * returns map data-structure which holds for every filter its result
  */
-map<string, Mat*> FilterRun::runBottomCameraUnorderedFilters(Mat& image)
+map<string, Mat*> FilterRun::runBottomCameraUnorderedFilters(Mat& image,int num)
 {
 	boost::thread_group g;
 	map<string, Mat*> bottom_filters_result;
@@ -204,7 +206,7 @@ map<string, Mat*> FilterRun::runBottomCameraUnorderedFilters(Mat& image)
 		}
 		else //Using created filter
 		{
-			bottom_filters_result[*it] = runCreatedFilter(*it, image);
+			bottom_filters_result[*it] = runCreatedFilter(*it, image,num);
 		}
 	}
 	/*
@@ -222,7 +224,7 @@ map<string, Mat*> FilterRun::runBottomCameraUnorderedFilters(Mat& image)
  * Iterating over every front-camera filter and running it with output of the previous filter
  * returns map data-structure which holds the result up-to every filter
  */
-map<string, Mat*> FilterRun::runFrontCameraChainedFilters(Mat& image)
+map<string, Mat*> FilterRun::runFrontCameraChainedFilters(Mat& image,int num)
 {
 	Mat* mat = new Mat(image.size(),image.type());
 	image.copyTo(*mat);
@@ -254,7 +256,7 @@ map<string, Mat*> FilterRun::runFrontCameraChainedFilters(Mat& image)
 		}
 		else
 		{
-			front_filters_result[*it] = runCreatedFilter(*it, image);
+			front_filters_result[*it] = runCreatedFilter(*it, image,num);
 		}
 	}
 
@@ -265,7 +267,7 @@ map<string, Mat*> FilterRun::runFrontCameraChainedFilters(Mat& image)
  * Iterating over every bottom-camera filter and running it with output of the previous filter
  * returns map data-structure which holds the result up-to every filter
  */
-map<string, Mat*> FilterRun::runBottomCameraChainedFilters(Mat& image)
+map<string, Mat*> FilterRun::runBottomCameraChainedFilters(Mat& image,int num)
 {
 	Mat* mat = new Mat(image.size(),image.type());
 	image.copyTo(*mat);
@@ -294,7 +296,7 @@ map<string, Mat*> FilterRun::runBottomCameraChainedFilters(Mat& image)
 		}
 		else
 		{
-			bottom_filters_result[*it] = runCreatedFilter(*it, image);
+			bottom_filters_result[*it] = runCreatedFilter(*it, image,num);
 		}
 	}
 
@@ -305,14 +307,14 @@ map<string, Mat*> FilterRun::runBottomCameraChainedFilters(Mat& image)
  * Runs the front filters on the given image.
  * returns a map data-structure. The map contains the front filters result.
  */
-map<string,Mat*> FilterRun::runFront(Mat* mat)
+map<string,Mat*> FilterRun::runFront(Mat* mat, int num)
 {
 	map<string, Mat*> front_filters_result;
 	if(_useUnorderedListFront && !_frontCameraFilters.empty())
-		front_filters_result = runFrontCameraUnorderedFilters(*mat);
+		front_filters_result = runFrontCameraUnorderedFilters(*mat,num);
 
 	if(!_useUnorderedListFront && !_frontCameraFilters.empty())
-		front_filters_result = runFrontCameraChainedFilters(*mat);
+		front_filters_result = runFrontCameraChainedFilters(*mat,num);
 
 	return front_filters_result;
 } //no need to delete the Mats. VideoStream will delete them.
@@ -324,14 +326,14 @@ map<string,Mat*> FilterRun::runFront(Mat* mat)
  * Runs the bottom filters on the given image.
  * returns a map data-structure. The map contains the bottom filters result.
  */
-map<string,Mat*> FilterRun::runBottom(Mat* mat)
+map<string,Mat*> FilterRun::runBottom(Mat* mat,int num)
 {
 	map<string, Mat*> bottom_filters_result;
 	if(_useUnorderedListBottom && !_bottomCameraFilters.empty())
-		bottom_filters_result = runBottomCameraUnorderedFilters(*mat);
+		bottom_filters_result = runBottomCameraUnorderedFilters(*mat,num);
 
 	if(!_useUnorderedListBottom && !_bottomCameraFilters.empty())
-		bottom_filters_result = runBottomCameraChainedFilters(*mat);
+		bottom_filters_result = runBottomCameraChainedFilters(*mat,num);
 
 	return bottom_filters_result;
 } //no need to delete the Mats. VideoStream will delete them.
@@ -358,17 +360,17 @@ void FilterRun::clearLists()
 
 //ROS AND MULTITHREAD
 
-void FilterRun::runFilterThread(Mat* mat, bool front){
+void FilterRun::runFilterThread(Mat* mat, bool front,int num){
 	if(front){
 		if(_useUnorderedListFront && !_frontCameraFilters.empty())
-			runFrontCameraUnorderedFilters(*mat);
+			runFrontCameraThread(*mat,num);
 	}
 	else{
 		if(_useUnorderedListBottom && !_bottomCameraFilters.empty())
-			runBottomCameraUnorderedFilters(*mat);
+			runBottomCameraThread(*mat,num);
 	}
 }
-void FilterRun::runFrontCameraThread(Mat& image){
+void FilterRun::runFrontCameraThread(Mat& image,int num){
 	Mat* mat = new Mat(image.size(),image.type());
 	image.copyTo(*mat);
 	vector<MissionControlMessage> vec;
@@ -383,11 +385,11 @@ void FilterRun::runFrontCameraThread(Mat& image){
 				_filterHandler->getFilter(*it)->MakeCopyAndRun(*mat);
 				_filterHandler->getFilter(*it)->Draw(*mat);
 				_filterHandler->getFilter(*it)->ToMesseges(vec);
-				sendMessagesToRos(vec);
+				sendMessagesToRos(vec,num);
 				//Making a new copy for every result up-to this filter
 				Mat* temp_mat = new Mat(mat->size(),mat->type());
 				mat->copyTo(*temp_mat);
-				sendImageToRos(temp_mat);
+				sendImageToRos(temp_mat,num);
 			}
 			else
 			{
@@ -397,12 +399,12 @@ void FilterRun::runFrontCameraThread(Mat& image){
 		}
 		else
 		{
-			Mat* temp_mat = runCreatedFilter(*it, image);
-			sendImageToRos(temp_mat);
+			Mat* temp_mat = runCreatedFilter(*it, image,num);
+			sendImageToRos(temp_mat,num);
 		}
 	}
 }
-void FilterRun::runBottomCameraThread(Mat& image){
+void FilterRun::runBottomCameraThread(Mat& image,int num){
 	Mat* mat = new Mat(image.size(),image.type());
 	image.copyTo(*mat);
 	vector<MissionControlMessage> vec;
@@ -416,10 +418,10 @@ void FilterRun::runBottomCameraThread(Mat& image){
 				_filterHandler->getFilter(*it)->MakeCopyAndRun(*mat);
 				_filterHandler->getFilter(*it)->Draw(*mat);
 				_filterHandler->getFilter(*it)->ToMesseges(vec);
-				sendMessagesToRos(vec);
+				sendMessagesToRos(vec,num);
 				Mat* temp_mat = new Mat(mat->size(),mat->type());
 				mat->copyTo(*temp_mat);
-				sendImageToRos(temp_mat);
+				sendImageToRos(temp_mat,num);
 			}
 			else
 			{
@@ -429,14 +431,33 @@ void FilterRun::runBottomCameraThread(Mat& image){
 		}
 		else
 		{
-			Mat* temp_mat = runCreatedFilter(*it, image);
-			sendImageToRos(temp_mat);
+			Mat* temp_mat = runCreatedFilter(*it, image,num);
+			sendImageToRos(temp_mat,num);
 		}
 	}
 }
-void FilterRun::sendMessagesToRos(vector<MissionControlMessage> vec){
+/*string vecToString(vector<pair(int,int)> v){
+	string s = "";
+	for(int i = 0; i < v.size(); i++){
+		if(i < v.size() - 1)
+			s += v[i] + " - ";
+		else
+			s += v[i];
+	}
+	return s;
+}*/
+void FilterRun::sendMessagesToRos(vector<MissionControlMessage> vec, int fnum){
 	//TODO
+	for(int i = 0; i < vec.size(); i++){
+		int mCode = vec[i].MissionCode;
+		int aInfo = vec[i].additionalInformation;
+		/*vector<pair(int,int)> bounds = vec[i].bounds;
+		vector<pair(int,int)> iPoints = vec[i].intrestPoints;
+		string m = mCode +"@"+aInfo+"@"+vecToString(bounds)+"@"+vecToString(iPoints);*/
+		_ros.sendMessage("dsada","dsadsa");
+	}
 }
-void FilterRun::sendImageToRos(Mat* imageToSend){
+void FilterRun::sendImageToRos(Mat* imageToSend, int fnum){
 	//TODO
+	_ros.sendImage(imageToSend, "channel1");
 }

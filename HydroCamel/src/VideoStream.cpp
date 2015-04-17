@@ -201,9 +201,10 @@ void VideoStream::runFront()
 		frame.copyTo(*image);
 
 		//Run the front filters on the given image
-		map<string, Mat*> front_filtered_mats = _filterRun->runFront(image);
+		//TODO
+		map<string, Mat*> front_filtered_mats = _filterRun->runFront(image,1);
 		/* MULTITHREAD IMPLEMENTATION */
-		boost::thread filterThread(_filterRun->runFront,image);
+		//boost::thread filterThread(_filterRun->runFrontCameraThread,image);
 		/* END */
 		//stream original image
 		streamImage(frame, 0, 9, 9);
@@ -274,7 +275,7 @@ void VideoStream::runBottom()
 		frame.copyTo(*image);
 
 		//Run the bottom filters on the given image
-		map<string, Mat*> bottom_filtered_mats = _filterRun->runBottom(image);
+		map<string, Mat*> bottom_filtered_mats = _filterRun->runBottom(image,1);
 		//stream original image
 		streamImage(frame, 1, 9, 9);
 		preStreamBottom(bottom_filtered_mats);

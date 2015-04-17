@@ -24,6 +24,8 @@
 #include <string>
 #include <vector>
 
+
+
 class FilterRun
 {
 private:
@@ -33,22 +35,29 @@ private:
     std::vector<std::string> _frontCameraFilters;
     std::vector<std::string> _bottomCameraFilters;
     Log* _log;
-    map<std::string, cv::Mat*> runFrontCameraUnorderedFilters(cv::Mat&);
-    map<std::string, cv::Mat*> runBottomCameraUnorderedFilters(cv::Mat&);
-    map<string, cv::Mat*> runFrontCameraChainedFilters(cv::Mat&);
-    map<string, cv::Mat*> runBottomCameraChainedFilters(cv::Mat&);
-    cv::Mat* runCreatedFilter(const std::string&, cv::Mat&);
+    int _filterNumber;
+    RosNetwork _ros;
+    map<std::string, cv::Mat*> runFrontCameraUnorderedFilters(cv::Mat&,int);
+    map<std::string, cv::Mat*> runBottomCameraUnorderedFilters(cv::Mat&,int);
+    map<string, cv::Mat*> runFrontCameraChainedFilters(cv::Mat&,int);
+    map<string, cv::Mat*> runBottomCameraChainedFilters(cv::Mat&,int);
+    cv::Mat* runCreatedFilter(const std::string&, cv::Mat&,int);
+    void sendMessagesToRos(vector<MissionControlMessage>,int);
+    void sendImageToRos(Mat*,int);
 
 public:
-    FilterRun(FilterHandler*, Log*);
+    FilterRun(FilterHandler*, Log*, RosNetwork);
     ~FilterRun();
     void useUnorderedFilterList(const std::vector<std::string>&, bool);
     void useChainFilterList(const std::vector<std::string>&, bool);
-    map<std::string,cv::Mat*> runFront(cv::Mat*);
-    map<std::string,cv::Mat*> runBottom(cv::Mat*);
+    map<std::string,cv::Mat*> runFront(cv::Mat*,int);
+    map<std::string,cv::Mat*> runBottom(cv::Mat*,int);
     std::vector<std::string> getFrontFilters();
     std::vector<std::string> getBottomFilters();
     bool filterIsInUse(const std::string&);
     void clearLists();
+    void runFilterThread(Mat*, bool,int);
+    void runFrontCameraThread(Mat&,int);
+    void runBottomCameraThread(Mat&,int);
 };
 #endif
