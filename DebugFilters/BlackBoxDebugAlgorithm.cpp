@@ -11,54 +11,13 @@ using namespace cv;
 using namespace std;
 
 /// Global variables
-Mat src, erosion_dst, dilation_dst;
-
-int erosion_elem = 0;
-int erosion_size = 0;
-int dilation_elem = 0;
-int dilation_size = 0;
-int const max_elem = 2;
-int const max_kernel_size = 21;
-string picName;
-int dcounter = 1;
-int ecounter = 1;
-int morph_elem = 0;
-int morph_size = 0;
-int morph_operator = 0;
-int const max_operator = 4;
-int edgeThresh = 1;
-int lowThreshold;
-int const max_lowThreshold = 100;
-int ratio = 3;
-int canny_kernel_size = 3;
-double groupsMinDiff = 0.2;
-Mat cedges;
-//For testing purposes
-int numberOfLinesFound = 0;
+Mat src;
 
 /** Function Headers */
 void abs(int, void*);
 /** @function main */
 int main( int argc, char** argv )
 {
-	/// Load an image
-	/*namedWindow( "Abs", CV_WINDOW_AUTOSIZE );
-	/// Create Trackbar to select Morphology operation
-	createTrackbar("Operator:\n 0: Opening - 1: Closing \n 2: Gradient - 3: Top Hat \n 4: Black Hat", "Abs", &morph_operator, max_operator, abs );
-
-	/// Create Trackbar to select kernel type
-	createTrackbar( "Element:\n 0: Rect - 1: Cross - 2: Ellipse", "Abs",
-			&morph_elem, max_elem,
-			abs );
-
-	/// Create Trackbar to choose kernel size
-	createTrackbar( "Kernel size:\n 2n +1", "Abs",
-			&morph_size, max_kernel_size,
-			abs );
-	/// Create a Trackbar for user to enter threshold
-	createTrackbar( "Min Threshold:", "Abs", &lowThreshold, max_lowThreshold, abs );
-	 */
-
 	DIR *dp;
 	struct dirent *dirp;
 	if((dp  = opendir(".")) == NULL) {
@@ -71,7 +30,7 @@ int main( int argc, char** argv )
 	while ((dirp = readdir(dp)) != NULL) {
 		string currFile = string(dirp->d_name);
 		if(currFile.find(".") != string::npos){
-			if(currFile.substr(0, 4).compare("gate") == 0){
+			if(currFile.substr(0, 3).compare("box") == 0){
 				if(currFile.substr(currFile.find_last_of(".")).compare(".png") == 0){
 					filesToCheck.push_back(currFile);
 				}
@@ -82,7 +41,7 @@ int main( int argc, char** argv )
 	int successCounter = 0;
 	for(i = 0; i < filesToCheck.size(); i++){
 		string pic = filesToCheck[i];
-		int numberOfLinesInFile = (int)(pic[4]-'0');
+		int numberOfLinesInFile = (int)(pic[3]-'0');
 		src = imread( pic );
 		if( !src.data )
 		{ return -1; }
