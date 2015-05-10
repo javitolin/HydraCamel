@@ -37,9 +37,9 @@ Mat cedges;
 int numberOfLinesFound = 0;
 
 /** Function Headers */
-void abs(int, void*);
+void gate(int, void*);
 /** @function main */
-int main( int argc, char** argv )
+int gateDebug( int argc, char** argv )
 {
 	/// Load an image
 	/*namedWindow( "Abs", CV_WINDOW_AUTOSIZE );
@@ -87,7 +87,7 @@ int main( int argc, char** argv )
 		if( !src.data )
 		{ return -1; }
 		picName = pic;
-		abs(0, 0);
+		gate(0, 0);
 		if(numberOfLinesInFile != numberOfLinesFound){
 			printf("We found %d lines instead of %d in file %s\n",numberOfLinesFound,numberOfLinesInFile,pic.c_str());
 			namedWindow(pic.c_str(), CV_WINDOW_AUTOSIZE );
@@ -119,7 +119,7 @@ bool lineCompare(Vec2f line1, Vec2f line2){
 	return x1<x2;
 }
 
-void abs(int, void*){
+void gate(int, void*){
 	numberOfLinesFound = 0;
 	Mat bw, cont;
 	cvtColor(src,bw, CV_RGB2GRAY);
