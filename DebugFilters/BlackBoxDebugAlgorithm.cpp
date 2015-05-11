@@ -94,7 +94,7 @@ void thresh_callback(int, void* ){
 		minEnclosingCircle( (Mat)contours_poly[i], center[i], radius[i] );
 	}
 
-	double minBlackResemblence = 30;
+	double minBlackResemblence = 5;
 	vector<bool> draw(contours.size()) ;
 	int boxesFound = 0;
 	for( uint i = 0; i < contours.size(); i++ )
@@ -105,7 +105,7 @@ void thresh_callback(int, void* ){
 		dist = abs(dist - 255);
 		//printf("%d: %f\n", i, dist);
 		bool good = abs(image_roi.cols- bb_src.cols)>5 &&abs(image_roi.rows- bb_src.rows)>5;
-		if (dist <= minBlackResemblence && good){
+		if (dist >= minBlackResemblence && good){
 			draw[i]=true;
 			boxesFound++;
 		}
