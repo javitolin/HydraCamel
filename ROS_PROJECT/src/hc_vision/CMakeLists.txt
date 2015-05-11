@@ -32,6 +32,3 @@ file(GLOB hc_algos_src_files
 
 add_executable(hc_vision_src ${hc_algos_src_files} ${hc_vision_src_files})
 target_link_libraries(hc_vision_src -ldl ${catkin_LIBRARIES} ${Boost_LIBRARIES} ${OpenCV_LIBS})
-
-#add_executable(hc_algo_exe ${hc_algos_src_files})
-#target_link_libraries(hc_algo_exe -ldl ${catkin_LIBRARIES} ${OpenCV_LIBS})

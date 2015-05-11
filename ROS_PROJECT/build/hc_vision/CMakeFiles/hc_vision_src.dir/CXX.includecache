@@ -180,6 +180,10 @@ opencv/cv.h
 opencv2/highgui/highgui.hpp
 -
 
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/src/FilterRun.cpp
+../include/FilterRun.h
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/include/FilterRun.h
+
 /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/src/VideoStream.cpp
 ../include/VideoStream.h
 /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/include/VideoStream.h

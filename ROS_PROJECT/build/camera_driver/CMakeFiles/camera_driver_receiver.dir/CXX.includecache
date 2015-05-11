@@ -21,6 +21,12 @@ fstream
 -
 string
 -
+cmath
+-
+stdio.h
+-
+time.h
+-
 
 /opt/ros/indigo/include/XmlRpcDecl.h
 ros/macros.h

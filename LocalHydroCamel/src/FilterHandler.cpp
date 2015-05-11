@@ -16,7 +16,7 @@ FilterHandler::FilterHandler(Log* log)
 	map<std::string,BaseAlgorithm*> _bottomFilters;
 	map<std::string,BaseAlgorithm*> _frontFilters;
 
-	_bottomFilters["path"] = new PathAlgorithm();
+	/*_bottomFilters["path"] = new PathAlgorithm();
 	_bottomFilters["path"]->Init(false);
 	//	_bottomAlgos["shadow"] = new ShadowAlgorithm();
 	//	_bottomAlgos["shadow"]->Init(false);
@@ -30,11 +30,11 @@ FilterHandler::FilterHandler(Log* log)
 	_frontFilters["blackGate"]->Init(false);
 	//IMPORTANT: Don't remove traffic if using Gate
 	_frontFilters["Gate"] = new Gate((Traffic*)_frontFilters.at("traffic"));
-	_frontFilters["Gate"]->Init(false);
+	_frontFilters["Gate"]->Init(false);*/
 
 	//JAVI ADDED
-	_frontFilters["javiTest"] = new JaviTest();
-	_frontFilters["javiTest"]->Init(false);
+	/*_frontFilters["javiTest"] = new JaviTest();
+	_frontFilters["javiTest"]->Init(false);*/
 	//END JAVI ADDED
 
 	//First Task Added
@@ -202,7 +202,7 @@ map<string, BaseAlgorithm*> FilterHandler::instanceGenerator()
 	map<string,BaseAlgorithm*> _bottomFilters;
 	map<string,BaseAlgorithm*> _frontFilters;
 
-	_bottomFilters["path"] = new PathAlgorithm();
+	/*_bottomFilters["path"] = new PathAlgorithm();
 	_bottomFilters["path"]->Init(false);
 	//	_bottomAlgos["shadow"] = new ShadowAlgorithm();
 	//	_bottomAlgos["shadow"]->Init(false);
@@ -216,11 +216,11 @@ map<string, BaseAlgorithm*> FilterHandler::instanceGenerator()
 	_frontFilters["blackGate"]->Init(false);
 	//IMPORTANT: Don't remove traffic if using Gate
 	_frontFilters["Gate"] = new Gate((Traffic*)_frontFilters.at("traffic"));
-	_frontFilters["Gate"]->Init(false);
+	_frontFilters["Gate"]->Init(false);*/
 
 	//Javi added
-	_frontFilters["Javi_Test"] = new JaviTest();
-	_frontFilters["Javi_Test"]->Init(false);
+	/*_frontFilters["Javi_Test"] = new JaviTest();
+	_frontFilters["Javi_Test"]->Init(false);*/
 	//END JAVI ADDED
 
 	//First Task Added
@@ -462,7 +462,7 @@ void FilterHandler::updateConfigs()
 	map<std::string,BaseAlgorithm*> _bottomFilters;
 	map<std::string,BaseAlgorithm*> _frontFilters;
 
-	_bottomFilters["path"] = new PathAlgorithm();
+	/*_bottomFilters["path"] = new PathAlgorithm();
 	_bottomFilters["path"]->Init(false);
 	//	_bottomAlgos["shadow"] = new ShadowAlgorithm();
 	//	_bottomAlgos["shadow"]->Init(false);
@@ -476,10 +476,10 @@ void FilterHandler::updateConfigs()
 	_frontFilters["blackGate"]->Init(false);
 	//IMPORTANT: Don't remove traffic if using Gate
 	_frontFilters["Gate"] = new Gate((Traffic*)_frontFilters.at("traffic"));
-	_frontFilters["Gate"]->Init(false);
+	_frontFilters["Gate"]->Init(false);*/
 	//JAVI ADDED
-	_frontFilters["Javi_Test"] = new JaviTest();
-	_frontFilters["Javi_Test"]->Init(false);
+	/*_frontFilters["Javi_Test"] = new JaviTest();
+	_frontFilters["Javi_Test"]->Init(false);*/
 	//END JAVI ADDED
 
 	//First Task Added

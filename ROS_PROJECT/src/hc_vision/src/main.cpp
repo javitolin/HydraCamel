@@ -19,13 +19,9 @@
 #include <string>
 #include "../include/VideoStream.h"
 #include "../include/FilterRun.h"
-#include <ros/ros.h>
-#include "std_msgs/String.h"
 using namespace std;
 using boost::asio::ip::tcp;
-
-string missionCodeChannel = "MissionCodes";
-string hcVisionNode = "hcVisionNode";
+RosNetwork rosN;
 map<string,int> server_codes;
 VideoStream* video_stream;
 FilterHandler* filter_handler;
@@ -283,24 +279,10 @@ void initNetwork()
 	}
 }
 
-void chatterCallback(const std_msgs::String::ConstPtr& msg)
-{
-  ROS_INFO("I heard: [%s]", msg->data.c_str());
-  printf("I heard: [%s]\n",msg->data.c_str());
-}
-/*
- * Initializing all ROS Listener startup
- */
-void initRosListener(int argc, char **argv){
-	ros::init(argc, argv, hcVisionNode);
-	ros::NodeHandle n;
-	ros::Subscriber sub = n.subscribe(missionCodeChannel, 1000, chatterCallback);
-	ros::spin();
-}
 /*
  * Initiating all the stuff that are necessary for the server.
  */
-void init(int argc, char **argv)
+void init()
 {
 	_log = new Log();
 	_log->printLog("", "Initiating...", "Info");
@@ -308,9 +290,8 @@ void init(int argc, char **argv)
 	initCodes();
 	//	stream_initiated = false;
 	filter_handler = new FilterHandler(_log);
-	filter_run = new FilterRun(filter_handler, _log);
-	//initNetwork();
-	initRosListener(argc,argv);
+	filter_run = new FilterRun(filter_handler, _log,rosN);
+	initNetwork();
 }
 
 /*
@@ -966,9 +947,10 @@ void recordUnfiltered(bool start)
 		video_stream->stopRecordUnfiltered(use_front_camera);
 }
 
-int main(int argc, char **argv)
+int main(int argc, char* argv[])
 {
-	init(argc,argv);
+	rosN = new RosNetwork(argc,argv);
+	init();
 	/*
 	 * When a client wants to do something, first of all it sends 3 bytes representing the server code.
 	 * Then, every feature has different step the client has to follow in order to complete the operation successfully.

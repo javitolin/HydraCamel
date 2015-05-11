@@ -50,6 +50,9 @@ Boost_THREAD_LIBRARY_RELEASE:FILEPATH=/usr/local/lib/libboost_thread.so
 //List of ';' separated packages to exclude
 CATKIN_BLACKLIST_PACKAGES:STRING=
 
+//catkin devel space
+CATKIN_DEVEL_PREFIX:PATH=/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel
+
 //Catkin enable testing
 CATKIN_ENABLE_TESTING:BOOL=ON
 
@@ -147,7 +150,7 @@ CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=OFF
 
 //Install path prefix, prepended onto install directories.
-CMAKE_INSTALL_PREFIX:PATH=/usr/local
+CMAKE_INSTALL_PREFIX:PATH=/home/jdorfsman/git/HydraCamel/ROS_PROJECT/install
 
 //Path to a program.
 CMAKE_LINKER:FILEPATH=/usr/bin/ld

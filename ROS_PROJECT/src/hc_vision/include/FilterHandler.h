@@ -9,14 +9,6 @@
 #include <dlfcn.h>
 #include "../Algos/BaseAlgorithm.h"
 #include "../Algos/Utils/ParamUtils.h"
-/*
-#include "../Algos/Torpedo/TorpedoAlgo.h"
-#include "../Algos/Traffic/Traffic.h"
-#include "../Algos/Gate/Gate.h"
-#include "../Algos/Path/PathAlgorithm.h"
-#include "../Algos/blackGate2/BlackGate_adaptive.h"
-#include "../Algos/Shadow/ShadowAlgorithm.h"
-*/
 #include "../Algos/Utils/Utils.h"
 #include <boost/thread/mutex.hpp>
 #include <boost/filesystem.hpp>

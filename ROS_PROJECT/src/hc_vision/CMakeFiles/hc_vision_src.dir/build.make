@@ -167,9 +167,101 @@ hc_vision/CMakeFiles/hc_vision_src.dir/src/VideoStream.cpp.o.provides: hc_vision
 
 hc_vision/CMakeFiles/hc_vision_src.dir/src/VideoStream.cpp.o.provides.build: hc_vision/CMakeFiles/hc_vision_src.dir/src/VideoStream.cpp.o
 
+hc_vision/CMakeFiles/hc_vision_src.dir/src/Filter.cpp.o: hc_vision/CMakeFiles/hc_vision_src.dir/flags.make
+hc_vision/CMakeFiles/hc_vision_src.dir/src/Filter.cpp.o: hc_vision/src/Filter.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/CMakeFiles $(CMAKE_PROGRESS_6)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object hc_vision/CMakeFiles/hc_vision_src.dir/src/Filter.cpp.o"
+	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/hc_vision_src.dir/src/Filter.cpp.o -c /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/src/Filter.cpp
+
+hc_vision/CMakeFiles/hc_vision_src.dir/src/Filter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hc_vision_src.dir/src/Filter.cpp.i"
+	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/src/Filter.cpp > CMakeFiles/hc_vision_src.dir/src/Filter.cpp.i
+
+hc_vision/CMakeFiles/hc_vision_src.dir/src/Filter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hc_vision_src.dir/src/Filter.cpp.s"
+	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/src/Filter.cpp -o CMakeFiles/hc_vision_src.dir/src/Filter.cpp.s
+
+hc_vision/CMakeFiles/hc_vision_src.dir/src/Filter.cpp.o.requires:
+.PHONY : hc_vision/CMakeFiles/hc_vision_src.dir/src/Filter.cpp.o.requires
+
+hc_vision/CMakeFiles/hc_vision_src.dir/src/Filter.cpp.o.provides: hc_vision/CMakeFiles/hc_vision_src.dir/src/Filter.cpp.o.requires
+	$(MAKE) -f hc_vision/CMakeFiles/hc_vision_src.dir/build.make hc_vision/CMakeFiles/hc_vision_src.dir/src/Filter.cpp.o.provides.build
+.PHONY : hc_vision/CMakeFiles/hc_vision_src.dir/src/Filter.cpp.o.provides
+
+hc_vision/CMakeFiles/hc_vision_src.dir/src/Filter.cpp.o.provides.build: hc_vision/CMakeFiles/hc_vision_src.dir/src/Filter.cpp.o
+
+hc_vision/CMakeFiles/hc_vision_src.dir/src/FrontCamera.cpp.o: hc_vision/CMakeFiles/hc_vision_src.dir/flags.make
+hc_vision/CMakeFiles/hc_vision_src.dir/src/FrontCamera.cpp.o: hc_vision/src/FrontCamera.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/CMakeFiles $(CMAKE_PROGRESS_7)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object hc_vision/CMakeFiles/hc_vision_src.dir/src/FrontCamera.cpp.o"
+	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/hc_vision_src.dir/src/FrontCamera.cpp.o -c /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/src/FrontCamera.cpp
+
+hc_vision/CMakeFiles/hc_vision_src.dir/src/FrontCamera.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hc_vision_src.dir/src/FrontCamera.cpp.i"
+	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/src/FrontCamera.cpp > CMakeFiles/hc_vision_src.dir/src/FrontCamera.cpp.i
+
+hc_vision/CMakeFiles/hc_vision_src.dir/src/FrontCamera.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hc_vision_src.dir/src/FrontCamera.cpp.s"
+	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/src/FrontCamera.cpp -o CMakeFiles/hc_vision_src.dir/src/FrontCamera.cpp.s
+
+hc_vision/CMakeFiles/hc_vision_src.dir/src/FrontCamera.cpp.o.requires:
+.PHONY : hc_vision/CMakeFiles/hc_vision_src.dir/src/FrontCamera.cpp.o.requires
+
+hc_vision/CMakeFiles/hc_vision_src.dir/src/FrontCamera.cpp.o.provides: hc_vision/CMakeFiles/hc_vision_src.dir/src/FrontCamera.cpp.o.requires
+	$(MAKE) -f hc_vision/CMakeFiles/hc_vision_src.dir/build.make hc_vision/CMakeFiles/hc_vision_src.dir/src/FrontCamera.cpp.o.provides.build
+.PHONY : hc_vision/CMakeFiles/hc_vision_src.dir/src/FrontCamera.cpp.o.provides
+
+hc_vision/CMakeFiles/hc_vision_src.dir/src/FrontCamera.cpp.o.provides.build: hc_vision/CMakeFiles/hc_vision_src.dir/src/FrontCamera.cpp.o
+
+hc_vision/CMakeFiles/hc_vision_src.dir/src/RosNetwork.cpp.o: hc_vision/CMakeFiles/hc_vision_src.dir/flags.make
+hc_vision/CMakeFiles/hc_vision_src.dir/src/RosNetwork.cpp.o: hc_vision/src/RosNetwork.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/CMakeFiles $(CMAKE_PROGRESS_8)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object hc_vision/CMakeFiles/hc_vision_src.dir/src/RosNetwork.cpp.o"
+	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/hc_vision_src.dir/src/RosNetwork.cpp.o -c /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/src/RosNetwork.cpp
+
+hc_vision/CMakeFiles/hc_vision_src.dir/src/RosNetwork.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hc_vision_src.dir/src/RosNetwork.cpp.i"
+	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/src/RosNetwork.cpp > CMakeFiles/hc_vision_src.dir/src/RosNetwork.cpp.i
+
+hc_vision/CMakeFiles/hc_vision_src.dir/src/RosNetwork.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hc_vision_src.dir/src/RosNetwork.cpp.s"
+	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/src/RosNetwork.cpp -o CMakeFiles/hc_vision_src.dir/src/RosNetwork.cpp.s
+
+hc_vision/CMakeFiles/hc_vision_src.dir/src/RosNetwork.cpp.o.requires:
+.PHONY : hc_vision/CMakeFiles/hc_vision_src.dir/src/RosNetwork.cpp.o.requires
+
+hc_vision/CMakeFiles/hc_vision_src.dir/src/RosNetwork.cpp.o.provides: hc_vision/CMakeFiles/hc_vision_src.dir/src/RosNetwork.cpp.o.requires
+	$(MAKE) -f hc_vision/CMakeFiles/hc_vision_src.dir/build.make hc_vision/CMakeFiles/hc_vision_src.dir/src/RosNetwork.cpp.o.provides.build
+.PHONY : hc_vision/CMakeFiles/hc_vision_src.dir/src/RosNetwork.cpp.o.provides
+
+hc_vision/CMakeFiles/hc_vision_src.dir/src/RosNetwork.cpp.o.provides.build: hc_vision/CMakeFiles/hc_vision_src.dir/src/RosNetwork.cpp.o
+
+hc_vision/CMakeFiles/hc_vision_src.dir/src/CamerasController.cpp.o: hc_vision/CMakeFiles/hc_vision_src.dir/flags.make
+hc_vision/CMakeFiles/hc_vision_src.dir/src/CamerasController.cpp.o: hc_vision/src/CamerasController.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/CMakeFiles $(CMAKE_PROGRESS_9)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object hc_vision/CMakeFiles/hc_vision_src.dir/src/CamerasController.cpp.o"
+	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/hc_vision_src.dir/src/CamerasController.cpp.o -c /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/src/CamerasController.cpp
+
+hc_vision/CMakeFiles/hc_vision_src.dir/src/CamerasController.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hc_vision_src.dir/src/CamerasController.cpp.i"
+	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/src/CamerasController.cpp > CMakeFiles/hc_vision_src.dir/src/CamerasController.cpp.i
+
+hc_vision/CMakeFiles/hc_vision_src.dir/src/CamerasController.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hc_vision_src.dir/src/CamerasController.cpp.s"
+	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/src/CamerasController.cpp -o CMakeFiles/hc_vision_src.dir/src/CamerasController.cpp.s
+
+hc_vision/CMakeFiles/hc_vision_src.dir/src/CamerasController.cpp.o.requires:
+.PHONY : hc_vision/CMakeFiles/hc_vision_src.dir/src/CamerasController.cpp.o.requires
+
+hc_vision/CMakeFiles/hc_vision_src.dir/src/CamerasController.cpp.o.provides: hc_vision/CMakeFiles/hc_vision_src.dir/src/CamerasController.cpp.o.requires
+	$(MAKE) -f hc_vision/CMakeFiles/hc_vision_src.dir/build.make hc_vision/CMakeFiles/hc_vision_src.dir/src/CamerasController.cpp.o.provides.build
+.PHONY : hc_vision/CMakeFiles/hc_vision_src.dir/src/CamerasController.cpp.o.provides
+
+hc_vision/CMakeFiles/hc_vision_src.dir/src/CamerasController.cpp.o.provides.build: hc_vision/CMakeFiles/hc_vision_src.dir/src/CamerasController.cpp.o
+
 hc_vision/CMakeFiles/hc_vision_src.dir/src/FilterHandler.cpp.o: hc_vision/CMakeFiles/hc_vision_src.dir/flags.make
 hc_vision/CMakeFiles/hc_vision_src.dir/src/FilterHandler.cpp.o: hc_vision/src/FilterHandler.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object hc_vision/CMakeFiles/hc_vision_src.dir/src/FilterHandler.cpp.o"
 	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/hc_vision_src.dir/src/FilterHandler.cpp.o -c /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/src/FilterHandler.cpp
 
@@ -192,7 +284,7 @@ hc_vision/CMakeFiles/hc_vision_src.dir/src/FilterHandler.cpp.o.provides.build: h
 
 hc_vision/CMakeFiles/hc_vision_src.dir/src/main.cpp.o: hc_vision/CMakeFiles/hc_vision_src.dir/flags.make
 hc_vision/CMakeFiles/hc_vision_src.dir/src/main.cpp.o: hc_vision/src/main.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object hc_vision/CMakeFiles/hc_vision_src.dir/src/main.cpp.o"
 	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/hc_vision_src.dir/src/main.cpp.o -c /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/src/main.cpp
 
@@ -215,7 +307,7 @@ hc_vision/CMakeFiles/hc_vision_src.dir/src/main.cpp.o.provides.build: hc_vision/
 
 hc_vision/CMakeFiles/hc_vision_src.dir/src/CreatedFilter.cpp.o: hc_vision/CMakeFiles/hc_vision_src.dir/flags.make
 hc_vision/CMakeFiles/hc_vision_src.dir/src/CreatedFilter.cpp.o: hc_vision/src/CreatedFilter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object hc_vision/CMakeFiles/hc_vision_src.dir/src/CreatedFilter.cpp.o"
 	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/hc_vision_src.dir/src/CreatedFilter.cpp.o -c /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/src/CreatedFilter.cpp
 
@@ -238,7 +330,7 @@ hc_vision/CMakeFiles/hc_vision_src.dir/src/CreatedFilter.cpp.o.provides.build: h
 
 hc_vision/CMakeFiles/hc_vision_src.dir/src/FilterRun.cpp.o: hc_vision/CMakeFiles/hc_vision_src.dir/flags.make
 hc_vision/CMakeFiles/hc_vision_src.dir/src/FilterRun.cpp.o: hc_vision/src/FilterRun.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object hc_vision/CMakeFiles/hc_vision_src.dir/src/FilterRun.cpp.o"
 	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/hc_vision_src.dir/src/FilterRun.cpp.o -c /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/src/FilterRun.cpp
 
@@ -266,6 +358,10 @@ hc_vision_src_OBJECTS = \
 "CMakeFiles/hc_vision_src.dir/Algos/Utils/Utils.cpp.o" \
 "CMakeFiles/hc_vision_src.dir/src/Log.cpp.o" \
 "CMakeFiles/hc_vision_src.dir/src/VideoStream.cpp.o" \
+"CMakeFiles/hc_vision_src.dir/src/Filter.cpp.o" \
+"CMakeFiles/hc_vision_src.dir/src/FrontCamera.cpp.o" \
+"CMakeFiles/hc_vision_src.dir/src/RosNetwork.cpp.o" \
+"CMakeFiles/hc_vision_src.dir/src/CamerasController.cpp.o" \
 "CMakeFiles/hc_vision_src.dir/src/FilterHandler.cpp.o" \
 "CMakeFiles/hc_vision_src.dir/src/main.cpp.o" \
 "CMakeFiles/hc_vision_src.dir/src/CreatedFilter.cpp.o" \
@@ -274,69 +370,73 @@ hc_vision_src_OBJECTS = \
 # External object files for target hc_vision_src
 hc_vision_src_EXTERNAL_OBJECTS =
 
-devel/lib/hc_vision/hc_vision_src: hc_vision/CMakeFiles/hc_vision_src.dir/Algos/BaseAlgorithm.cpp.o
-devel/lib/hc_vision/hc_vision_src: hc_vision/CMakeFiles/hc_vision_src.dir/Algos/Utils/ParamUtils.cpp.o
-devel/lib/hc_vision/hc_vision_src: hc_vision/CMakeFiles/hc_vision_src.dir/Algos/Utils/Utils.cpp.o
-devel/lib/hc_vision/hc_vision_src: hc_vision/CMakeFiles/hc_vision_src.dir/src/Log.cpp.o
-devel/lib/hc_vision/hc_vision_src: hc_vision/CMakeFiles/hc_vision_src.dir/src/VideoStream.cpp.o
-devel/lib/hc_vision/hc_vision_src: hc_vision/CMakeFiles/hc_vision_src.dir/src/FilterHandler.cpp.o
-devel/lib/hc_vision/hc_vision_src: hc_vision/CMakeFiles/hc_vision_src.dir/src/main.cpp.o
-devel/lib/hc_vision/hc_vision_src: hc_vision/CMakeFiles/hc_vision_src.dir/src/CreatedFilter.cpp.o
-devel/lib/hc_vision/hc_vision_src: hc_vision/CMakeFiles/hc_vision_src.dir/src/FilterRun.cpp.o
-devel/lib/hc_vision/hc_vision_src: hc_vision/CMakeFiles/hc_vision_src.dir/build.make
-devel/lib/hc_vision/hc_vision_src: /opt/ros/indigo/lib/libroscpp.so
-devel/lib/hc_vision/hc_vision_src: /usr/lib/x86_64-linux-gnu/libboost_signals.so
-devel/lib/hc_vision/hc_vision_src: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-devel/lib/hc_vision/hc_vision_src: /opt/ros/indigo/lib/libxmlrpcpp.so
-devel/lib/hc_vision/hc_vision_src: /opt/ros/indigo/lib/libcv_bridge.so
-devel/lib/hc_vision/hc_vision_src: /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.2.4.8
-devel/lib/hc_vision/hc_vision_src: /usr/lib/x86_64-linux-gnu/libopencv_video.so.2.4.8
-devel/lib/hc_vision/hc_vision_src: /usr/lib/x86_64-linux-gnu/libopencv_superres.so.2.4.8
-devel/lib/hc_vision/hc_vision_src: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.2.4.8
-devel/lib/hc_vision/hc_vision_src: /usr/lib/x86_64-linux-gnu/libopencv_photo.so.2.4.8
-devel/lib/hc_vision/hc_vision_src: /usr/lib/x86_64-linux-gnu/libopencv_ocl.so.2.4.8
-devel/lib/hc_vision/hc_vision_src: /usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.2.4.8
-devel/lib/hc_vision/hc_vision_src: /usr/lib/x86_64-linux-gnu/libopencv_ml.so.2.4.8
-devel/lib/hc_vision/hc_vision_src: /usr/lib/x86_64-linux-gnu/libopencv_legacy.so.2.4.8
-devel/lib/hc_vision/hc_vision_src: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.2.4.8
-devel/lib/hc_vision/hc_vision_src: /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.2.4.8
-devel/lib/hc_vision/hc_vision_src: /usr/lib/x86_64-linux-gnu/libopencv_gpu.so.2.4.8
-devel/lib/hc_vision/hc_vision_src: /usr/lib/x86_64-linux-gnu/libopencv_flann.so.2.4.8
-devel/lib/hc_vision/hc_vision_src: /usr/lib/x86_64-linux-gnu/libopencv_features2d.so.2.4.8
-devel/lib/hc_vision/hc_vision_src: /usr/lib/x86_64-linux-gnu/libopencv_core.so.2.4.8
-devel/lib/hc_vision/hc_vision_src: /usr/lib/x86_64-linux-gnu/libopencv_contrib.so.2.4.8
-devel/lib/hc_vision/hc_vision_src: /usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.2.4.8
-devel/lib/hc_vision/hc_vision_src: /opt/ros/indigo/lib/librosconsole.so
-devel/lib/hc_vision/hc_vision_src: /opt/ros/indigo/lib/librosconsole_log4cxx.so
-devel/lib/hc_vision/hc_vision_src: /opt/ros/indigo/lib/librosconsole_backend_interface.so
-devel/lib/hc_vision/hc_vision_src: /usr/lib/liblog4cxx.so
-devel/lib/hc_vision/hc_vision_src: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-devel/lib/hc_vision/hc_vision_src: /opt/ros/indigo/lib/libroscpp_serialization.so
-devel/lib/hc_vision/hc_vision_src: /opt/ros/indigo/lib/librostime.so
-devel/lib/hc_vision/hc_vision_src: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-devel/lib/hc_vision/hc_vision_src: /opt/ros/indigo/lib/libcpp_common.so
-devel/lib/hc_vision/hc_vision_src: /usr/lib/x86_64-linux-gnu/libboost_system.so
-devel/lib/hc_vision/hc_vision_src: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-devel/lib/hc_vision/hc_vision_src: /usr/lib/x86_64-linux-gnu/libpthread.so
-devel/lib/hc_vision/hc_vision_src: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
-devel/lib/hc_vision/hc_vision_src: /usr/local/lib/libboost_system.so
-devel/lib/hc_vision/hc_vision_src: /usr/local/lib/libboost_filesystem.so
-devel/lib/hc_vision/hc_vision_src: /usr/local/lib/libboost_thread.so
-devel/lib/hc_vision/hc_vision_src: /usr/lib/x86_64-linux-gnu/libpthread.so
-devel/lib/hc_vision/hc_vision_src: /usr/local/lib/libopencv_core.so.2.4.9
-devel/lib/hc_vision/hc_vision_src: /usr/local/lib/libopencv_highgui.so.2.4.9
-devel/lib/hc_vision/hc_vision_src: /usr/local/lib/libopencv_imgproc.so.2.4.9
-devel/lib/hc_vision/hc_vision_src: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
-devel/lib/hc_vision/hc_vision_src: /usr/local/lib/libboost_system.so
-devel/lib/hc_vision/hc_vision_src: /usr/local/lib/libboost_filesystem.so
-devel/lib/hc_vision/hc_vision_src: /usr/local/lib/libboost_thread.so
-devel/lib/hc_vision/hc_vision_src: /usr/local/lib/libopencv_core.so.2.4.9
-devel/lib/hc_vision/hc_vision_src: hc_vision/CMakeFiles/hc_vision_src.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable ../devel/lib/hc_vision/hc_vision_src"
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: hc_vision/CMakeFiles/hc_vision_src.dir/Algos/BaseAlgorithm.cpp.o
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: hc_vision/CMakeFiles/hc_vision_src.dir/Algos/Utils/ParamUtils.cpp.o
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: hc_vision/CMakeFiles/hc_vision_src.dir/Algos/Utils/Utils.cpp.o
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: hc_vision/CMakeFiles/hc_vision_src.dir/src/Log.cpp.o
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: hc_vision/CMakeFiles/hc_vision_src.dir/src/VideoStream.cpp.o
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: hc_vision/CMakeFiles/hc_vision_src.dir/src/Filter.cpp.o
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: hc_vision/CMakeFiles/hc_vision_src.dir/src/FrontCamera.cpp.o
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: hc_vision/CMakeFiles/hc_vision_src.dir/src/RosNetwork.cpp.o
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: hc_vision/CMakeFiles/hc_vision_src.dir/src/CamerasController.cpp.o
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: hc_vision/CMakeFiles/hc_vision_src.dir/src/FilterHandler.cpp.o
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: hc_vision/CMakeFiles/hc_vision_src.dir/src/main.cpp.o
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: hc_vision/CMakeFiles/hc_vision_src.dir/src/CreatedFilter.cpp.o
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: hc_vision/CMakeFiles/hc_vision_src.dir/src/FilterRun.cpp.o
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: hc_vision/CMakeFiles/hc_vision_src.dir/build.make
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: /opt/ros/indigo/lib/libroscpp.so
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: /usr/lib/x86_64-linux-gnu/libboost_signals.so
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: /opt/ros/indigo/lib/libxmlrpcpp.so
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: /opt/ros/indigo/lib/libcv_bridge.so
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.2.4.8
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: /usr/lib/x86_64-linux-gnu/libopencv_video.so.2.4.8
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: /usr/lib/x86_64-linux-gnu/libopencv_superres.so.2.4.8
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.2.4.8
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: /usr/lib/x86_64-linux-gnu/libopencv_photo.so.2.4.8
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: /usr/lib/x86_64-linux-gnu/libopencv_ocl.so.2.4.8
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: /usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.2.4.8
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: /usr/lib/x86_64-linux-gnu/libopencv_ml.so.2.4.8
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: /usr/lib/x86_64-linux-gnu/libopencv_legacy.so.2.4.8
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.2.4.8
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.2.4.8
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: /usr/lib/x86_64-linux-gnu/libopencv_gpu.so.2.4.8
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: /usr/lib/x86_64-linux-gnu/libopencv_flann.so.2.4.8
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: /usr/lib/x86_64-linux-gnu/libopencv_features2d.so.2.4.8
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: /usr/lib/x86_64-linux-gnu/libopencv_core.so.2.4.8
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: /usr/lib/x86_64-linux-gnu/libopencv_contrib.so.2.4.8
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: /usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.2.4.8
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: /opt/ros/indigo/lib/librosconsole.so
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: /opt/ros/indigo/lib/librosconsole_log4cxx.so
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: /opt/ros/indigo/lib/librosconsole_backend_interface.so
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: /usr/lib/liblog4cxx.so
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: /opt/ros/indigo/lib/libroscpp_serialization.so
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: /opt/ros/indigo/lib/librostime.so
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: /opt/ros/indigo/lib/libcpp_common.so
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: /usr/local/lib/libboost_system.so
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: /usr/local/lib/libboost_filesystem.so
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: /usr/local/lib/libboost_thread.so
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: /usr/local/lib/libopencv_core.so.2.4.9
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: /usr/local/lib/libopencv_highgui.so.2.4.9
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: /usr/local/lib/libopencv_imgproc.so.2.4.9
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: /usr/local/lib/libboost_system.so
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: /usr/local/lib/libboost_filesystem.so
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: /usr/local/lib/libboost_thread.so
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: /usr/local/lib/libopencv_core.so.2.4.9
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: hc_vision/CMakeFiles/hc_vision_src.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable /home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src"
 	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/hc_vision_src.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-hc_vision/CMakeFiles/hc_vision_src.dir/build: devel/lib/hc_vision/hc_vision_src
+hc_vision/CMakeFiles/hc_vision_src.dir/build: /home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src
 .PHONY : hc_vision/CMakeFiles/hc_vision_src.dir/build
 
 hc_vision/CMakeFiles/hc_vision_src.dir/requires: hc_vision/CMakeFiles/hc_vision_src.dir/Algos/BaseAlgorithm.cpp.o.requires
@@ -344,6 +444,10 @@ hc_vision/CMakeFiles/hc_vision_src.dir/requires: hc_vision/CMakeFiles/hc_vision_
 hc_vision/CMakeFiles/hc_vision_src.dir/requires: hc_vision/CMakeFiles/hc_vision_src.dir/Algos/Utils/Utils.cpp.o.requires
 hc_vision/CMakeFiles/hc_vision_src.dir/requires: hc_vision/CMakeFiles/hc_vision_src.dir/src/Log.cpp.o.requires
 hc_vision/CMakeFiles/hc_vision_src.dir/requires: hc_vision/CMakeFiles/hc_vision_src.dir/src/VideoStream.cpp.o.requires
+hc_vision/CMakeFiles/hc_vision_src.dir/requires: hc_vision/CMakeFiles/hc_vision_src.dir/src/Filter.cpp.o.requires
+hc_vision/CMakeFiles/hc_vision_src.dir/requires: hc_vision/CMakeFiles/hc_vision_src.dir/src/FrontCamera.cpp.o.requires
+hc_vision/CMakeFiles/hc_vision_src.dir/requires: hc_vision/CMakeFiles/hc_vision_src.dir/src/RosNetwork.cpp.o.requires
+hc_vision/CMakeFiles/hc_vision_src.dir/requires: hc_vision/CMakeFiles/hc_vision_src.dir/src/CamerasController.cpp.o.requires
 hc_vision/CMakeFiles/hc_vision_src.dir/requires: hc_vision/CMakeFiles/hc_vision_src.dir/src/FilterHandler.cpp.o.requires
 hc_vision/CMakeFiles/hc_vision_src.dir/requires: hc_vision/CMakeFiles/hc_vision_src.dir/src/main.cpp.o.requires
 hc_vision/CMakeFiles/hc_vision_src.dir/requires: hc_vision/CMakeFiles/hc_vision_src.dir/src/CreatedFilter.cpp.o.requires

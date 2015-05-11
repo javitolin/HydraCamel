@@ -5,6 +5,7 @@
  * TODO: change FilterRun to the one in the main!
  */
 #include "../include/VideoStream.h"
+#include <thread>
 using namespace std;
 using namespace cv;
 
@@ -204,7 +205,9 @@ void VideoStream::runFront()
 		//TODO
 		map<string, Mat*> front_filtered_mats = _filterRun->runFront(image,1);
 		/* MULTITHREAD IMPLEMENTATION */
-		//boost::thread filterThread(_filterRun->runFrontCameraThread,image);
+		//boost::thread filterThread(boost::bind(FilterRun::runFrontCameraThread,image));
+		//std::thread filterThread(std::bind(&FilterRun::runFrontCameraThread, _filterRun, image,1));
+		_filterRun->runThreadFront(image,1);
 		/* END */
 		//stream original image
 		streamImage(frame, 0, 9, 9);

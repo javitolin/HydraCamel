@@ -1,2 +1,2 @@
 - setup-file:
-    local-name: /usr/local/setup.sh
+    local-name: /home/jdorfsman/git/HydraCamel/ROS_PROJECT/install/setup.sh

@@ -5,6 +5,7 @@
  * TODO: change FilterRun to the one in the main!
  */
 #include "../include/VideoStream.h"
+#include <thread>
 using namespace std;
 using namespace cv;
 
@@ -55,6 +56,27 @@ VideoStream::~VideoStream()
 		delete _bottomUnfiltered;
 }
 
+/*
+void VideoStream::initCameras()
+{
+	_cameraControl.Init();
+	map<CameraType, CameraStatus> stat = _cameraControl.GetStatus();
+	if(stat[Left] == NotWorking)
+	{
+		_log->printLog("VideoStream", "Left camera not working", "Error");
+		_leftCameraWorking = false;
+	}
+	if(stat[Right] == NotWorking)
+	{
+		_log->printLog("VideoStream", "Right camera not working", "Error");
+		_rightCameraWorking = false;
+	}
+	if(stat[Bottom] == NotWorking)
+	{
+		_log->printLog("VideoStream", "Bottom camera not working", "Error");
+		_bottomCameraWorking = false;
+	}
+}*/
 
 /*
  * Return the last number used for the videos in the VideoLog folder. We call this function so we will know what's the next
@@ -154,12 +176,6 @@ void VideoStream::runFront()
 		return;
 	}
 
-	//	if(!_leftCameraWorking && !_rightCameraWorking)
-	//	{
-	//		_log->printLog("VideoStream", "Front camera not working. Killing thread...", "Error");
-	//		return;
-	//	}
-
 	while( !_killStream )
 	{
 		if( _requestToStopStream ) //If the client has requested to stop the stream
@@ -176,6 +192,8 @@ void VideoStream::runFront()
 			_stopedStreamingFront = false;
 		}
 		Mat frame;
+//		Mat *left, *right;
+		//get a new frame from camera.
 		cap >> frame;
 		if(_recordUnfilteredFront)
 			recordUnfiltered(frame, true);
@@ -184,7 +202,13 @@ void VideoStream::runFront()
 		frame.copyTo(*image);
 
 		//Run the front filters on the given image
-		map<string, Mat*> front_filtered_mats = _filterRun->runFront(image);
+		//TODO
+		map<string, Mat*> front_filtered_mats = _filterRun->runFront(image,1);
+		/* MULTITHREAD IMPLEMENTATION */
+		//boost::thread filterThread(boost::bind(FilterRun::runFrontCameraThread,image));
+		//std::thread filterThread(std::bind(&FilterRun::runFrontCameraThread, _filterRun, image,1));
+		_filterRun->runThreadFront(image,1);
+		/* END */
 		//stream original image
 		streamImage(frame, 0, 9, 9);
 		preStreamFront(front_filtered_mats);
@@ -254,7 +278,7 @@ void VideoStream::runBottom()
 		frame.copyTo(*image);
 
 		//Run the bottom filters on the given image
-		map<string, Mat*> bottom_filtered_mats = _filterRun->runBottom(image);
+		map<string, Mat*> bottom_filtered_mats = _filterRun->runBottom(image,1);
 		//stream original image
 		streamImage(frame, 1, 9, 9);
 		preStreamBottom(bottom_filtered_mats);

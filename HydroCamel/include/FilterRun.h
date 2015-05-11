@@ -23,7 +23,8 @@
 #include <fstream>
 #include <string>
 #include <vector>
-
+#include "RosNetwork.h"
+#include <thread>
 
 
 class FilterRun
@@ -59,5 +60,6 @@ public:
     void runFilterThread(Mat*, bool,int);
     void runFrontCameraThread(Mat&,int);
     void runBottomCameraThread(Mat&,int);
+    void runThreadFront(Mat* image, int num);
 };
 #endif

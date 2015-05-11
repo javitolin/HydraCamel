@@ -334,6 +334,26 @@
 			<location>/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/src/VideoStream.cpp</location>
 		</link>
 		<link>
+			<name>[Targets]/[exe] hc_vision_src/Source Files/Filter.cpp</name>
+			<type>1</type>
+			<location>/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/src/Filter.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] hc_vision_src/Source Files/FrontCamera.cpp</name>
+			<type>1</type>
+			<location>/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/src/FrontCamera.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] hc_vision_src/Source Files/RosNetwork.cpp</name>
+			<type>1</type>
+			<location>/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/src/RosNetwork.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] hc_vision_src/Source Files/CamerasController.cpp</name>
+			<type>1</type>
+			<location>/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/src/CamerasController.cpp</location>
+		</link>
+		<link>
 			<name>[Targets]/[exe] hc_vision_src/Source Files/FilterHandler.cpp</name>
 			<type>1</type>
 			<location>/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/src/FilterHandler.cpp</location>

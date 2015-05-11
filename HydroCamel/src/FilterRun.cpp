@@ -370,6 +370,11 @@ void FilterRun::runFilterThread(Mat* mat, bool front,int num){
 			runBottomCameraThread(*mat,num);
 	}
 }
+void FilterRun::runThreadFront(Mat* image, int num){
+	//std::thread frontThread(&runFrontCameraThread, image, num);
+	//std::thread t1(std::bind(&FilterRun::runFrontCameraThread, this, image, num));
+	new boost::thread(&FilterRun::runFrontCameraThread,this, image, num);
+}
 void FilterRun::runFrontCameraThread(Mat& image,int num){
 	Mat* mat = new Mat(image.size(),image.type());
 	image.copyTo(*mat);
@@ -448,7 +453,7 @@ void FilterRun::runBottomCameraThread(Mat& image,int num){
 }*/
 void FilterRun::sendMessagesToRos(vector<MissionControlMessage> vec, int fnum){
 	//TODO
-	for(int i = 0; i < vec.size(); i++){
+	for(unsigned int i = 0; i < vec.size(); i++){
 		int mCode = vec[i].MissionCode;
 		int aInfo = vec[i].additionalInformation;
 		/*vector<pair(int,int)> bounds = vec[i].bounds;
@@ -459,5 +464,6 @@ void FilterRun::sendMessagesToRos(vector<MissionControlMessage> vec, int fnum){
 }
 void FilterRun::sendImageToRos(Mat* imageToSend, int fnum){
 	//TODO
-	_ros.sendImage(imageToSend, "channel1");
+	Mat img = imageToSend[0];
+	_ros.sendImage(img, "channel1");
 }

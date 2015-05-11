@@ -21,14 +21,11 @@ using namespace cv;
 class RosNetwork{
 public:
 	RosNetwork(int,char**);
+	RosNetwork(){};
 	void sendMessage(string, string);
-	void sendImage(Mat*, string);
+	void sendImage(Mat, string);
 private:
 	ros::NodeHandle _n;
 };
-
-
-
-
 
 #endif /* ROSNETWORK_H_ */
