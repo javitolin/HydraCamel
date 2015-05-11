@@ -207,7 +207,7 @@ void VideoStream::runFront()
 		/* MULTITHREAD IMPLEMENTATION */
 		//boost::thread filterThread(boost::bind(FilterRun::runFrontCameraThread,image));
 		//std::thread filterThread(std::bind(&FilterRun::runFrontCameraThread, _filterRun, image,1));
-		_filterRun->runThreadFront(image,1);
+		//_filterRun->runThreadFront(image,1);
 		/* END */
 		//stream original image
 		streamImage(frame, 0, 9, 9);

@@ -11,7 +11,6 @@ CPP_SRCS += \
 ../src/FilterRunThread.cpp \
 ../src/FrontCamera.cpp \
 ../src/Log.cpp \
-../src/RosNetwork.cpp \
 ../src/VideoStream.cpp \
 ../src/main.cpp 
 
@@ -23,7 +22,6 @@ OBJS += \
 ./src/FilterRunThread.o \
 ./src/FrontCamera.o \
 ./src/Log.o \
-./src/RosNetwork.o \
 ./src/VideoStream.o \
 ./src/main.o 
 
@@ -35,7 +33,6 @@ CPP_DEPS += \
 ./src/FilterRunThread.d \
 ./src/FrontCamera.d \
 ./src/Log.d \
-./src/RosNetwork.d \
 ./src/VideoStream.d \
 ./src/main.d 
 
@@ -44,7 +41,7 @@ CPP_DEPS += \
 src/%.o: ../src/%.cpp
 	@echo 'Building file: $<'
 	@echo 'Invoking: GCC C++ Compiler'
-	g++ -std=c++11 -D__cplusplus=201103L -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	g++ -D__cplusplus=201103L -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
