@@ -5,7 +5,6 @@
  * TODO: change FilterRun to the one in the main!
  */
 #include "../include/VideoStream.h"
-#include <thread>
 using namespace std;
 using namespace cv;
 

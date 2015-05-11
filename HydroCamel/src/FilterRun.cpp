@@ -11,7 +11,7 @@
 using namespace cv;
 using namespace std;
 
-FilterRun::FilterRun(FilterHandler* filterHandler, Log* log,RosNetwork r)
+FilterRun::FilterRun(FilterHandler* filterHandler, Log* log,RosNetwork *r)
 {
 	_useUnorderedListFront = true;
 	_useUnorderedListBottom = true;
@@ -373,7 +373,7 @@ void FilterRun::runFilterThread(Mat* mat, bool front,int num){
 void FilterRun::runThreadFront(Mat* image, int num){
 	//std::thread frontThread(&runFrontCameraThread, image, num);
 	//std::thread t1(std::bind(&FilterRun::runFrontCameraThread, this, image, num));
-	new boost::thread(&FilterRun::runFrontCameraThread,this, image, num);
+	//new boost::thread(&FilterRun::runFrontCameraThread,this, image, num);
 }
 void FilterRun::runFrontCameraThread(Mat& image,int num){
 	Mat* mat = new Mat(image.size(),image.type());
@@ -459,11 +459,11 @@ void FilterRun::sendMessagesToRos(vector<MissionControlMessage> vec, int fnum){
 		/*vector<pair(int,int)> bounds = vec[i].bounds;
 		vector<pair(int,int)> iPoints = vec[i].intrestPoints;
 		string m = mCode +"@"+aInfo+"@"+vecToString(bounds)+"@"+vecToString(iPoints);*/
-		_ros.sendMessage("dsada","dsadsa");
+		_ros->sendMessage("dsada","dsadsa");
 	}
 }
 void FilterRun::sendImageToRos(Mat* imageToSend, int fnum){
 	//TODO
 	Mat img = imageToSend[0];
-	_ros.sendImage(img, "channel1");
+	_ros->sendImage(img, "channel1");
 }

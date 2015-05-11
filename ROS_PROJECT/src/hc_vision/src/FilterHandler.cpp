@@ -47,7 +47,7 @@ void FilterHandler::loadBuiltinFilters()
 	map<std::string,BaseAlgorithm*> _bottomFilters;
 	map<std::string,BaseAlgorithm*> _frontFilters;
 
-	_bottomFilters["path"] = new PathAlgorithm();
+	/*_bottomFilters["path"] = new PathAlgorithm();
 	_bottomFilters["path"]->Init(false);
 	//	_bottomAlgos["shadow"] = new ShadowAlgorithm();
 	//	_bottomAlgos["shadow"]->Init(false);
@@ -61,7 +61,7 @@ void FilterHandler::loadBuiltinFilters()
 	_frontFilters["blackGate"]->Init(false);
 	//IMPORTANT: Don't remove traffic if using Gate
 	_frontFilters["Gate"] = new Gate((Traffic*)_frontFilters.at("traffic"));
-	_frontFilters["Gate"]->Init(false);
+	_frontFilters["Gate"]->Init(false);*/
 
 	loadParameters(_frontFilters);
 	loadParameters(_bottomFilters);
@@ -223,7 +223,7 @@ map<string, BaseAlgorithm*> FilterHandler::instanceGenerator()
 	map<string,BaseAlgorithm*> _bottomFilters;
 	map<string,BaseAlgorithm*> _frontFilters;
 
-	_bottomFilters["path"] = new PathAlgorithm();
+	/*_bottomFilters["path"] = new PathAlgorithm();
 	_bottomFilters["path"]->Init(false);
 	//	_bottomAlgos["shadow"] = new ShadowAlgorithm();
 	//	_bottomAlgos["shadow"]->Init(false);
@@ -237,7 +237,7 @@ map<string, BaseAlgorithm*> FilterHandler::instanceGenerator()
 	_frontFilters["blackGate"]->Init(false);
 	//IMPORTANT: Don't remove traffic if using Gate
 	_frontFilters["Gate"] = new Gate((Traffic*)_frontFilters.at("traffic"));
-	_frontFilters["Gate"]->Init(false);
+	_frontFilters["Gate"]->Init(false);*/
 
 	loadParameters(_frontFilters);
 	loadParameters(_bottomFilters);

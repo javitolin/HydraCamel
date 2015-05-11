@@ -8,6 +8,7 @@ CPP_SRCS += \
 ../src/CreatedFilter.cpp \
 ../src/FilterHandler.cpp \
 ../src/FilterRun.cpp \
+../src/FilterRunThread.cpp \
 ../src/FrontCamera.cpp \
 ../src/Log.cpp \
 ../src/RosNetwork.cpp \
@@ -19,6 +20,7 @@ OBJS += \
 ./src/CreatedFilter.o \
 ./src/FilterHandler.o \
 ./src/FilterRun.o \
+./src/FilterRunThread.o \
 ./src/FrontCamera.o \
 ./src/Log.o \
 ./src/RosNetwork.o \
@@ -30,6 +32,7 @@ CPP_DEPS += \
 ./src/CreatedFilter.d \
 ./src/FilterHandler.d \
 ./src/FilterRun.d \
+./src/FilterRunThread.d \
 ./src/FrontCamera.d \
 ./src/Log.d \
 ./src/RosNetwork.d \

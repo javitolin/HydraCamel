@@ -6,6 +6,7 @@ find_package(catkin REQUIRED COMPONENTS
   rospy
   cv_bridge
   std_msgs
+  image_transport
 )
 find_package(OpenCV 2 REQUIRED COMPONENTS core highgui imgproc)
 find_package(Boost REQUIRED COMPONENTS system filesystem thread)

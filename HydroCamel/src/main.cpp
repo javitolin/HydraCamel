@@ -21,7 +21,7 @@
 #include "../include/FilterRun.h"
 using namespace std;
 using boost::asio::ip::tcp;
-RosNetwork rosN;
+RosNetwork *rosN;
 map<string,int> server_codes;
 VideoStream* video_stream;
 FilterHandler* filter_handler;

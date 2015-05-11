@@ -19,9 +19,10 @@
 #include <string>
 #include "../include/VideoStream.h"
 #include "../include/FilterRun.h"
+#include "../include/FilterRunThread.h"
 using namespace std;
 using boost::asio::ip::tcp;
-RosNetwork rosN;
+RosNetwork *rosN;
 map<string,int> server_codes;
 VideoStream* video_stream;
 FilterHandler* filter_handler;
@@ -38,6 +39,9 @@ boost::asio::ip::udp::socket* stream_socket;
 tcp::acceptor* acceptor;
 tcp::socket* server_socket;
 size_t length;
+
+vector<boost::thread*> filterThreads;
+vector<FilterRunThread*> filterRunThreads;
 
 /*
  * Receives a command ,and prints to log what the server does next
@@ -91,6 +95,9 @@ void commandLog(int command)
 	case 114:
 		_log->printLog("", "Sending list of filters in machine...", "Info");
 		break;
+	case 201:
+		_log->printLog("", "Starting task 1 filter...", "Info");
+		break;
 	default:
 		_log->printLog("", "Unknown command..." , "Error");
 		break;
@@ -117,6 +124,7 @@ void initCodes()
 	server_codes["delete_filter"] = 112;
 	server_codes["create_filter"] = 113;
 	server_codes["filters_in_machine"] = 114;
+	server_codes["start_task_1"] = 201;
 }
 
 /*
@@ -946,6 +954,31 @@ void recordUnfiltered(bool start)
 	else//Stop recording
 		video_stream->stopRecordUnfiltered(use_front_camera);
 }
+void stop_task(char* filterName){
+
+	for(unsigned int i = 0; i < filterRunThreads.size(); i++){
+		FilterRunThread *f = filterRunThreads[i];
+		if(strcmp(f->getFilterName(),filterName) == 0){
+			filterThreads[i]->interrupt();
+			filterRunThreads.erase(filterRunThreads.begin() + i);
+			filterThreads.erase(filterThreads.begin() + i);
+			break;
+		}
+	}
+}
+void start_task(char* filterName){
+	bool camera = receiveCode();
+	bool filterNum = receiveCode();
+	BaseAlgorithm* f;
+	map<string,BaseAlgorithm*> filters = filter_handler->getFiltersInMachine();
+	f = filters.at(filterName);
+	FilterRunThread *frt = new FilterRunThread("driverChannel",camera,rosN,f,filterName);
+	boost::thread *filterThread = new boost::thread(&FilterRunThread::runFilter,frt);
+	filterThread->start_thread();
+	filterThreads.push_back(filterThread);
+	filterRunThreads.push_back(frt);
+}
+
 
 int main(int argc, char* argv[])
 {
@@ -1004,6 +1037,10 @@ int main(int argc, char* argv[])
 
 		else if(command == server_codes["filters_in_machine"])
 			sendFiltersInMachine();
+		else if(command == server_codes["start_task_1"])
+			start_task("first_task_filter");
+		else if(command == server_codes["stop_task_1"])
+			stop_task("first_task_filter");
 	}
 
 	return 0;

@@ -4,7 +4,7 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/hc_vision_src.dir/Algos/Utils/Utils.cpp.o"
   "CMakeFiles/hc_vision_src.dir/src/Log.cpp.o"
   "CMakeFiles/hc_vision_src.dir/src/VideoStream.cpp.o"
-  "CMakeFiles/hc_vision_src.dir/src/Filter.cpp.o"
+  "CMakeFiles/hc_vision_src.dir/src/FilterRunThread.cpp.o"
   "CMakeFiles/hc_vision_src.dir/src/FrontCamera.cpp.o"
   "CMakeFiles/hc_vision_src.dir/src/RosNetwork.cpp.o"
   "CMakeFiles/hc_vision_src.dir/src/CamerasController.cpp.o"

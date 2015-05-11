@@ -25,7 +25,7 @@ public:
 	void sendMessage(string, string);
 	void sendImage(Mat, string);
 private:
-	ros::NodeHandle _n;
+	//ros::NodeHandle _n;
 };
 
 #endif /* ROSNETWORK_H_ */

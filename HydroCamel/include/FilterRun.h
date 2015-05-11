@@ -37,7 +37,7 @@ private:
     std::vector<std::string> _bottomCameraFilters;
     Log* _log;
     int _filterNumber;
-    RosNetwork _ros;
+    RosNetwork *_ros;
     map<std::string, cv::Mat*> runFrontCameraUnorderedFilters(cv::Mat&,int);
     map<std::string, cv::Mat*> runBottomCameraUnorderedFilters(cv::Mat&,int);
     map<string, cv::Mat*> runFrontCameraChainedFilters(cv::Mat&,int);
@@ -47,7 +47,7 @@ private:
     void sendImageToRos(Mat*,int);
 
 public:
-    FilterRun(FilterHandler*, Log*, RosNetwork);
+    FilterRun(FilterHandler*, Log*, RosNetwork*);
     ~FilterRun();
     void useUnorderedFilterList(const std::vector<std::string>&, bool);
     void useChainFilterList(const std::vector<std::string>&, bool);

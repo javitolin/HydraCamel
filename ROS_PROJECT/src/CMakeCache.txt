@@ -379,7 +379,7 @@ hc_vision_SOURCE_DIR:STATIC=/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vi
 image_transport_DIR:PATH=/opt/ros/indigo/share/image_transport/cmake
 
 //Path to a library.
-lib:FILEPATH=/opt/ros/indigo/lib/libcv_bridge.so
+lib:FILEPATH=/opt/ros/indigo/lib/libroslib.so
 
 //The directory containing a CMake configuration file for message_filters.
 message_filters_DIR:PATH=/opt/ros/indigo/share/message_filters/cmake

@@ -238,6 +238,30 @@ Algos/Utils/Utils.cpp.s:
 	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build && $(MAKE) -f hc_vision/CMakeFiles/hc_vision_src.dir/build.make hc_vision/CMakeFiles/hc_vision_src.dir/Algos/Utils/Utils.cpp.s
 .PHONY : Algos/Utils/Utils.cpp.s
 
+src/CamerasController.o: src/CamerasController.cpp.o
+.PHONY : src/CamerasController.o
+
+# target to build an object file
+src/CamerasController.cpp.o:
+	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build && $(MAKE) -f hc_vision/CMakeFiles/hc_vision_src.dir/build.make hc_vision/CMakeFiles/hc_vision_src.dir/src/CamerasController.cpp.o
+.PHONY : src/CamerasController.cpp.o
+
+src/CamerasController.i: src/CamerasController.cpp.i
+.PHONY : src/CamerasController.i
+
+# target to preprocess a source file
+src/CamerasController.cpp.i:
+	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build && $(MAKE) -f hc_vision/CMakeFiles/hc_vision_src.dir/build.make hc_vision/CMakeFiles/hc_vision_src.dir/src/CamerasController.cpp.i
+.PHONY : src/CamerasController.cpp.i
+
+src/CamerasController.s: src/CamerasController.cpp.s
+.PHONY : src/CamerasController.s
+
+# target to generate assembly for a file
+src/CamerasController.cpp.s:
+	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build && $(MAKE) -f hc_vision/CMakeFiles/hc_vision_src.dir/build.make hc_vision/CMakeFiles/hc_vision_src.dir/src/CamerasController.cpp.s
+.PHONY : src/CamerasController.cpp.s
+
 src/CreatedFilter.o: src/CreatedFilter.cpp.o
 .PHONY : src/CreatedFilter.o
 
@@ -310,6 +334,54 @@ src/FilterRun.cpp.s:
 	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build && $(MAKE) -f hc_vision/CMakeFiles/hc_vision_src.dir/build.make hc_vision/CMakeFiles/hc_vision_src.dir/src/FilterRun.cpp.s
 .PHONY : src/FilterRun.cpp.s
 
+src/FilterRunThread.o: src/FilterRunThread.cpp.o
+.PHONY : src/FilterRunThread.o
+
+# target to build an object file
+src/FilterRunThread.cpp.o:
+	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build && $(MAKE) -f hc_vision/CMakeFiles/hc_vision_src.dir/build.make hc_vision/CMakeFiles/hc_vision_src.dir/src/FilterRunThread.cpp.o
+.PHONY : src/FilterRunThread.cpp.o
+
+src/FilterRunThread.i: src/FilterRunThread.cpp.i
+.PHONY : src/FilterRunThread.i
+
+# target to preprocess a source file
+src/FilterRunThread.cpp.i:
+	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build && $(MAKE) -f hc_vision/CMakeFiles/hc_vision_src.dir/build.make hc_vision/CMakeFiles/hc_vision_src.dir/src/FilterRunThread.cpp.i
+.PHONY : src/FilterRunThread.cpp.i
+
+src/FilterRunThread.s: src/FilterRunThread.cpp.s
+.PHONY : src/FilterRunThread.s
+
+# target to generate assembly for a file
+src/FilterRunThread.cpp.s:
+	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build && $(MAKE) -f hc_vision/CMakeFiles/hc_vision_src.dir/build.make hc_vision/CMakeFiles/hc_vision_src.dir/src/FilterRunThread.cpp.s
+.PHONY : src/FilterRunThread.cpp.s
+
+src/FrontCamera.o: src/FrontCamera.cpp.o
+.PHONY : src/FrontCamera.o
+
+# target to build an object file
+src/FrontCamera.cpp.o:
+	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build && $(MAKE) -f hc_vision/CMakeFiles/hc_vision_src.dir/build.make hc_vision/CMakeFiles/hc_vision_src.dir/src/FrontCamera.cpp.o
+.PHONY : src/FrontCamera.cpp.o
+
+src/FrontCamera.i: src/FrontCamera.cpp.i
+.PHONY : src/FrontCamera.i
+
+# target to preprocess a source file
+src/FrontCamera.cpp.i:
+	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build && $(MAKE) -f hc_vision/CMakeFiles/hc_vision_src.dir/build.make hc_vision/CMakeFiles/hc_vision_src.dir/src/FrontCamera.cpp.i
+.PHONY : src/FrontCamera.cpp.i
+
+src/FrontCamera.s: src/FrontCamera.cpp.s
+.PHONY : src/FrontCamera.s
+
+# target to generate assembly for a file
+src/FrontCamera.cpp.s:
+	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build && $(MAKE) -f hc_vision/CMakeFiles/hc_vision_src.dir/build.make hc_vision/CMakeFiles/hc_vision_src.dir/src/FrontCamera.cpp.s
+.PHONY : src/FrontCamera.cpp.s
+
 src/Log.o: src/Log.cpp.o
 .PHONY : src/Log.o
 
@@ -333,6 +405,30 @@ src/Log.s: src/Log.cpp.s
 src/Log.cpp.s:
 	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build && $(MAKE) -f hc_vision/CMakeFiles/hc_vision_src.dir/build.make hc_vision/CMakeFiles/hc_vision_src.dir/src/Log.cpp.s
 .PHONY : src/Log.cpp.s
+
+src/RosNetwork.o: src/RosNetwork.cpp.o
+.PHONY : src/RosNetwork.o
+
+# target to build an object file
+src/RosNetwork.cpp.o:
+	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build && $(MAKE) -f hc_vision/CMakeFiles/hc_vision_src.dir/build.make hc_vision/CMakeFiles/hc_vision_src.dir/src/RosNetwork.cpp.o
+.PHONY : src/RosNetwork.cpp.o
+
+src/RosNetwork.i: src/RosNetwork.cpp.i
+.PHONY : src/RosNetwork.i
+
+# target to preprocess a source file
+src/RosNetwork.cpp.i:
+	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build && $(MAKE) -f hc_vision/CMakeFiles/hc_vision_src.dir/build.make hc_vision/CMakeFiles/hc_vision_src.dir/src/RosNetwork.cpp.i
+.PHONY : src/RosNetwork.cpp.i
+
+src/RosNetwork.s: src/RosNetwork.cpp.s
+.PHONY : src/RosNetwork.s
+
+# target to generate assembly for a file
+src/RosNetwork.cpp.s:
+	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build && $(MAKE) -f hc_vision/CMakeFiles/hc_vision_src.dir/build.make hc_vision/CMakeFiles/hc_vision_src.dir/src/RosNetwork.cpp.s
+.PHONY : src/RosNetwork.cpp.s
 
 src/VideoStream.o: src/VideoStream.cpp.o
 .PHONY : src/VideoStream.o
@@ -405,6 +501,9 @@ help:
 	@echo "... Algos/Utils/Utils.o"
 	@echo "... Algos/Utils/Utils.i"
 	@echo "... Algos/Utils/Utils.s"
+	@echo "... src/CamerasController.o"
+	@echo "... src/CamerasController.i"
+	@echo "... src/CamerasController.s"
 	@echo "... src/CreatedFilter.o"
 	@echo "... src/CreatedFilter.i"
 	@echo "... src/CreatedFilter.s"
@@ -414,9 +513,18 @@ help:
 	@echo "... src/FilterRun.o"
 	@echo "... src/FilterRun.i"
 	@echo "... src/FilterRun.s"
+	@echo "... src/FilterRunThread.o"
+	@echo "... src/FilterRunThread.i"
+	@echo "... src/FilterRunThread.s"
+	@echo "... src/FrontCamera.o"
+	@echo "... src/FrontCamera.i"
+	@echo "... src/FrontCamera.s"
 	@echo "... src/Log.o"
 	@echo "... src/Log.i"
 	@echo "... src/Log.s"
+	@echo "... src/RosNetwork.o"
+	@echo "... src/RosNetwork.i"
+	@echo "... src/RosNetwork.s"
 	@echo "... src/VideoStream.o"
 	@echo "... src/VideoStream.i"
 	@echo "... src/VideoStream.s"

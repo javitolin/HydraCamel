@@ -286,30 +286,6 @@ src/CreatedFilter.cpp.s:
 	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src && $(MAKE) -f hc_vision/CMakeFiles/hc_vision_src.dir/build.make hc_vision/CMakeFiles/hc_vision_src.dir/src/CreatedFilter.cpp.s
 .PHONY : src/CreatedFilter.cpp.s
 
-src/Filter.o: src/Filter.cpp.o
-.PHONY : src/Filter.o
-
-# target to build an object file
-src/Filter.cpp.o:
-	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src && $(MAKE) -f hc_vision/CMakeFiles/hc_vision_src.dir/build.make hc_vision/CMakeFiles/hc_vision_src.dir/src/Filter.cpp.o
-.PHONY : src/Filter.cpp.o
-
-src/Filter.i: src/Filter.cpp.i
-.PHONY : src/Filter.i
-
-# target to preprocess a source file
-src/Filter.cpp.i:
-	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src && $(MAKE) -f hc_vision/CMakeFiles/hc_vision_src.dir/build.make hc_vision/CMakeFiles/hc_vision_src.dir/src/Filter.cpp.i
-.PHONY : src/Filter.cpp.i
-
-src/Filter.s: src/Filter.cpp.s
-.PHONY : src/Filter.s
-
-# target to generate assembly for a file
-src/Filter.cpp.s:
-	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src && $(MAKE) -f hc_vision/CMakeFiles/hc_vision_src.dir/build.make hc_vision/CMakeFiles/hc_vision_src.dir/src/Filter.cpp.s
-.PHONY : src/Filter.cpp.s
-
 src/FilterHandler.o: src/FilterHandler.cpp.o
 .PHONY : src/FilterHandler.o
 
@@ -357,6 +333,30 @@ src/FilterRun.s: src/FilterRun.cpp.s
 src/FilterRun.cpp.s:
 	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src && $(MAKE) -f hc_vision/CMakeFiles/hc_vision_src.dir/build.make hc_vision/CMakeFiles/hc_vision_src.dir/src/FilterRun.cpp.s
 .PHONY : src/FilterRun.cpp.s
+
+src/FilterRunThread.o: src/FilterRunThread.cpp.o
+.PHONY : src/FilterRunThread.o
+
+# target to build an object file
+src/FilterRunThread.cpp.o:
+	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src && $(MAKE) -f hc_vision/CMakeFiles/hc_vision_src.dir/build.make hc_vision/CMakeFiles/hc_vision_src.dir/src/FilterRunThread.cpp.o
+.PHONY : src/FilterRunThread.cpp.o
+
+src/FilterRunThread.i: src/FilterRunThread.cpp.i
+.PHONY : src/FilterRunThread.i
+
+# target to preprocess a source file
+src/FilterRunThread.cpp.i:
+	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src && $(MAKE) -f hc_vision/CMakeFiles/hc_vision_src.dir/build.make hc_vision/CMakeFiles/hc_vision_src.dir/src/FilterRunThread.cpp.i
+.PHONY : src/FilterRunThread.cpp.i
+
+src/FilterRunThread.s: src/FilterRunThread.cpp.s
+.PHONY : src/FilterRunThread.s
+
+# target to generate assembly for a file
+src/FilterRunThread.cpp.s:
+	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src && $(MAKE) -f hc_vision/CMakeFiles/hc_vision_src.dir/build.make hc_vision/CMakeFiles/hc_vision_src.dir/src/FilterRunThread.cpp.s
+.PHONY : src/FilterRunThread.cpp.s
 
 src/FrontCamera.o: src/FrontCamera.cpp.o
 .PHONY : src/FrontCamera.o
@@ -507,15 +507,15 @@ help:
 	@echo "... src/CreatedFilter.o"
 	@echo "... src/CreatedFilter.i"
 	@echo "... src/CreatedFilter.s"
-	@echo "... src/Filter.o"
-	@echo "... src/Filter.i"
-	@echo "... src/Filter.s"
 	@echo "... src/FilterHandler.o"
 	@echo "... src/FilterHandler.i"
 	@echo "... src/FilterHandler.s"
 	@echo "... src/FilterRun.o"
 	@echo "... src/FilterRun.i"
 	@echo "... src/FilterRun.s"
+	@echo "... src/FilterRunThread.o"
+	@echo "... src/FilterRunThread.i"
+	@echo "... src/FilterRunThread.s"
 	@echo "... src/FrontCamera.o"
 	@echo "... src/FrontCamera.i"
 	@echo "... src/FrontCamera.s"
