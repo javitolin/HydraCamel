@@ -5,6 +5,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
   "/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/Algos/BaseAlgorithm.cpp" "/home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/hc_vision/CMakeFiles/hc_vision_src.dir/Algos/BaseAlgorithm.cpp.o"
+  "/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/Algos/FirstTask/FirstTaskGate.cpp" "/home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/hc_vision/CMakeFiles/hc_vision_src.dir/Algos/FirstTask/FirstTaskGate.cpp.o"
   "/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/Algos/Utils/ParamUtils.cpp" "/home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/hc_vision/CMakeFiles/hc_vision_src.dir/Algos/Utils/ParamUtils.cpp.o"
   "/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/Algos/Utils/Utils.cpp" "/home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/hc_vision/CMakeFiles/hc_vision_src.dir/Algos/Utils/Utils.cpp.o"
   "/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/src/CamerasController.cpp" "/home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/hc_vision/CMakeFiles/hc_vision_src.dir/src/CamerasController.cpp.o"

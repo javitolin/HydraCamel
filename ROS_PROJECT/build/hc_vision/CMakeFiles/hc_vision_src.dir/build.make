@@ -75,9 +75,32 @@ hc_vision/CMakeFiles/hc_vision_src.dir/Algos/BaseAlgorithm.cpp.o.provides: hc_vi
 
 hc_vision/CMakeFiles/hc_vision_src.dir/Algos/BaseAlgorithm.cpp.o.provides.build: hc_vision/CMakeFiles/hc_vision_src.dir/Algos/BaseAlgorithm.cpp.o
 
+hc_vision/CMakeFiles/hc_vision_src.dir/Algos/FirstTask/FirstTaskGate.cpp.o: hc_vision/CMakeFiles/hc_vision_src.dir/flags.make
+hc_vision/CMakeFiles/hc_vision_src.dir/Algos/FirstTask/FirstTaskGate.cpp.o: /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/Algos/FirstTask/FirstTaskGate.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object hc_vision/CMakeFiles/hc_vision_src.dir/Algos/FirstTask/FirstTaskGate.cpp.o"
+	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/hc_vision && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/hc_vision_src.dir/Algos/FirstTask/FirstTaskGate.cpp.o -c /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/Algos/FirstTask/FirstTaskGate.cpp
+
+hc_vision/CMakeFiles/hc_vision_src.dir/Algos/FirstTask/FirstTaskGate.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hc_vision_src.dir/Algos/FirstTask/FirstTaskGate.cpp.i"
+	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/hc_vision && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/Algos/FirstTask/FirstTaskGate.cpp > CMakeFiles/hc_vision_src.dir/Algos/FirstTask/FirstTaskGate.cpp.i
+
+hc_vision/CMakeFiles/hc_vision_src.dir/Algos/FirstTask/FirstTaskGate.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hc_vision_src.dir/Algos/FirstTask/FirstTaskGate.cpp.s"
+	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/hc_vision && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/Algos/FirstTask/FirstTaskGate.cpp -o CMakeFiles/hc_vision_src.dir/Algos/FirstTask/FirstTaskGate.cpp.s
+
+hc_vision/CMakeFiles/hc_vision_src.dir/Algos/FirstTask/FirstTaskGate.cpp.o.requires:
+.PHONY : hc_vision/CMakeFiles/hc_vision_src.dir/Algos/FirstTask/FirstTaskGate.cpp.o.requires
+
+hc_vision/CMakeFiles/hc_vision_src.dir/Algos/FirstTask/FirstTaskGate.cpp.o.provides: hc_vision/CMakeFiles/hc_vision_src.dir/Algos/FirstTask/FirstTaskGate.cpp.o.requires
+	$(MAKE) -f hc_vision/CMakeFiles/hc_vision_src.dir/build.make hc_vision/CMakeFiles/hc_vision_src.dir/Algos/FirstTask/FirstTaskGate.cpp.o.provides.build
+.PHONY : hc_vision/CMakeFiles/hc_vision_src.dir/Algos/FirstTask/FirstTaskGate.cpp.o.provides
+
+hc_vision/CMakeFiles/hc_vision_src.dir/Algos/FirstTask/FirstTaskGate.cpp.o.provides.build: hc_vision/CMakeFiles/hc_vision_src.dir/Algos/FirstTask/FirstTaskGate.cpp.o
+
 hc_vision/CMakeFiles/hc_vision_src.dir/Algos/Utils/ParamUtils.cpp.o: hc_vision/CMakeFiles/hc_vision_src.dir/flags.make
 hc_vision/CMakeFiles/hc_vision_src.dir/Algos/Utils/ParamUtils.cpp.o: /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/Algos/Utils/ParamUtils.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object hc_vision/CMakeFiles/hc_vision_src.dir/Algos/Utils/ParamUtils.cpp.o"
 	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/hc_vision && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/hc_vision_src.dir/Algos/Utils/ParamUtils.cpp.o -c /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/Algos/Utils/ParamUtils.cpp
 
@@ -100,7 +123,7 @@ hc_vision/CMakeFiles/hc_vision_src.dir/Algos/Utils/ParamUtils.cpp.o.provides.bui
 
 hc_vision/CMakeFiles/hc_vision_src.dir/Algos/Utils/Utils.cpp.o: hc_vision/CMakeFiles/hc_vision_src.dir/flags.make
 hc_vision/CMakeFiles/hc_vision_src.dir/Algos/Utils/Utils.cpp.o: /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/Algos/Utils/Utils.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object hc_vision/CMakeFiles/hc_vision_src.dir/Algos/Utils/Utils.cpp.o"
 	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/hc_vision && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/hc_vision_src.dir/Algos/Utils/Utils.cpp.o -c /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/Algos/Utils/Utils.cpp
 
@@ -123,7 +146,7 @@ hc_vision/CMakeFiles/hc_vision_src.dir/Algos/Utils/Utils.cpp.o.provides.build: h
 
 hc_vision/CMakeFiles/hc_vision_src.dir/src/Log.cpp.o: hc_vision/CMakeFiles/hc_vision_src.dir/flags.make
 hc_vision/CMakeFiles/hc_vision_src.dir/src/Log.cpp.o: /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/src/Log.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object hc_vision/CMakeFiles/hc_vision_src.dir/src/Log.cpp.o"
 	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/hc_vision && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/hc_vision_src.dir/src/Log.cpp.o -c /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/src/Log.cpp
 
@@ -146,7 +169,7 @@ hc_vision/CMakeFiles/hc_vision_src.dir/src/Log.cpp.o.provides.build: hc_vision/C
 
 hc_vision/CMakeFiles/hc_vision_src.dir/src/VideoStream.cpp.o: hc_vision/CMakeFiles/hc_vision_src.dir/flags.make
 hc_vision/CMakeFiles/hc_vision_src.dir/src/VideoStream.cpp.o: /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/src/VideoStream.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object hc_vision/CMakeFiles/hc_vision_src.dir/src/VideoStream.cpp.o"
 	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/hc_vision && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/hc_vision_src.dir/src/VideoStream.cpp.o -c /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/src/VideoStream.cpp
 
@@ -169,7 +192,7 @@ hc_vision/CMakeFiles/hc_vision_src.dir/src/VideoStream.cpp.o.provides.build: hc_
 
 hc_vision/CMakeFiles/hc_vision_src.dir/src/FilterRunThread.cpp.o: hc_vision/CMakeFiles/hc_vision_src.dir/flags.make
 hc_vision/CMakeFiles/hc_vision_src.dir/src/FilterRunThread.cpp.o: /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/src/FilterRunThread.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object hc_vision/CMakeFiles/hc_vision_src.dir/src/FilterRunThread.cpp.o"
 	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/hc_vision && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/hc_vision_src.dir/src/FilterRunThread.cpp.o -c /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/src/FilterRunThread.cpp
 
@@ -192,7 +215,7 @@ hc_vision/CMakeFiles/hc_vision_src.dir/src/FilterRunThread.cpp.o.provides.build:
 
 hc_vision/CMakeFiles/hc_vision_src.dir/src/FrontCamera.cpp.o: hc_vision/CMakeFiles/hc_vision_src.dir/flags.make
 hc_vision/CMakeFiles/hc_vision_src.dir/src/FrontCamera.cpp.o: /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/src/FrontCamera.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object hc_vision/CMakeFiles/hc_vision_src.dir/src/FrontCamera.cpp.o"
 	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/hc_vision && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/hc_vision_src.dir/src/FrontCamera.cpp.o -c /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/src/FrontCamera.cpp
 
@@ -215,7 +238,7 @@ hc_vision/CMakeFiles/hc_vision_src.dir/src/FrontCamera.cpp.o.provides.build: hc_
 
 hc_vision/CMakeFiles/hc_vision_src.dir/src/RosNetwork.cpp.o: hc_vision/CMakeFiles/hc_vision_src.dir/flags.make
 hc_vision/CMakeFiles/hc_vision_src.dir/src/RosNetwork.cpp.o: /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/src/RosNetwork.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object hc_vision/CMakeFiles/hc_vision_src.dir/src/RosNetwork.cpp.o"
 	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/hc_vision && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/hc_vision_src.dir/src/RosNetwork.cpp.o -c /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/src/RosNetwork.cpp
 
@@ -238,7 +261,7 @@ hc_vision/CMakeFiles/hc_vision_src.dir/src/RosNetwork.cpp.o.provides.build: hc_v
 
 hc_vision/CMakeFiles/hc_vision_src.dir/src/CamerasController.cpp.o: hc_vision/CMakeFiles/hc_vision_src.dir/flags.make
 hc_vision/CMakeFiles/hc_vision_src.dir/src/CamerasController.cpp.o: /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/src/CamerasController.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object hc_vision/CMakeFiles/hc_vision_src.dir/src/CamerasController.cpp.o"
 	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/hc_vision && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/hc_vision_src.dir/src/CamerasController.cpp.o -c /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/src/CamerasController.cpp
 
@@ -261,7 +284,7 @@ hc_vision/CMakeFiles/hc_vision_src.dir/src/CamerasController.cpp.o.provides.buil
 
 hc_vision/CMakeFiles/hc_vision_src.dir/src/FilterHandler.cpp.o: hc_vision/CMakeFiles/hc_vision_src.dir/flags.make
 hc_vision/CMakeFiles/hc_vision_src.dir/src/FilterHandler.cpp.o: /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/src/FilterHandler.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object hc_vision/CMakeFiles/hc_vision_src.dir/src/FilterHandler.cpp.o"
 	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/hc_vision && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/hc_vision_src.dir/src/FilterHandler.cpp.o -c /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/src/FilterHandler.cpp
 
@@ -284,7 +307,7 @@ hc_vision/CMakeFiles/hc_vision_src.dir/src/FilterHandler.cpp.o.provides.build: h
 
 hc_vision/CMakeFiles/hc_vision_src.dir/src/main.cpp.o: hc_vision/CMakeFiles/hc_vision_src.dir/flags.make
 hc_vision/CMakeFiles/hc_vision_src.dir/src/main.cpp.o: /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/src/main.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object hc_vision/CMakeFiles/hc_vision_src.dir/src/main.cpp.o"
 	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/hc_vision && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/hc_vision_src.dir/src/main.cpp.o -c /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/src/main.cpp
 
@@ -307,7 +330,7 @@ hc_vision/CMakeFiles/hc_vision_src.dir/src/main.cpp.o.provides.build: hc_vision/
 
 hc_vision/CMakeFiles/hc_vision_src.dir/src/CreatedFilter.cpp.o: hc_vision/CMakeFiles/hc_vision_src.dir/flags.make
 hc_vision/CMakeFiles/hc_vision_src.dir/src/CreatedFilter.cpp.o: /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/src/CreatedFilter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles $(CMAKE_PROGRESS_12)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object hc_vision/CMakeFiles/hc_vision_src.dir/src/CreatedFilter.cpp.o"
 	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/hc_vision && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/hc_vision_src.dir/src/CreatedFilter.cpp.o -c /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/src/CreatedFilter.cpp
 
@@ -330,7 +353,7 @@ hc_vision/CMakeFiles/hc_vision_src.dir/src/CreatedFilter.cpp.o.provides.build: h
 
 hc_vision/CMakeFiles/hc_vision_src.dir/src/FilterRun.cpp.o: hc_vision/CMakeFiles/hc_vision_src.dir/flags.make
 hc_vision/CMakeFiles/hc_vision_src.dir/src/FilterRun.cpp.o: /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/src/FilterRun.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object hc_vision/CMakeFiles/hc_vision_src.dir/src/FilterRun.cpp.o"
 	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/hc_vision && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/hc_vision_src.dir/src/FilterRun.cpp.o -c /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/src/FilterRun.cpp
 
@@ -354,6 +377,7 @@ hc_vision/CMakeFiles/hc_vision_src.dir/src/FilterRun.cpp.o.provides.build: hc_vi
 # Object files for target hc_vision_src
 hc_vision_src_OBJECTS = \
 "CMakeFiles/hc_vision_src.dir/Algos/BaseAlgorithm.cpp.o" \
+"CMakeFiles/hc_vision_src.dir/Algos/FirstTask/FirstTaskGate.cpp.o" \
 "CMakeFiles/hc_vision_src.dir/Algos/Utils/ParamUtils.cpp.o" \
 "CMakeFiles/hc_vision_src.dir/Algos/Utils/Utils.cpp.o" \
 "CMakeFiles/hc_vision_src.dir/src/Log.cpp.o" \
@@ -371,6 +395,7 @@ hc_vision_src_OBJECTS = \
 hc_vision_src_EXTERNAL_OBJECTS =
 
 /home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: hc_vision/CMakeFiles/hc_vision_src.dir/Algos/BaseAlgorithm.cpp.o
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: hc_vision/CMakeFiles/hc_vision_src.dir/Algos/FirstTask/FirstTaskGate.cpp.o
 /home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: hc_vision/CMakeFiles/hc_vision_src.dir/Algos/Utils/ParamUtils.cpp.o
 /home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: hc_vision/CMakeFiles/hc_vision_src.dir/Algos/Utils/Utils.cpp.o
 /home/jdorfsman/git/HydraCamel/ROS_PROJECT/devel/lib/hc_vision/hc_vision_src: hc_vision/CMakeFiles/hc_vision_src.dir/src/Log.cpp.o
@@ -447,6 +472,7 @@ hc_vision/CMakeFiles/hc_vision_src.dir/build: /home/jdorfsman/git/HydraCamel/ROS
 .PHONY : hc_vision/CMakeFiles/hc_vision_src.dir/build
 
 hc_vision/CMakeFiles/hc_vision_src.dir/requires: hc_vision/CMakeFiles/hc_vision_src.dir/Algos/BaseAlgorithm.cpp.o.requires
+hc_vision/CMakeFiles/hc_vision_src.dir/requires: hc_vision/CMakeFiles/hc_vision_src.dir/Algos/FirstTask/FirstTaskGate.cpp.o.requires
 hc_vision/CMakeFiles/hc_vision_src.dir/requires: hc_vision/CMakeFiles/hc_vision_src.dir/Algos/Utils/ParamUtils.cpp.o.requires
 hc_vision/CMakeFiles/hc_vision_src.dir/requires: hc_vision/CMakeFiles/hc_vision_src.dir/Algos/Utils/Utils.cpp.o.requires
 hc_vision/CMakeFiles/hc_vision_src.dir/requires: hc_vision/CMakeFiles/hc_vision_src.dir/src/Log.cpp.o.requires

@@ -20,14 +20,8 @@ include_directories(
 
 file(GLOB hc_vision_src_files src/*.cpp)
 file(GLOB hc_algos_src_files 
-	Algos/*.cpp 
-#	Algos/Balls/*.cpp 
-#	Algos/blackGate2/*.cpp
-#	Algos/Gate/*.cpp
-#	Algos/Path/*.cpp
-#	Algos/Shadow/*.cpp
-#	Algos/Torpedo/*.cpp
-#	Algos/Traffic/*.cpp
+	Algos/*.cpp
+  Algos/FirstTask/*.cpp
 	Algos/Utils/*.cpp)
 
 

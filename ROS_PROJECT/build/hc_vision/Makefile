@@ -190,6 +190,30 @@ Algos/BaseAlgorithm.cpp.s:
 	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build && $(MAKE) -f hc_vision/CMakeFiles/hc_vision_src.dir/build.make hc_vision/CMakeFiles/hc_vision_src.dir/Algos/BaseAlgorithm.cpp.s
 .PHONY : Algos/BaseAlgorithm.cpp.s
 
+Algos/FirstTask/FirstTaskGate.o: Algos/FirstTask/FirstTaskGate.cpp.o
+.PHONY : Algos/FirstTask/FirstTaskGate.o
+
+# target to build an object file
+Algos/FirstTask/FirstTaskGate.cpp.o:
+	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build && $(MAKE) -f hc_vision/CMakeFiles/hc_vision_src.dir/build.make hc_vision/CMakeFiles/hc_vision_src.dir/Algos/FirstTask/FirstTaskGate.cpp.o
+.PHONY : Algos/FirstTask/FirstTaskGate.cpp.o
+
+Algos/FirstTask/FirstTaskGate.i: Algos/FirstTask/FirstTaskGate.cpp.i
+.PHONY : Algos/FirstTask/FirstTaskGate.i
+
+# target to preprocess a source file
+Algos/FirstTask/FirstTaskGate.cpp.i:
+	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build && $(MAKE) -f hc_vision/CMakeFiles/hc_vision_src.dir/build.make hc_vision/CMakeFiles/hc_vision_src.dir/Algos/FirstTask/FirstTaskGate.cpp.i
+.PHONY : Algos/FirstTask/FirstTaskGate.cpp.i
+
+Algos/FirstTask/FirstTaskGate.s: Algos/FirstTask/FirstTaskGate.cpp.s
+.PHONY : Algos/FirstTask/FirstTaskGate.s
+
+# target to generate assembly for a file
+Algos/FirstTask/FirstTaskGate.cpp.s:
+	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build && $(MAKE) -f hc_vision/CMakeFiles/hc_vision_src.dir/build.make hc_vision/CMakeFiles/hc_vision_src.dir/Algos/FirstTask/FirstTaskGate.cpp.s
+.PHONY : Algos/FirstTask/FirstTaskGate.cpp.s
+
 Algos/Utils/ParamUtils.o: Algos/Utils/ParamUtils.cpp.o
 .PHONY : Algos/Utils/ParamUtils.o
 
@@ -495,6 +519,9 @@ help:
 	@echo "... Algos/BaseAlgorithm.o"
 	@echo "... Algos/BaseAlgorithm.i"
 	@echo "... Algos/BaseAlgorithm.s"
+	@echo "... Algos/FirstTask/FirstTaskGate.o"
+	@echo "... Algos/FirstTask/FirstTaskGate.i"
+	@echo "... Algos/FirstTask/FirstTaskGate.s"
 	@echo "... Algos/Utils/ParamUtils.o"
 	@echo "... Algos/Utils/ParamUtils.i"
 	@echo "... Algos/Utils/ParamUtils.s"

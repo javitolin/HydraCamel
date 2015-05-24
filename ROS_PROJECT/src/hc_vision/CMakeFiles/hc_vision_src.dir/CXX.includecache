@@ -14,6 +14,12 @@ opencv/cv.h
 MissionControlMessage.h
 /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/Algos/MissionControlMessage.h
 
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/Algos/FirstTask/FirstTaskGate.h
+opencv/cv.h
+-
+../BaseAlgorithm.h
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/Algos/BaseAlgorithm.h
+
 /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/Algos/MissionControlMessage.h
 stdio.h
 /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/Algos/stdio.h
@@ -61,6 +67,8 @@ dlfcn.h
 /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/Algos/Utils/ParamUtils.h
 ../Algos/Utils/Utils.h
 /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/Algos/Utils/Utils.h
+../Algos/FirstTask/FirstTaskGate.h
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/Algos/FirstTask/FirstTaskGate.h
 boost/thread/mutex.hpp
 -
 boost/filesystem.hpp
@@ -153,6 +161,8 @@ sensor_msgs/Image.h
 -
 sensor_msgs/CompressedImage.h
 -
+thread
+-
 
 /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/include/VideoStream.h
 ../include/FilterRun.h
@@ -183,6 +193,22 @@ opencv/cv.h
 -
 opencv2/highgui/highgui.hpp
 -
+
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/src/FilterRun.cpp
+../include/FilterRun.h
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/include/FilterRun.h
+
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/src/FilterRunThread.cpp
+../include/FilterRunThread.h
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/include/FilterRunThread.h
+
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/src/RosNetwork.cpp
+../include/RosNetwork.h
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/include/RosNetwork.h
+
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/src/VideoStream.cpp
+../include/VideoStream.h
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/include/VideoStream.h
 
 /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/src/main.cpp
 boost/asio.hpp

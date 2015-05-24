@@ -314,6 +314,11 @@
 			<location>/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/Algos/BaseAlgorithm.cpp</location>
 		</link>
 		<link>
+			<name>[Targets]/[exe] hc_vision_src/Source Files/FirstTaskGate.cpp</name>
+			<type>1</type>
+			<location>/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/Algos/FirstTask/FirstTaskGate.cpp</location>
+		</link>
+		<link>
 			<name>[Targets]/[exe] hc_vision_src/Source Files/ParamUtils.cpp</name>
 			<type>1</type>
 			<location>/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/Algos/Utils/ParamUtils.cpp</location>

@@ -16,7 +16,7 @@ using namespace cv;
 using namespace FlyCapture2;
 
 string nodeName = "imageDriver";
-string subsName = "imageFromCamera";
+string subsName = "driverChannel";
 const int col_size   = 640;  
 const int row_size   = 480;  
 const int data_size  = row_size * col_size;  
@@ -44,6 +44,21 @@ int main(int argc, char* argv[])
 	ros::NodeHandle nh;
 	image_transport::ImageTransport it(nh);
 	image_transport::Publisher pub = it.advertise(subsName, 1);
+    VideoCapture cap(0);
+    ros::Rate loop_rate(100);
+    for(;;)
+    {
+        Mat frame;
+        cap >> frame;
+        if(nh.ok()){
+            sensor_msgs::ImagePtr msg = cv_bridge::CvImage(std_msgs::Header(), "bgr8", frame).toImageMsg();
+            pub.publish(msg);
+            ros::spinOnce();
+            loop_rate.sleep();
+        }
+    }
+
+    /*
     // Create OpenCV structs for grayscale image  
     img = cvCreateImage( cvSize( col_size, row_size ),  
              IPL_DEPTH_8U,  
@@ -185,7 +200,7 @@ int main(int argc, char* argv[])
     	printf("line 278");
         PrintError( error );  
         return -1;  
-    }   
+    }   */
   
     return 0;  
 }   

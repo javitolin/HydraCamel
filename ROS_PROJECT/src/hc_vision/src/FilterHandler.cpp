@@ -63,6 +63,9 @@ void FilterHandler::loadBuiltinFilters()
 	_frontFilters["Gate"] = new Gate((Traffic*)_frontFilters.at("traffic"));
 	_frontFilters["Gate"]->Init(false);*/
 
+	_frontFilters["FirstTaskGate"] = new FirstTaskGate();
+	_frontFilters["FirstTaskGate"]->Init(false);
+
 	loadParameters(_frontFilters);
 	loadParameters(_bottomFilters);
 
@@ -238,6 +241,9 @@ map<string, BaseAlgorithm*> FilterHandler::instanceGenerator()
 	//IMPORTANT: Don't remove traffic if using Gate
 	_frontFilters["Gate"] = new Gate((Traffic*)_frontFilters.at("traffic"));
 	_frontFilters["Gate"]->Init(false);*/
+
+	_frontFilters["FirstTaskGate"] = new FirstTaskGate();
+	_frontFilters["FirstTaskGate"]->Init(false);
 
 	loadParameters(_frontFilters);
 	loadParameters(_bottomFilters);

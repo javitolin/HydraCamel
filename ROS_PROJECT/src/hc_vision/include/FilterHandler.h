@@ -10,6 +10,7 @@
 #include "../Algos/BaseAlgorithm.h"
 #include "../Algos/Utils/ParamUtils.h"
 #include "../Algos/Utils/Utils.h"
+#include "../Algos/FirstTask/FirstTaskGate.h"
 #include <boost/thread/mutex.hpp>
 #include <boost/filesystem.hpp>
 #include "../include/Log.h"
