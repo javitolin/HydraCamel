@@ -957,17 +957,15 @@ void stop_task(string filterName) {
 	}
 }
 void start_task(string filterName) {
-	BaseAlgorithm* f;
-	map<string, BaseAlgorithm*> filters = filter_handler->getFiltersInMachine();
-	f = filters.at(filterName);
+	BaseAlgorithm* f = filter_handler->getFiltersInMachine().at(filterName);
 	FilterRunThread *frt = new FilterRunThread("driverChannel", true, rosN, f,
 			const_cast<char*>(filterName.c_str()));
 	boost::thread *filterThread = new boost::thread(&FilterRunThread::runFilter,
 			frt);
 	cout << "Starting thread" << endl;
-	filterThread->start_thread();
 	filterThreads.push_back(filterThread);
 	filterRunThreads.push_back(frt);
+	cout << "Starting task: " << filterName << endl;
 }
 
 bool findThreadRunning(string filterName) {
@@ -991,7 +989,7 @@ void chatterCallback(const std_msgs::String::ConstPtr& msg) {
 			start_task("FirstTaskGate");
 		}
 		else{
-			cout << "Thread already running" << endl;
+			//cout << "Thread already running" << endl;
 		}
 	} else if (atoi(data.c_str()) == server_codes["stop_task_1"]) {
 		stop_task("FirstTaskGate");
