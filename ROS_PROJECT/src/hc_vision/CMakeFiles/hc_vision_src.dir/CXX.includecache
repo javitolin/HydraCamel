@@ -123,6 +123,20 @@ RosNetwork.h
 /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/include/RosNetwork.h
 ../Algos/BaseAlgorithm.h
 /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/Algos/BaseAlgorithm.h
+opencv/highgui.h
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/include/opencv/highgui.h
+
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/include/FilterThreadPool.h
+FilterRunThread.h
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/include/FilterRunThread.h
+../Algos/FirstTask/FirstTaskGate.h
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/Algos/FirstTask/FirstTaskGate.h
+RosNetwork.h
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/include/RosNetwork.h
+vector
+-
+string
+-
 
 /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/include/Log.h
 iostream
@@ -149,6 +163,8 @@ ros/ros.h
 -
 opencv/cv.h
 -
+opencv2/highgui/highgui.hpp
+-
 cv_bridge/cv_bridge.h
 -
 std_msgs/String.h
@@ -161,7 +177,7 @@ sensor_msgs/Image.h
 -
 sensor_msgs/CompressedImage.h
 -
-thread
+boost/thread.hpp
 -
 
 /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/include/VideoStream.h
@@ -194,22 +210,6 @@ opencv/cv.h
 opencv2/highgui/highgui.hpp
 -
 
-/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/src/FilterRun.cpp
-../include/FilterRun.h
-/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/include/FilterRun.h
-
-/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/src/FilterRunThread.cpp
-../include/FilterRunThread.h
-/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/include/FilterRunThread.h
-
-/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/src/RosNetwork.cpp
-../include/RosNetwork.h
-/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/include/RosNetwork.h
-
-/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/src/VideoStream.cpp
-../include/VideoStream.h
-/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/include/VideoStream.h
-
 /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/src/main.cpp
 boost/asio.hpp
 -
@@ -239,6 +239,8 @@ string
 /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/include/FilterRun.h
 ../include/FilterRunThread.h
 /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/include/FilterRunThread.h
+../include/FilterThreadPool.h
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/include/FilterThreadPool.h
 
 /opt/ros/indigo/include/XmlRpcDecl.h
 ros/macros.h

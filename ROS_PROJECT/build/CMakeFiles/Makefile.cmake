@@ -29,6 +29,7 @@ SET(CMAKE_MAKEFILE_DEPENDS
   "/opt/ros/indigo/share/catkin/cmake/catkinConfig.cmake"
   "/opt/ros/indigo/share/catkin/cmake/catkin_add_env_hooks.cmake"
   "/opt/ros/indigo/share/catkin/cmake/catkin_destinations.cmake"
+  "/opt/ros/indigo/share/catkin/cmake/catkin_download.cmake"
   "/opt/ros/indigo/share/catkin/cmake/catkin_generate_environment.cmake"
   "/opt/ros/indigo/share/catkin/cmake/catkin_install_python.cmake"
   "/opt/ros/indigo/share/catkin/cmake/catkin_libraries.cmake"
@@ -42,7 +43,6 @@ SET(CMAKE_MAKEFILE_DEPENDS
   "/opt/ros/indigo/share/catkin/cmake/em/pkg.pc.em"
   "/opt/ros/indigo/share/catkin/cmake/em_expand.cmake"
   "/opt/ros/indigo/share/catkin/cmake/empy.cmake"
-  "/opt/ros/indigo/share/catkin/cmake/env-hooks/05.catkin-test-results.sh.develspace.in"
   "/opt/ros/indigo/share/catkin/cmake/find_program_required.cmake"
   "/opt/ros/indigo/share/catkin/cmake/interrogate_setup_dot_py.py"
   "/opt/ros/indigo/share/catkin/cmake/legacy.cmake"
@@ -180,6 +180,7 @@ SET(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 SET(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/clean_test_results.dir/DependInfo.cmake"
+  "CMakeFiles/download_extra_data.dir/DependInfo.cmake"
   "CMakeFiles/doxygen.dir/DependInfo.cmake"
   "CMakeFiles/run_tests.dir/DependInfo.cmake"
   "CMakeFiles/tests.dir/DependInfo.cmake"

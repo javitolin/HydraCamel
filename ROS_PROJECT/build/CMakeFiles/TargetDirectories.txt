@@ -1,6 +1,7 @@
 /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/camera_driver/CMakeFiles/camera_driver_receiver.dir
 /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/camera_driver/CMakeFiles/camera_driver_sender.dir
 /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles/clean_test_results.dir
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles/download_extra_data.dir
 /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/CMakeFiles/doxygen.dir
 /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/camera_driver/CMakeFiles/geometry_msgs_generate_messages_cpp.dir
 /home/jdorfsman/git/HydraCamel/ROS_PROJECT/build/camera_driver/CMakeFiles/geometry_msgs_generate_messages_lisp.dir

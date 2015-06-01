@@ -354,6 +354,11 @@
 			<location>/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/src/RosNetwork.cpp</location>
 		</link>
 		<link>
+			<name>[Targets]/[exe] hc_vision_src/Source Files/FilterThreadPool.cpp</name>
+			<type>1</type>
+			<location>/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/src/FilterThreadPool.cpp</location>
+		</link>
+		<link>
 			<name>[Targets]/[exe] hc_vision_src/Source Files/CamerasController.cpp</name>
 			<type>1</type>
 			<location>/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/src/CamerasController.cpp</location>

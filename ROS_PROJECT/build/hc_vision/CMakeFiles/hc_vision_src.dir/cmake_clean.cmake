@@ -8,6 +8,7 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/hc_vision_src.dir/src/FilterRunThread.cpp.o"
   "CMakeFiles/hc_vision_src.dir/src/FrontCamera.cpp.o"
   "CMakeFiles/hc_vision_src.dir/src/RosNetwork.cpp.o"
+  "CMakeFiles/hc_vision_src.dir/src/FilterThreadPool.cpp.o"
   "CMakeFiles/hc_vision_src.dir/src/CamerasController.cpp.o"
   "CMakeFiles/hc_vision_src.dir/src/FilterHandler.cpp.o"
   "CMakeFiles/hc_vision_src.dir/src/main.cpp.o"

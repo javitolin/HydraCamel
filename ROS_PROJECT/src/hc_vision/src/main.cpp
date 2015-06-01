@@ -20,6 +20,7 @@
 #include "../include/VideoStream.h"
 #include "../include/FilterRun.h"
 #include "../include/FilterRunThread.h"
+#include "../include/FilterThreadPool.h"
 using namespace std;
 using boost::asio::ip::tcp;
 RosNetwork *rosN;
@@ -44,6 +45,7 @@ vector<boost::thread*> filterThreads;
 vector<FilterRunThread*> filterRunThreads;
 ros::Publisher chatter_pub;
 boost::mutex _mutex;
+FilterThreadPool* _filterThreadPool;
 
 /*
  * Receives a command ,and prints to log what the server does next
@@ -956,41 +958,22 @@ void stop_task(string filterName) {
 		}
 	}
 }
-void start_task(string filterName) {
-	BaseAlgorithm* f = filter_handler->getFiltersInMachine().at(filterName);
-	FilterRunThread *frt = new FilterRunThread("driverChannel", true, rosN, f,
-			const_cast<char*>(filterName.c_str()));
-	boost::thread *filterThread = new boost::thread(&FilterRunThread::runFilter,
-			frt);
-	cout << "Starting thread" << endl;
-	filterThreads.push_back(filterThread);
-	filterRunThreads.push_back(frt);
-	cout << "Starting task: " << filterName << endl;
-}
-
-bool findThreadRunning(string filterName) {
-	for (unsigned int i = 0; i < filterThreads.size(); i++) {
-		FilterRunThread *f = filterRunThreads[i];
-		if (strcmp(f->getFilterName(), filterName.c_str()) == 0) {
-			return true;
-		}
+void start_task(int filterNum) {
+	FilterRunThread *frt = _filterThreadPool->useFilter(filterNum - 1);
+	if (frt != 0) {
+		boost::thread *filterThread = new boost::thread(
+				&FilterRunThread::runFilter, frt);
+		cout << "Starting thread" << endl;
+		filterThreads.push_back(filterThread);
+		filterRunThreads.push_back(frt);
 	}
-	return false;
 }
 
 void chatterCallback(const std_msgs::String::ConstPtr& msg) {
 	_mutex.lock();
-	chatter_pub.publish(msg);
-	ros::spinOnce();
 	string data = msg.get()->data;
 	if (atoi(data.c_str()) == server_codes["start_task_1"]) {
-		if(!findThreadRunning("FirstTaskGate")){
-			cout << "Starting task FirstTaskGate" << endl;
-			start_task("FirstTaskGate");
-		}
-		else{
-			//cout << "Thread already running" << endl;
-		}
+		start_task(1);
 	} else if (atoi(data.c_str()) == server_codes["stop_task_1"]) {
 		stop_task("FirstTaskGate");
 	}
@@ -1002,6 +985,7 @@ int main(int argc, char* argv[]) {
 	init();
 	ros::init(argc, argv, "listener");
 	rosN = new RosNetwork();
+	_filterThreadPool = new FilterThreadPool(rosN);
 	ros::NodeHandle n;
 	ros::Subscriber sub = n.subscribe("chatter", 1, chatterCallback);
 	chatter_pub = n.advertise<std_msgs::String>("subChatter", 1000);
@@ -1064,7 +1048,7 @@ int main(int argc, char* argv[]) {
 		 stop_task("FirstTaskGate");
 		 */
 		ros::spinOnce();
-		rate.sleep();
+		//rate.sleep();
 	}
 
 	return 0;
