@@ -41,10 +41,6 @@ char buf [80];
 void imageCallback(const sensor_msgs::ImageConstPtr& msg) {
 	try {
 		image = cv_bridge::toCvShare(msg, "bgr8")->image;
-		/*time(&t);
-		ptr = localtime(&t);
-		strftime (buf,80,"%d-%m-%Y_%I:%M:%S.jpg",ptr);
-		imwrite(buf,image);*/
 		found = true;
 	} catch (cv_bridge::Exception& e) {
 		ROS_ERROR("Could not convert from '%s' to 'bgr8'.",

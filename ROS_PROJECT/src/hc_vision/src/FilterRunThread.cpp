@@ -24,7 +24,6 @@ void FilterRunThread::runFilter() {
 		if (!mat.empty()) {
 			_filter->MakeCopyAndRun(mat);
 			Mat newImage;
-			//_filter->Draw(newImage);
 		}
 		/*VideoWriter vw("myVideo.avi",CV_FOURCC('M','J','P','G'),25,Size(640,480),1);
 		 vw << mat;*/

@@ -30,7 +30,7 @@ public:
 	/* get a image and run the algorithm on it.
 	 * the algorithm is allowed to change the image.
 	 */
-	virtual void Run(Mat& image) = 0;
+	virtual void Run(Mat image) = 0;
 
 	/* set the parameters of the algorithm.
 	 * params is containing ALL the parameters of the algorithm
