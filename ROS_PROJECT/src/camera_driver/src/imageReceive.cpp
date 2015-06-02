@@ -1,6 +1,7 @@
 #include <ros/ros.h>
 #include <image_transport/image_transport.h>
 #include <opencv2/highgui/highgui.hpp>
+#include <opencv/cv.h>
 #include <cv_bridge/cv_bridge.h>
 #include <sstream>
 #include <fstream>
@@ -20,7 +21,9 @@ void imageCallback(const sensor_msgs::ImageConstPtr& msg)
 	try
 	{
 		cv::Mat img = cv_bridge::toCvShare(msg, "bgr8")->image;
-		cv::imshow("view", img);
+		cv::Mat bw;
+		cv::cvtColor(img,bw, CV_BGR2GRAY);
+		cv::imshow("view", bw);
 		video.write(img);
 		cv::waitKey(30);
 	}

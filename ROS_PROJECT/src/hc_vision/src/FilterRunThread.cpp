@@ -16,36 +16,33 @@ FilterRunThread::FilterRunThread(char* imageSrcChannel, bool camera,
 	_filterChannel = filterChannel;
 }
 void FilterRunThread::runFilter() {
-	cvNamedWindow("MYWINDOW", CV_WINDOW_AUTOSIZE);
+	cvNamedWindow("BEFORE", CV_WINDOW_AUTOSIZE);
+	cvNamedWindow("AFTER", CV_WINDOW_AUTOSIZE);
 	while (1) {
 		cout << "Running filter" << endl;
 		vector<MissionControlMessage> vec;
-		Mat mat = _ros->getImage(_driverChannel);
+		Mat mat;
+		_ros->getFrontImage(mat);
 		if (!mat.empty()) {
+			imshow("BEFORE", mat);
 			_filter->MakeCopyAndRun(mat);
+			imshow("AFTER", mat);
+			waitKey(30);
 			Mat newImage;
+			_filter->Draw(newImage);
+			_filter->ToMesseges(vec);
+			cout << "The Messages were retrieved" << endl;
+			for (unsigned int i = 0; i < vec.size(); i++) {
+				MissionControlMessage m = vec[i];
+				_ros->sendMessage("Message", _filterChannel);
+			}
+			cout << "The messages were sent" << endl;
+		} else {
+			cout << "image was empty" << endl;
 		}
-		/*VideoWriter vw("myVideo.avi",CV_FOURCC('M','J','P','G'),25,Size(640,480),1);
-		 vw << mat;*/
-		cout << "Image was obtained" << endl;
-		//_filter->MakeCopyAndRun(mat);
-		/*cout << "The filter was ran over the image" << endl;
-		 Mat newImage;
-		 _filter->Draw(newImage);
-		 cvNamedWindow("MYWINDOW", CV_WINDOW_AUTOSIZE);
-		 imshow("MYWINDOW", newImage);
-		 waitKey(30);
-		 cout << "The new image was drawn" << endl;
-		 _filter->ToMesseges(vec);
-		 cout << "The Messages were retrieved" << endl;
-		 for (unsigned int i = 0; i < vec.size(); i++) {
-		 MissionControlMessage m = vec[i];
-		 _ros->sendMessage("Message", _filterChannel);
-		 }
-		 cout << "The messages were sent" << endl;*/
 	}
 }
 FilterRunThread::~FilterRunThread() {
-	// TODO Auto-generated destructor stub
+// TODO Auto-generated destructor stub
 }
 

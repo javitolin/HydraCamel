@@ -27,10 +27,8 @@ void BaseAlgorithm::MakeCopyAndRun(const Mat& image)
 {
 	try
 	{
-		Mat copy(image);
-		image.copyTo(copy);
 		Logs.clear();
-		Run(copy);
+		Run(image);
 		fixResults(_offset);
 	} catch (std::exception& e)
 	{

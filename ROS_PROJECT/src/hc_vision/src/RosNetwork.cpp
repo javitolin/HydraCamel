@@ -32,28 +32,53 @@ void RosNetwork::sendImage(Mat img, string channel) {
 	ros::spinOnce();
 	_mtx.unlock();
 }
-Mat image;
+
+Mat frontImage;
+Mat bottomImage;
 bool found = false;
 long counter = 0;
 time_t t;
 struct tm * ptr;
 char buf [80];
-void imageCallback(const sensor_msgs::ImageConstPtr& msg) {
+Mutex _mux;
+
+void frontImageCallback(const sensor_msgs::ImageConstPtr& msg) {
+	_mux.lock();
 	try {
-		image = cv_bridge::toCvShare(msg, "bgr8")->image;
-		found = true;
+		frontImage = cv_bridge::toCvShare(msg, "bgr8")->image;
 	} catch (cv_bridge::Exception& e) {
 		ROS_ERROR("Could not convert from '%s' to 'bgr8'.",
 				msg->encoding.c_str());
 	}
+	_mux.unlock();
 }
-Mat RosNetwork::getImage(string channel) {
-	ros::NodeHandle nh;
-	image_transport::ImageTransport it(nh);
-	image_transport::Subscriber sub = it.subscribe(channel, 1, imageCallback);
-	while (!found)
-		ros::spinOnce();
-	found = false;
-	return image;
+void bottomImageCallback(const sensor_msgs::ImageConstPtr& msg) {
+	_mux.lock();
+	try {
+		bottomImage = cv_bridge::toCvShare(msg, "bgr8")->image;
+	} catch (cv_bridge::Exception& e) {
+		ROS_ERROR("Could not convert from '%s' to 'bgr8'.",
+				msg->encoding.c_str());
+	}
+	_mux.unlock();
+}
+
+
+
+void RosNetwork::subscribeOnChannels(ros::NodeHandle nh) {
+	static ros::NodeHandle _nh;
+	static image_transport::ImageTransport it(_nh);
+	static image_transport::Subscriber sub = it.subscribe("driverChannel", 1, frontImageCallback);
+}
+
+void RosNetwork::getBottomImage(Mat & mat) {
+	_mux.lock();
+	bottomImage.copyTo(mat);
+	_mux.unlock();
+}
+void RosNetwork::getFrontImage(Mat & mat) {
+	_mux.lock();
+	frontImage.copyTo(mat);
+	_mux.unlock();
 }
 

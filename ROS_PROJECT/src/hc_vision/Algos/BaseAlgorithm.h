@@ -85,7 +85,7 @@ protected:
 
 	virtual void fixResults(Point offset)
 	{
-
+		//cout << "fix results" << endl;
 	}
 
 public:

@@ -989,10 +989,12 @@ int main(int argc, char* argv[]) {
 	ros::NodeHandle n;
 	ros::Subscriber sub = n.subscribe("chatter", 1, chatterCallback);
 	chatter_pub = n.advertise<std_msgs::String>("subChatter", 1000);
+	rosN->subscribeOnChannels(n);
 	/*
 	 * When a client wants to do something, first of all it sends 3 bytes representing the server code.
 	 * Then, every feature has different step the client has to follow in order to complete the operation successfully.
 	 */
+	//ros::spin();
 	ros::Rate rate(10);
 	while (1) {
 		/*int command = receiveCode();

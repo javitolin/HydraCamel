@@ -25,7 +25,9 @@ public:
 	RosNetwork();
 	void sendMessage(string, string);
 	void sendImage(Mat, string);
-	Mat getImage(string);
+	void getFrontImage(Mat&);
+	void getBottomImage(Mat&);
+	void subscribeOnChannels(ros::NodeHandle);
 private:
 	ros::NodeHandle _n;
 	boost::mutex _mtx;
