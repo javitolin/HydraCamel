@@ -13,11 +13,24 @@ RM := rm -rf
 -include Algos/Utils/subdir.mk
 -include Algos/Traffic/subdir.mk
 -include Algos/Torpedo/subdir.mk
+-include Algos/ThirdTask/subdir.mk
 -include Algos/Shadow/subdir.mk
 -include Algos/Path/subdir.mk
 -include Algos/JaviTest/subdir.mk
 -include Algos/Gate/subdir.mk
 -include Algos/FirstTask/subdir.mk
+-include Algos/Debug/blackGate2/subdir.mk
+-include Algos/Debug/Utils/subdir.mk
+-include Algos/Debug/Traffic/subdir.mk
+-include Algos/Debug/Torpedo/subdir.mk
+-include Algos/Debug/Shadow/subdir.mk
+-include Algos/Debug/Path/subdir.mk
+-include Algos/Debug/JaviTest/subdir.mk
+-include Algos/Debug/Gate/subdir.mk
+-include Algos/Debug/FirstTask/subdir.mk
+-include Algos/Debug/BlackBox/subdir.mk
+-include Algos/Debug/Balls/subdir.mk
+-include Algos/Debug/subdir.mk
 -include Algos/Balls/subdir.mk
 -include Algos/subdir.mk
 -include subdir.mk
@@ -55,7 +68,7 @@ all: LocalHydroCamel
 LocalHydroCamel: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GCC C++ Linker'
-	g++ -L/usr/local/lib -L"/home/jdorfsman/ROS_ws/src/hc_server" -o "LocalHydroCamel" $(OBJS) $(USER_OBJS) $(LIBS)
+	g++ -L/usr/local/lib -o "LocalHydroCamel" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 

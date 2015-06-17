@@ -22,6 +22,9 @@ src/FilterHandler.d: ../src/FilterHandler.cpp \
  ../src/../include/../Algos/JaviTest/../BaseAlgorithm.h \
  ../src/../include/../Algos/FirstTask/FirstTaskGate.h \
  ../src/../include/../Algos/FirstTask/../BaseAlgorithm.h \
+ /usr/local/include/opencv/highgui.h \
+ ../src/../include/../Algos/FirstTask/../Utils/Utils.h \
+ ../src/../include/../Algos/FirstTask/../Utils/ParamUtils.h \
  ../src/../include/../include/Log.h \
  ../src/../include/../include/CreatedFilter.h \
  ../src/../include/../include/../Algos/BaseAlgorithm.h
@@ -71,6 +74,12 @@ src/FilterHandler.d: ../src/FilterHandler.cpp \
 ../src/../include/../Algos/FirstTask/FirstTaskGate.h:
 
 ../src/../include/../Algos/FirstTask/../BaseAlgorithm.h:
+
+/usr/local/include/opencv/highgui.h:
+
+../src/../include/../Algos/FirstTask/../Utils/Utils.h:
+
+../src/../include/../Algos/FirstTask/../Utils/ParamUtils.h:
 
 ../src/../include/../include/Log.h:
 

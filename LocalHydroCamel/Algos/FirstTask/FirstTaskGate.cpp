@@ -6,19 +6,7 @@
  */
 
 #include "FirstTaskGate.h"
-#include "opencv2/imgproc/imgproc.hpp"
-#include "opencv2/highgui/highgui.hpp"
-#include "highgui.h"
-#include <stdlib.h>
-#include <stdio.h>
-#include <iostream>
-#include <fstream>
-#include <dirent.h>
-#include <sys/types.h>
-#include "../Utils/Utils.h"
-#include "../Utils/ParamUtils.h"
-using namespace cv;
-using namespace std;
+
 
 /// Global variables
 Mat drawedImage;

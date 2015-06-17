@@ -5,8 +5,8 @@
  *      Author: jdorfsman
  */
 
-#ifndef FIRSTTASKGATE_H_
-#define FIRSTTASKGATE_H_
+#ifndef THIRDTASKBLACK_H_
+#define THIRDTASKBLACK_H_
 
 #include <opencv/cv.h>
 #include "../BaseAlgorithm.h"
@@ -23,11 +23,11 @@
 #include "../Utils/ParamUtils.h"
 using namespace cv;
 using namespace std;
-class FirstTaskGate : public BaseAlgorithm
+class ThirdTaskBlackBox : public BaseAlgorithm
 {
 public:
-	FirstTaskGate();
-	virtual ~FirstTaskGate();
+	ThirdTaskBlackBox();
+	virtual ~ThirdTaskBlackBox();
 	virtual void Run(Mat&);
 	virtual void Load(map<string, string>& params);
 	virtual void ToMesseges(vector<MissionControlMessage>& res);
