@@ -1,6 +1,7 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/hc_vision_src.dir/Algos/BaseAlgorithm.cpp.o"
   "CMakeFiles/hc_vision_src.dir/Algos/FirstTask/FirstTaskGate.cpp.o"
+  "CMakeFiles/hc_vision_src.dir/Algos/ThirdTask/ThirdTaskBlackBox.cpp.o"
   "CMakeFiles/hc_vision_src.dir/Algos/Utils/ParamUtils.cpp.o"
   "CMakeFiles/hc_vision_src.dir/Algos/Utils/Utils.cpp.o"
   "CMakeFiles/hc_vision_src.dir/src/Log.cpp.o"

@@ -132,6 +132,8 @@ void initCodes() {
 	server_codes["filters_in_machine"] = 114;
 	server_codes["start_task_1"] = 201;
 	server_codes["stop_task_1"] = 211;
+	server_codes["start_task_2"] = 202;
+	server_codes["stop_task_2"] = 212;
 
 }
 
@@ -307,7 +309,7 @@ void init() {
 	//	stream_initiated = false;
 	filter_handler = new FilterHandler(_log);
 	filter_run = new FilterRun(filter_handler, _log, rosN);
-	//initNetwork();
+	initNetwork();
 }
 
 /*
@@ -946,14 +948,12 @@ void recordUnfiltered(bool start) {
 		//Stop recording
 		video_stream->stopRecordUnfiltered(use_front_camera);
 }
-void stop_task(string filterName) {
-
-	for (unsigned int i = 0; i < filterRunThreads.size(); i++) {
-		FilterRunThread *f = filterRunThreads[i];
-		if (strcmp(f->getFilterName(), filterName.c_str()) == 0) {
-			filterThreads[i]->interrupt();
-			filterRunThreads.erase(filterRunThreads.begin() + i);
+void stop_task(int filterNum) {
+	for(unsigned int i = 0; i < filterRunThreads.size(); i++){
+		if(filterRunThreads.at(i)->getFilterNum() == filterNum){
+			filterThreads.at(i)->interrupt();
 			filterThreads.erase(filterThreads.begin() + i);
+			filterRunThreads.erase(filterRunThreads.begin() + i);
 			break;
 		}
 	}
@@ -970,88 +970,91 @@ void start_task(int filterNum) {
 }
 
 void chatterCallback(const std_msgs::String::ConstPtr& msg) {
-	_mutex.lock();
 	string data = msg.get()->data;
-	if (atoi(data.c_str()) == server_codes["start_task_1"]) {
+	int codeReceived = atoi(data.c_str());
+	if(codeReceived == server_codes["start_task_1"])
 		start_task(1);
-	} else if (atoi(data.c_str()) == server_codes["stop_task_1"]) {
-		stop_task("FirstTaskGate");
-	}
-	_mutex.unlock();
+	else if(codeReceived == server_codes["start_task_2"])
+			start_task(2);
+	else if(codeReceived == server_codes["stop_task_1"])
+			stop_task(1);
+	else if(codeReceived == server_codes["stop_task_2"])
+			stop_task(2);
+	else
+		printf("Code %d not recognized\n",codeReceived);
 }
-int main(int argc, char* argv[]) {
-	//boost::thread *initThread = new boost::thread(init);
-	//initThread->start_thread();
-	init();
-	ros::init(argc, argv, "listener");
+void startRosConnection() {
 	rosN = new RosNetwork();
+	cout << "here" << endl << flush;
 	_filterThreadPool = new FilterThreadPool(rosN);
 	ros::NodeHandle n;
 	ros::Subscriber sub = n.subscribe("chatter", 1, chatterCallback);
 	chatter_pub = n.advertise<std_msgs::String>("subChatter", 1000);
 	rosN->subscribeOnChannels(n);
-	/*
-	 * When a client wants to do something, first of all it sends 3 bytes representing the server code.
-	 * Then, every feature has different step the client has to follow in order to complete the operation successfully.
-	 */
-	//ros::spin();
-	ros::Rate rate(10);
+	ros::spin();
+
+}
+void startTcpNetwork() {
+	init();
 	while (1) {
-		/*int command = receiveCode();
-		 commandLog(command);
-
-		 if (command == server_codes["config"])
-		 changeConfig();
-
-		 else if (command == server_codes["start_stream"])
-		 startStream();
-
-		 else if (command == server_codes["end_stream"])
-		 endStream();
-
-		 else if (command == server_codes["unordered_filter_list"])
-		 changeList(true);
-
-		 else if (command == server_codes["chain_filter_list"])
-		 changeList(false);
-
-		 else if (command == server_codes["add_filter"])
-		 addFilter();
-
-		 else if (command == server_codes["end_contact"])
-		 endContact();
-
-		 else if (command == server_codes["start_recording_filters"])
-		 record(true);
-
-		 else if (command == server_codes["stop_recording_filters"])
-		 record(false);
-
-		 else if (command == server_codes["send_disk_stats"])
-		 sendHDDStats();
-
-		 else if (command == server_codes["record_unfiltered"])
-		 recordUnfiltered(true);
-
-		 else if (command == server_codes["stop_recording_unfiltered"])
-		 recordUnfiltered(false);
-
-		 else if (command == server_codes["delete_filter"])
-		 deleteFilter();
-
-		 else if (command == server_codes["create_filter"])
-		 createFilter();
-
-		 else if (command == server_codes["filters_in_machine"])
-		 sendFiltersInMachine();
-		 else if (command == server_codes["start_task_1"])
-		 start_task("FirstTaskGate");
-		 else if (command == server_codes["stop_task_1"])
-		 stop_task("FirstTaskGate");
+		/*
+		 * When a client wants to do something, first of all it sends 3 bytes representing the server code.
+		 * Then, every feature has different step the client has to follow in order to complete the operation successfully.
 		 */
-		ros::spinOnce();
-		//rate.sleep();
-	}
+		int command = receiveCode();
+		commandLog(command);
 
+		if (command == server_codes["config"])
+			changeConfig();
+
+		else if (command == server_codes["start_stream"])
+			startStream();
+
+		else if (command == server_codes["end_stream"])
+			endStream();
+
+		else if (command == server_codes["unordered_filter_list"])
+			changeList(true);
+
+		else if (command == server_codes["chain_filter_list"])
+			changeList(false);
+
+		else if (command == server_codes["add_filter"])
+			addFilter();
+
+		else if (command == server_codes["end_contact"])
+			endContact();
+
+		else if (command == server_codes["start_recording_filters"])
+			record(true);
+
+		else if (command == server_codes["stop_recording_filters"])
+			record(false);
+
+		else if (command == server_codes["send_disk_stats"])
+			sendHDDStats();
+
+		else if (command == server_codes["record_unfiltered"])
+			recordUnfiltered(true);
+
+		else if (command == server_codes["stop_recording_unfiltered"])
+			recordUnfiltered(false);
+
+		else if (command == server_codes["delete_filter"])
+			deleteFilter();
+
+		else if (command == server_codes["create_filter"])
+			createFilter();
+
+		else if (command == server_codes["filters_in_machine"])
+			sendFiltersInMachine();
+	}
+}
+int main(int argc, char* argv[]) {
+	ros::init(argc, argv, "listener");
+	boost::thread rosConnectionThread(startRosConnection);
+	boost::thread tcpConnectionThread(startTcpNetwork);
+	tcpConnectionThread.join();
+	rosConnectionThread.join();
 	return 0;
 }

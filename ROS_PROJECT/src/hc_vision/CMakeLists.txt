@@ -22,6 +22,7 @@ file(GLOB hc_vision_src_files src/*.cpp src/FilterThreadPool.cpp)
 file(GLOB hc_algos_src_files 
 	Algos/*.cpp
   Algos/FirstTask/*.cpp
+  Algos/ThirdTask/*.cpp
 	Algos/Utils/*.cpp)
 
 

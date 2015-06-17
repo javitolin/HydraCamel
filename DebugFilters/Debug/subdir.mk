@@ -7,18 +7,21 @@ CPP_SRCS += \
 ../BaseAlgorithm.cpp \
 ../BlackBoxDebugAlgorithm.cpp \
 ../GateDebugAlgorithm.cpp \
+../dani.cpp \
 ../main.cpp 
 
 OBJS += \
 ./BaseAlgorithm.o \
 ./BlackBoxDebugAlgorithm.o \
 ./GateDebugAlgorithm.o \
+./dani.o \
 ./main.o 
 
 CPP_DEPS += \
 ./BaseAlgorithm.d \
 ./BlackBoxDebugAlgorithm.d \
 ./GateDebugAlgorithm.d \
+./dani.d \
 ./main.d 
 
 

@@ -9,6 +9,7 @@
 #define SRC_FILTERTHREADPOOL_H_
 #include "FilterRunThread.h"
 #include "../Algos/FirstTask/FirstTaskGate.h"
+#include "../Algos/ThirdTask/ThirdTaskBlackBox.h"
 #include "RosNetwork.h"
 #include <vector>
 #include <string>
