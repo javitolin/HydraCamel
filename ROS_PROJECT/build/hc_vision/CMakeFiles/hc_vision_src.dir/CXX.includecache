@@ -14,23 +14,13 @@ opencv/cv.h
 MissionControlMessage.h
 /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/Algos/MissionControlMessage.h
 
-/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/Algos/MissionControlMessage.h
-stdio.h
-/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/Algos/stdio.h
-
-/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/Algos/ThirdTask/ThirdTaskBlackBox.cpp
-../ThirdTask/ThirdTaskBlackBox.h
-/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/Algos/ThirdTask/ThirdTaskBlackBox.h
-
-/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/Algos/ThirdTask/ThirdTaskBlackBox.h
-opencv/cv.h
--
-../BaseAlgorithm.h
-/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/Algos/BaseAlgorithm.h
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/Algos/FirstTask/FirstTaskGate.cpp
+FirstTaskGate.h
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/Algos/FirstTask/FirstTaskGate.h
 opencv2/imgproc/imgproc.hpp
-/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/Algos/ThirdTask/opencv2/imgproc/imgproc.hpp
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/Algos/FirstTask/opencv2/imgproc/imgproc.hpp
 opencv2/highgui/highgui.hpp
-/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/Algos/ThirdTask/opencv2/highgui/highgui.hpp
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/Algos/FirstTask/opencv2/highgui/highgui.hpp
 stdlib.h
 -
 stdio.h
@@ -47,6 +37,16 @@ sys/types.h
 /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/Algos/Utils/Utils.h
 ../Utils/ParamUtils.h
 /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/Algos/Utils/ParamUtils.h
+
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/Algos/FirstTask/FirstTaskGate.h
+opencv/cv.h
+-
+../BaseAlgorithm.h
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/Algos/BaseAlgorithm.h
+
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/Algos/MissionControlMessage.h
+stdio.h
+/home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/Algos/stdio.h
 
 /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/Algos/Utils/ParamUtils.h
 map

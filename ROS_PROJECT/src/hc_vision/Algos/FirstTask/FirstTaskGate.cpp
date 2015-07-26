@@ -29,7 +29,7 @@ int morph_size = 0;
 int morph_operator = 0;
 int const max_operator = 4;
 int edgeThresh = 1;
-int lowThreshold;
+int lowThreshold = 8;
 int const max_lowThreshold = 100;
 int ratio = 3;
 int canny_kernel_size = 3;

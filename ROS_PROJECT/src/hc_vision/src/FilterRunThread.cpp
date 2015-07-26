@@ -25,7 +25,8 @@ void FilterRunThread::runFilter() {
 	//beforeWindow += itos(_filterNum);
 	cout << beforeWindow << endl << flush;
 	//string afterWindow = "AFTER_" + _filterNum;
-	if(_filterNum == 2){
+	int test = 1;
+	if(_filterNum == test){
 	cvNamedWindow(beforeWindow, CV_WINDOW_AUTOSIZE);
 	cvNamedWindow(afterWindow, CV_WINDOW_AUTOSIZE);
 	}
@@ -35,12 +36,12 @@ void FilterRunThread::runFilter() {
 		Mat mat;
 		_ros->getFrontImage(mat);
 		if (!mat.empty()) {
-			if(_filterNum == 2)
+			if(_filterNum == test)
 				imshow(beforeWindow, mat);
 			_filter->MakeCopyAndRun(mat);
 			Mat newImage;
 			_filter->Draw(newImage);
-			if(_filterNum == 2){
+			if(_filterNum == test){
 				imshow(afterWindow, newImage);
 				waitKey(30);
 			}
