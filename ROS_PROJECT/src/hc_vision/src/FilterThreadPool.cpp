@@ -45,7 +45,7 @@ bool FilterThreadPool::generateFilters(RosNetwork* rosN,Log* _log) {
 		secondTaskFilter->Load(args);
 	} catch (ParameterException& e)
 	{
-		_log->printLog("FilterThreadPool::generateFilters",  "problem in loading parameters of " + firstTaskConfig + ":" + e.what() ,"Error");
+		_log->printLog("FilterThreadPool::generateFilters",  "problem in loading parameters of " + blackBoxConfig + ":" + e.what() ,"Error");
 		return false;
 	}
 
