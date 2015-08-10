@@ -1,0 +1,5 @@
+﻿roscore
+cd git/HydraCamel/ROS_PROJECT
+catkin_make
+roscd camera_input
+rosrun camera_input 
