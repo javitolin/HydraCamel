@@ -37,7 +37,7 @@ public class Connection {
 	public ArrayList<String> connect()
 	{
 		try {
-			this.tcpSocket = new Socket("localhost", 5000);
+			this.tcpSocket = new Socket("169.254.1.70", 5000);
 			this.outToServer = new DataOutputStream( tcpSocket.getOutputStream() );
 			//			this.inFromServer = new BufferedInputStream(tcpSocket.getInputStream());
 			this.inFromServer = new DataInputStream(tcpSocket.getInputStream());

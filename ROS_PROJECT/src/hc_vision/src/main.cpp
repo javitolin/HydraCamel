@@ -949,11 +949,13 @@ void recordUnfiltered(bool start) {
 		video_stream->stopRecordUnfiltered(use_front_camera);
 }
 void stop_task(int filterNum) {
+	cout << "stopping filter " << filterNum << endl;
 	for(unsigned int i = 0; i < filterRunThreads.size(); i++){
 		if(filterRunThreads.at(i)->getFilterNum() == filterNum){
 			filterThreads.at(i)->interrupt();
 			filterThreads.erase(filterThreads.begin() + i);
 			filterRunThreads.erase(filterRunThreads.begin() + i);
+			printf(_filterThreadPool->unUseFilter(filterNum-1) ? "Filter released\n" : "Error while releasing\n");
 			break;
 		}
 	}
@@ -966,6 +968,9 @@ void start_task(int filterNum) {
 		cout << "Starting thread" << endl;
 		filterThreads.push_back(filterThread);
 		filterRunThreads.push_back(frt);
+	}
+	else{
+		cout << "Filter: " << filterNum << " not found" << endl;
 	}
 }
 
@@ -985,11 +990,11 @@ void chatterCallback(const std_msgs::String::ConstPtr& msg) {
 }
 void startRosConnection() {
 	rosN = new RosNetwork();
-	cout << "here" << endl << flush;
-	_filterThreadPool = new FilterThreadPool(rosN);
+	_filterThreadPool = new FilterThreadPool();
+	_filterThreadPool->generateFilters(rosN,_log);
 	ros::NodeHandle n;
-	ros::Subscriber sub = n.subscribe("chatter", 1, chatterCallback);
-	chatter_pub = n.advertise<std_msgs::String>("subChatter", 1000);
+	ros::Subscriber subTests = n.subscribe("PythonTests", 10, chatterCallback); //Subscribing to the python tests channel
+	ros::Subscriber subReal = n.subscribe("CaC", 10, chatterCallback); //Subscribing to the command and control channel
 	rosN->subscribeOnChannels(n);
 	ros::spin();
 
@@ -1051,7 +1056,7 @@ void startTcpNetwork() {
 	}
 }
 int main(int argc, char* argv[]) {
-	ros::init(argc, argv, "listener");
+	ros::init(argc, argv, "IPU");
 	boost::thread rosConnectionThread(startRosConnection);
 	boost::thread tcpConnectionThread(startTcpNetwork);
 	tcpConnectionThread.join();

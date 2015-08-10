@@ -7,6 +7,7 @@
 #include <fstream>
 #include <dirent.h>
 #include <sys/types.h>
+#include <ctime>
 using namespace cv;
 using namespace std;
 
@@ -26,9 +27,10 @@ void blackbox(int, void*);
 /** @function main */
 int boxDebug( int argc, char** argv )
 {
+	string folderName = "black";
 	DIR *dp;
 	struct dirent *dirp;
-	if((dp  = opendir(".")) == NULL) {
+	if((dp  = opendir(folderName.c_str())) == NULL) {
 		cout << "Error: opening root folder" << endl;
 		return -1;
 	}
@@ -38,10 +40,9 @@ int boxDebug( int argc, char** argv )
 	while ((dirp = readdir(dp)) != NULL) {
 		string currFile = string(dirp->d_name);
 		if(currFile.find(".") != string::npos){
-			if(currFile.substr(0, 5).compare("black") == 0){
-				if(currFile.substr(currFile.find_last_of(".")).compare(".png") == 0){
-					filesToCheck.push_back(currFile);
-				}
+			if(currFile.substr(currFile.find_last_of(".")).compare(".png") == 0
+					|| currFile.substr(currFile.find_last_of(".")).compare(".JPG") == 0){
+				filesToCheck.push_back(currFile);
 			}
 		}
 	}
@@ -50,23 +51,25 @@ int boxDebug( int argc, char** argv )
 	for(i = 0; i < filesToCheck.size(); i++){
 		string pic = filesToCheck[i];
 		int numberOfBoxesInFile = (int)(pic[5]-'0');
-		bb_src = imread( pic );
-		if( !bb_src.data )
-		{ return -1; }
-		bb_picName = pic;
-		blackbox(0, 0);
-		if(numberOfBoxesInFile != numberOfBoxesFound){
-			printf("We found %d lines instead of %d in file %s\n",numberOfBoxesFound,numberOfBoxesInFile,pic.c_str());
-			namedWindow(pic.c_str(), CV_WINDOW_AUTOSIZE );
-			imshow(pic.c_str(), drawing);
+		bb_src = imread( folderName+"/"+pic );
+		if(bb_src.data != 0){
+			bb_picName = pic;
+			blackbox(0, 0);
+			if(numberOfBoxesInFile != numberOfBoxesFound){
+				printf("We found %d boxes instead of %d in file %s\n",numberOfBoxesFound,numberOfBoxesInFile,pic.c_str());
+				//namedWindow(pic.c_str(), CV_WINDOW_AUTOSIZE );
+				//imshow(pic.c_str(), drawing);
+			}
+			else
+				successCounter++;
 		}
-		else
-			successCounter++;
+		else{
+			cout << "Error loading image: " << pic << endl;
+		}
 	}
-	double successRate = (successCounter/filesToCheck.size())*100;
+	double successRate = ((double)successCounter/(double)filesToCheck.size())*100;
 	printf("We were correct in %d of the cases\n",successCounter);
 	printf("We were correct in %f%% of the cases\n",successRate);
-
 	waitKey(0);
 	return 0;
 }
@@ -138,49 +141,6 @@ void thresh_callback(int, void* ){
 			Point bottomLeft = Point(topLeft.x, bottomRight.y);
 		}
 	}
-
-	//distance code starts here
-	/*
-	/// Calculate the distances to the contour
-	Mat raw_dist( bb_src.size(), CV_32FC1 );
-
-	for( int j = 0; j < bb_src.rows; j++ ){
-		for( int i = 0; i < bb_src.cols; i++ ){
-			for(int k = 0; k< contours.size(); k++){
-				raw_dist.at<float>(j,i) = pointPolygonTest( contours[k], Point2f(i,j), true );
-			}
-		}
-	}
-
-	double minVal; double maxVal;
-	minMaxLoc( raw_dist, &minVal, &maxVal, 0, 0, Mat() );
-	minVal = abs(minVal); maxVal = abs(maxVal);
-
-	/// Depicting the  distances graphically
-	Mat dists = Mat::ones( bb_src.size(), CV_8UC3 );
-
-	for( int j = 0; j < bb_src.rows; j++ ){
-		for( int i = 0; i < bb_src.cols; i++ )
-		{
-			if( raw_dist.at<float>(j,i) < 0 ){
-				dists.at<Vec3b>(j,i)[0] = 255 - (int) abs(raw_dist.at<float>(j,i))*255/minVal;
-			}
-			//if( raw_dist.at<float>(j,i) > 0 ){
-			//	dists.at<Vec3b>(j,i)[2] = 255 - (int) raw_dist.at<float>(j,i)*255/maxVal;
-			//}
-			else if( raw_dist.at<float>(j,i) == 0 ){
-				dists.at<Vec3b>(j,i)[0] = 255;
-				dists.at<Vec3b>(j,i)[1] = 255;
-				dists.at<Vec3b>(j,i)[2] = 255;
-			}
-		}
-	}
-	 */
-	/// Show in a window
-	//namedWindow( "Contours", CV_WINDOW_AUTOSIZE );
-	//imshow( "Contours", drawing );
-	//namedWindow( "Distance", CV_WINDOW_AUTOSIZE );
-	//imshow( "Distance", dists );
 }
 
 void blackbox(int, void*){

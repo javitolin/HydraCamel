@@ -16,48 +16,30 @@ FilterRunThread::FilterRunThread(char* imageSrcChannel, bool camera,
 	_filterChannel = filterChannel;
 	_filterNum = filterNum;
 }
+/**
+ * This function runs a thread forever.
+ * It has a single interruption point so the thread can be killed.
+ */
 void FilterRunThread::runFilter() {
-	char beforeWindow[10] = "";
-	char afterWindow[10] = "";
-	sprintf(beforeWindow, "BEFORE_%d", _filterNum);
-	sprintf(afterWindow, "AFTER_%d", _filterNum);
-	//string beforeWindow = "BEFORE_";
-	//beforeWindow += itos(_filterNum);
-	cout << beforeWindow << endl << flush;
-	//string afterWindow = "AFTER_" + _filterNum;
-	int test = 1;
-	if(_filterNum == test){
-	cvNamedWindow(beforeWindow, CV_WINDOW_AUTOSIZE);
-	cvNamedWindow(afterWindow, CV_WINDOW_AUTOSIZE);
-	}
 	while (1) {
-		cout << "Running filter" << endl;
+		boost::this_thread::interruption_point();
+		cout <<  "Filter " << _filterNum << " Running" << endl;
 		vector<MissionControlMessage> vec;
 		Mat mat;
-		_ros->getFrontImage(mat);
+		_ros->getFrontImage(mat); //Get an image from the camera
 		if (!mat.empty()) {
-			if(_filterNum == test)
-				imshow(beforeWindow, mat);
-			_filter->MakeCopyAndRun(mat);
+			_filter->MakeCopyAndRun(mat); //Make a copy of the image and run the filter
 			Mat newImage;
-			_filter->Draw(newImage);
-			if(_filterNum == test){
-				imshow(afterWindow, newImage);
-				waitKey(30);
-			}
-			_filter->ToMesseges(vec);
-			cout << "The Messages were retrieved" << endl;
+			_filter->Draw(newImage); //Draw the result onto newImage
+			_filter->ToMesseges(vec); //Get the messages of the filter to vec
 			for (unsigned int i = 0; i < vec.size(); i++) {
-				MissionControlMessage m = vec[i];
-				_ros->sendMessage("Message", _filterChannel);
+				MissionControlMessage m = vec[i]; //Read the message
+				_ros->sendMessage("Message", (_filterNum-1)); //Send through ROS
 			}
-			cout << "The messages were sent" << endl;
 		} else {
 			cout << "image was empty" << endl;
 		}
 	}
 }
-FilterRunThread::~FilterRunThread() {
-// TODO Auto-generated destructor stub
-}
+FilterRunThread::~FilterRunThread() {}
 

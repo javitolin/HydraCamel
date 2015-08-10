@@ -214,6 +214,30 @@ Algos/FirstTask/FirstTaskGate.cpp.s:
 	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src && $(MAKE) -f hc_vision/CMakeFiles/hc_vision_src.dir/build.make hc_vision/CMakeFiles/hc_vision_src.dir/Algos/FirstTask/FirstTaskGate.cpp.s
 .PHONY : Algos/FirstTask/FirstTaskGate.cpp.s
 
+Algos/ThirdTask/ThirdTaskBlackBox.o: Algos/ThirdTask/ThirdTaskBlackBox.cpp.o
+.PHONY : Algos/ThirdTask/ThirdTaskBlackBox.o
+
+# target to build an object file
+Algos/ThirdTask/ThirdTaskBlackBox.cpp.o:
+	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src && $(MAKE) -f hc_vision/CMakeFiles/hc_vision_src.dir/build.make hc_vision/CMakeFiles/hc_vision_src.dir/Algos/ThirdTask/ThirdTaskBlackBox.cpp.o
+.PHONY : Algos/ThirdTask/ThirdTaskBlackBox.cpp.o
+
+Algos/ThirdTask/ThirdTaskBlackBox.i: Algos/ThirdTask/ThirdTaskBlackBox.cpp.i
+.PHONY : Algos/ThirdTask/ThirdTaskBlackBox.i
+
+# target to preprocess a source file
+Algos/ThirdTask/ThirdTaskBlackBox.cpp.i:
+	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src && $(MAKE) -f hc_vision/CMakeFiles/hc_vision_src.dir/build.make hc_vision/CMakeFiles/hc_vision_src.dir/Algos/ThirdTask/ThirdTaskBlackBox.cpp.i
+.PHONY : Algos/ThirdTask/ThirdTaskBlackBox.cpp.i
+
+Algos/ThirdTask/ThirdTaskBlackBox.s: Algos/ThirdTask/ThirdTaskBlackBox.cpp.s
+.PHONY : Algos/ThirdTask/ThirdTaskBlackBox.s
+
+# target to generate assembly for a file
+Algos/ThirdTask/ThirdTaskBlackBox.cpp.s:
+	cd /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src && $(MAKE) -f hc_vision/CMakeFiles/hc_vision_src.dir/build.make hc_vision/CMakeFiles/hc_vision_src.dir/Algos/ThirdTask/ThirdTaskBlackBox.cpp.s
+.PHONY : Algos/ThirdTask/ThirdTaskBlackBox.cpp.s
+
 Algos/Utils/ParamUtils.o: Algos/Utils/ParamUtils.cpp.o
 .PHONY : Algos/Utils/ParamUtils.o
 
@@ -546,6 +570,9 @@ help:
 	@echo "... Algos/FirstTask/FirstTaskGate.o"
 	@echo "... Algos/FirstTask/FirstTaskGate.i"
 	@echo "... Algos/FirstTask/FirstTaskGate.s"
+	@echo "... Algos/ThirdTask/ThirdTaskBlackBox.o"
+	@echo "... Algos/ThirdTask/ThirdTaskBlackBox.i"
+	@echo "... Algos/ThirdTask/ThirdTaskBlackBox.s"
 	@echo "... Algos/Utils/ParamUtils.o"
 	@echo "... Algos/Utils/ParamUtils.i"
 	@echo "... Algos/Utils/ParamUtils.s"

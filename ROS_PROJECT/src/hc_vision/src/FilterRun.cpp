@@ -46,9 +46,7 @@ Mat* FilterRun::runCreatedFilter(const string& filter_name, Mat& image,int num)
 		(*it)->MakeCopyAndRun(*mat);
 		(*it)->Draw(*mat);
 		(*it)->ToMesseges(vec);
-		sendMessagesToRos(vec,num);
 	}
-	sendImageToRos(mat,num);
 	return mat;
 }
 
@@ -354,115 +352,4 @@ void FilterRun::clearLists()
 	_bottomCameraFilters.clear();
 	_useUnorderedListFront = true;
 	_useUnorderedListBottom = true;
-}
-
-
-
-//ROS AND MULTITHREAD
-
-void FilterRun::runFilterThread(Mat* mat, bool front,int num){
-	if(front){
-		if(_useUnorderedListFront && !_frontCameraFilters.empty())
-			runFrontCameraThread(*mat,num);
-	}
-	else{
-		if(_useUnorderedListBottom && !_bottomCameraFilters.empty())
-			runBottomCameraThread(*mat,num);
-	}
-}
-void FilterRun::runThreadFront(Mat* image, int num){
-	//std::thread frontThread(&runFrontCameraThread, image, num);
-	//std::thread t1(std::bind(&FilterRun::runFrontCameraThread, this, image, num));
-}
-void FilterRun::runFrontCameraThread(Mat& image,int num){
-	Mat* mat = new Mat(image.size(),image.type());
-	image.copyTo(*mat);
-	vector<MissionControlMessage> vec;
-	vector<string>::const_iterator it;
-	for(it = _frontCameraFilters.begin(); it != _frontCameraFilters.end(); ++it)
-	{
-		if(_filterHandler->getFiltersInMachine().count(*it))
-
-		{
-			if( _filterHandler->isEnabled(*it) )
-			{
-				_filterHandler->getFilter(*it)->MakeCopyAndRun(*mat);
-				_filterHandler->getFilter(*it)->Draw(*mat);
-				_filterHandler->getFilter(*it)->ToMesseges(vec);
-				sendMessagesToRos(vec,num);
-				//Making a new copy for every result up-to this filter
-				Mat* temp_mat = new Mat(mat->size(),mat->type());
-				mat->copyTo(*temp_mat);
-				sendImageToRos(temp_mat,num);
-			}
-			else
-			{
-				_log->printLog("FilterRun", "Function \"runFrontCameraChainedFilters\" tried to use " + *it
-						+ ". This filter is not enabled", "Error");
-			}
-		}
-		else
-		{
-			Mat* temp_mat = runCreatedFilter(*it, image,num);
-			sendImageToRos(temp_mat,num);
-		}
-	}
-}
-void FilterRun::runBottomCameraThread(Mat& image,int num){
-	Mat* mat = new Mat(image.size(),image.type());
-	image.copyTo(*mat);
-	vector<MissionControlMessage> vec;
-	vector<string>::const_iterator it;
-	for(it = _bottomCameraFilters.begin(); it != _bottomCameraFilters.end(); ++it)
-	{
-		if(_filterHandler->getFiltersInMachine().count(*it))
-		{
-			if( _filterHandler->isEnabled(*it) )
-			{
-				_filterHandler->getFilter(*it)->MakeCopyAndRun(*mat);
-				_filterHandler->getFilter(*it)->Draw(*mat);
-				_filterHandler->getFilter(*it)->ToMesseges(vec);
-				sendMessagesToRos(vec,num);
-				Mat* temp_mat = new Mat(mat->size(),mat->type());
-				mat->copyTo(*temp_mat);
-				sendImageToRos(temp_mat,num);
-			}
-			else
-			{
-				_log->printLog("FilterRun", "Function \"runBottomCameraChainedFilters\" tried to use " + *it
-						+ ". This filter is not enabled", "Error");
-			}
-		}
-		else
-		{
-			Mat* temp_mat = runCreatedFilter(*it, image,num);
-			sendImageToRos(temp_mat,num);
-		}
-	}
-}
-/*string vecToString(vector<pair(int,int)> v){
-	string s = "";
-	for(int i = 0; i < v.size(); i++){
-		if(i < v.size() - 1)
-			s += v[i] + " - ";
-		else
-			s += v[i];
-	}
-	return s;
-}*/
-void FilterRun::sendMessagesToRos(vector<MissionControlMessage> vec, int fnum){
-	//TODO
-	for(unsigned int i = 0; i < vec.size(); i++){
-		int mCode = vec[i].MissionCode;
-		int aInfo = vec[i].additionalInformation;
-		/*vector<pair(int,int)> bounds = vec[i].bounds;
-		vector<pair(int,int)> iPoints = vec[i].intrestPoints;
-		string m = mCode +"@"+aInfo+"@"+vecToString(bounds)+"@"+vecToString(iPoints);*/
-		_ros->sendMessage("dsada","dsadsa");
-	}
-}
-void FilterRun::sendImageToRos(Mat* imageToSend, int fnum){
-	//TODO
-	Mat img = imageToSend[0];
-	_ros->sendImage(img, "channel1");
 }

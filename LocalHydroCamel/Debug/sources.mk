@@ -34,18 +34,6 @@ Algos/Path \
 Algos/JaviTest \
 Algos/Gate \
 Algos/FirstTask \
-Algos/Debug/blackGate2 \
-Algos/Debug/Utils \
-Algos/Debug/Traffic \
-Algos/Debug/Torpedo \
-Algos/Debug/Shadow \
-Algos/Debug/Path \
-Algos/Debug/JaviTest \
-Algos/Debug/Gate \
-Algos/Debug/FirstTask \
-Algos/Debug/BlackBox \
-Algos/Debug \
-Algos/Debug/Balls \
 Algos \
 Algos/Balls \
 

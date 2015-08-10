@@ -23,14 +23,16 @@ using namespace cv;
 class RosNetwork{
 public:
 	RosNetwork();
-	void sendMessage(string, string);
+	void sendMessage(string, int);
 	void sendImage(Mat, string);
 	void getFrontImage(Mat&);
 	void getBottomImage(Mat&);
 	void subscribeOnChannels(ros::NodeHandle);
+	void addChatter(string channelName);
 private:
 	ros::NodeHandle _n;
 	boost::mutex _mtx;
+	vector<ros::Publisher> _chatters;
 };
 
 #endif /* ROSNETWORK_H_ */

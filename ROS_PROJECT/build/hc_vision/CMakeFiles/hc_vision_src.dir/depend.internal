@@ -4145,6 +4145,7 @@ hc_vision/CMakeFiles/hc_vision_src.dir/src/FilterThreadPool.cpp.o
  /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/Algos/Utils/Utils.h
  /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/include/FilterRunThread.h
  /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/include/FilterThreadPool.h
+ /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/include/Log.h
  /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/include/RosNetwork.h
  /home/jdorfsman/git/HydraCamel/ROS_PROJECT/src/hc_vision/src/FilterThreadPool.cpp
  /opt/ros/indigo/include/XmlRpcDecl.h

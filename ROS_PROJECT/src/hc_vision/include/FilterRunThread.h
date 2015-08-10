@@ -13,6 +13,7 @@
 #include "opencv/highgui.h"
 #include <string>
 #include <stdio.h>
+#include <boost/thread.hpp>
 class FilterRunThread {
 public:
 	FilterRunThread(char* driverChannel, bool camera, RosNetwork *ros,

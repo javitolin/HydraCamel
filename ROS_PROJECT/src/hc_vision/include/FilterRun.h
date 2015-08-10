@@ -37,8 +37,6 @@ private:
     map<string, cv::Mat*> runFrontCameraChainedFilters(cv::Mat&,int);
     map<string, cv::Mat*> runBottomCameraChainedFilters(cv::Mat&,int);
     cv::Mat* runCreatedFilter(const std::string&, cv::Mat&,int);
-    void sendMessagesToRos(vector<MissionControlMessage>,int);
-    void sendImageToRos(Mat*,int);
 
 public:
     FilterRun(FilterHandler*, Log*, RosNetwork*);
@@ -51,9 +49,5 @@ public:
     std::vector<std::string> getBottomFilters();
     bool filterIsInUse(const std::string&);
     void clearLists();
-    void runFilterThread(Mat*, bool,int);
-    void runFrontCameraThread(Mat&,int);
-    void runBottomCameraThread(Mat&,int);
-    void runThreadFront(Mat* image, int num);
 };
 #endif

@@ -203,11 +203,6 @@ void VideoStream::runFront()
 		//Run the front filters on the given image
 		//TODO
 		map<string, Mat*> front_filtered_mats = _filterRun->runFront(image,1);
-		/* MULTITHREAD IMPLEMENTATION */
-		//boost::thread filterThread(boost::bind(FilterRun::runFrontCameraThread,image));
-		//std::thread filterThread(std::bind(&FilterRun::runFrontCameraThread, _filterRun, image,1));
-		_filterRun->runThreadFront(image,1);
-		/* END */
 		//stream original image
 		streamImage(frame, 0, 9, 9);
 		preStreamFront(front_filtered_mats);

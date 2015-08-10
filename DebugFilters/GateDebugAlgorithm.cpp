@@ -1,12 +1,23 @@
-#include "opencv2/imgproc/imgproc.hpp"
-#include "opencv2/highgui/highgui.hpp"
-#include "highgui.h"
-#include <stdlib.h>
-#include <stdio.h>
-#include <iostream>
-#include <fstream>
 #include <dirent.h>
-#include <sys/types.h>
+#include <opencv2/core/core.hpp>
+#include <opencv2/core/core_c.h>
+#include <opencv2/core/mat.hpp>
+#include <opencv2/core/operations.hpp>
+#include <opencv2/core/types_c.h>
+#include <opencv2/highgui/highgui.hpp>
+#include <opencv2/imgproc/imgproc.hpp>
+#include <opencv2/imgproc/types_c.h>
+#include <stddef.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <sys/time.h>
+#include <c++/4.8/cmath>
+#include <c++/4.8/ostream>
+#include <ctime>
+#include <iostream>
+#include <string>
+#include <vector>
+
 using namespace cv;
 using namespace std;
 
@@ -35,33 +46,15 @@ double groupsMinDiff = 0.2;
 Mat cedges;
 //For testing purposes
 int numberOfLinesFound = 0;
-
 /** Function Headers */
 void gate(int, void*);
 /** @function main */
 int gateDebug( int argc, char** argv )
 {
-	/// Load an image
-	/*namedWindow( "Abs", CV_WINDOW_AUTOSIZE );
-	/// Create Trackbar to select Morphology operation
-	createTrackbar("Operator:\n 0: Opening - 1: Closing \n 2: Gradient - 3: Top Hat \n 4: Black Hat", "Abs", &morph_operator, max_operator, abs );
-
-	/// Create Trackbar to select kernel type
-	createTrackbar( "Element:\n 0: Rect - 1: Cross - 2: Ellipse", "Abs",
-			&morph_elem, max_elem,
-			abs );
-
-	/// Create Trackbar to choose kernel size
-	createTrackbar( "Kernel size:\n 2n +1", "Abs",
-			&morph_size, max_kernel_size,
-			abs );
-	/// Create a Trackbar for user to enter threshold
-	createTrackbar( "Min Threshold:", "Abs", &lowThreshold, max_lowThreshold, abs );
-	 */
-
+	string folderName = "gate";
 	DIR *dp;
 	struct dirent *dirp;
-	if((dp  = opendir(".")) == NULL) {
+	if((dp  = opendir(folderName.c_str())) == NULL) {
 		cout << "Error: opening root folder" << endl;
 		return -1;
 	}
@@ -71,10 +64,9 @@ int gateDebug( int argc, char** argv )
 	while ((dirp = readdir(dp)) != NULL) {
 		string currFile = string(dirp->d_name);
 		if(currFile.find(".") != string::npos){
-			if(currFile.substr(0, 4).compare("gate") == 0){
-				if(currFile.substr(currFile.find_last_of(".")).compare(".png") == 0){
-					filesToCheck.push_back(currFile);
-				}
+			if(currFile.substr(currFile.find_last_of(".")).compare(".png") == 0
+					|| currFile.substr(currFile.find_last_of(".")).compare(".JPG") == 0){
+				filesToCheck.push_back(currFile);
 			}
 		}
 	}
@@ -83,23 +75,25 @@ int gateDebug( int argc, char** argv )
 	for(i = 0; i < filesToCheck.size(); i++){
 		string pic = filesToCheck[i];
 		int numberOfLinesInFile = (int)(pic[4]-'0');
-		src = imread( pic );
-		if( !src.data )
-		{ return -1; }
-		picName = pic;
-		gate(0, 0);
-		if(numberOfLinesInFile != numberOfLinesFound){
-			printf("We found %d lines instead of %d in file %s\n",numberOfLinesFound,numberOfLinesInFile,pic.c_str());
-			namedWindow(pic.c_str(), CV_WINDOW_AUTOSIZE );
-			imshow(pic.c_str(), cedges);
+		src = imread( folderName+"/"+pic );
+		if(src.data != 0){
+			picName = pic;
+			gate(0, 0);
+			if(numberOfLinesInFile != numberOfLinesFound){
+				printf("We found %d lines instead of %d in file %s\n",numberOfLinesFound,numberOfLinesInFile,pic.c_str());
+				//namedWindow(pic.c_str(), CV_WINDOW_AUTOSIZE );
+				//imshow(pic.c_str(), cedges);
+			}
+			else
+				successCounter++;
 		}
-		else
-			successCounter++;
+		else{
+			cout << "Error loading image: " << pic << endl;
+		}
 	}
-	double successRate = (successCounter/filesToCheck.size())*100;
+	double successRate = ((double)successCounter/(double)filesToCheck.size())*100;
 	printf("We were correct in %d of the cases\n",successCounter);
 	printf("We were correct in %f%% of the cases\n",successRate);
-
 	waitKey(0);
 	return 0;
 }

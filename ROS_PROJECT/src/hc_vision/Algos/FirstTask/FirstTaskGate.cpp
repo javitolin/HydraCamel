@@ -214,7 +214,6 @@ void FirstTaskGate::SetDefaultParams(){
 	numberOfLinesFound = 0;
 }
 void FirstTaskGate::Draw(Mat& draw){
-	cout << "got here!" << endl;
 	drawedImage.copyTo(draw);
 }
 void FirstTaskGate::InitProcessData(){
