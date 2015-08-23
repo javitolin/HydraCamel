@@ -21,6 +21,7 @@ using namespace std;
 
 /// Global variables
 Mat drawedImage;
+int firstLine, secondLine , firstWidth ,secondWidth;
 int const max_elem = 2;
 int const max_kernel_size = 21;
 string picName;
@@ -155,8 +156,14 @@ void FirstTaskGate::Run(Mat mat){
 			group2.clear();
 		}
 
+	firstLine = -1;
+	secondLine = -1;
+	firstWidth = -1;
+	secondWidth = -1;
+
 	for( size_t i = 0; i < group1.size() || i < group2.size(); i++ ){
 		if(i < group1.size()){
+			firstWidth = group1.size();
 			float rho = group1[i][0], theta = group1[i][1];
 			Point pt1, pt2;
 			double a = cos(theta), b = sin(theta);
@@ -165,9 +172,11 @@ void FirstTaskGate::Run(Mat mat){
 			pt1.y = cvRound(y0 + 1000*(a));
 			pt2.x = cvRound(x0 - 1000*(-b));
 			pt2.y = cvRound(y0 - 1000*(a));
+			firstLine =firstLine+ pt1.x ;
 			line( cedges, pt1, pt2, Scalar(255,0,0), 2, CV_AA);
 		}
 		if(i < group2.size()){
+			secondWidth = group2.size();
 			float rho = group2[i][0], theta = group2[i][1];
 			Point pt1, pt2;
 			double a = cos(theta), b = sin(theta);
@@ -176,9 +185,14 @@ void FirstTaskGate::Run(Mat mat){
 			pt1.y = cvRound(y0 + 1000*(a));
 			pt2.x = cvRound(x0 - 1000*(-b));
 			pt2.y = cvRound(y0 - 1000*(a));
+			secondLine = secondLine + pt1.x;
 			line( cedges, pt1, pt2, Scalar(0,255,0), 2, CV_AA);
 		}
 	}
+	if(group1.size()!=0)
+		firstLine = firstLine/group1.size();
+	if(group2.size()!=0)
+		secondLine = secondLine/group2.size();
 	cedges.copyTo(mat);
 	cedges.copyTo(drawedImage);
 	if(group1.size() > 0) numberOfLinesFound++;
@@ -197,6 +211,8 @@ void FirstTaskGate::Load(map<string, string>& params){
 void FirstTaskGate::ToMesseges(vector<MissionControlMessage>& res){
 	MissionControlMessage msg;
 	msg.MissionCode = 2;
+	msg.bounds.push_back(std::make_pair(firstLine,firstWidth));
+	msg.bounds.push_back(std::make_pair(secondLine,secondWidth));
 	res.push_back(msg);
 }
 void FirstTaskGate::ClearProcessData(){

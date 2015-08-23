@@ -11,6 +11,10 @@
 Mat bb_bw, drawing;
 int bb_max_thresh = 255;
 RNG rng(12345);
+
+vector<bool> draw;
+vector<Rect> boundRect;
+
 //config file vars START HERE:
 int bb_thresh = 150;
 double minBlackResemblence = 5;
@@ -80,17 +84,7 @@ void ThirdTaskBlackBox::Run(Mat mat){
 	}
 
 	//TODO:
-	//send back to ros part:
-	for( uint i = 0; i< contours.size(); i++ )
-	{
-		if(draw[i]){
-			//need to return:
-			Point topLeft =boundRect[i].tl();
-			Point bottomRight = boundRect[i].br();
-			Point topRight = Point(bottomRight.x, topLeft.y);
-			Point bottomLeft = Point(topLeft.x, bottomRight.y);
-		}
-	}
+
 }
 void ThirdTaskBlackBox::Load(map<string, string>& params){
 	ParamUtils::setParam(params, "bb_thresh", bb_thresh);
@@ -98,9 +92,26 @@ void ThirdTaskBlackBox::Load(map<string, string>& params){
 
 }
 void ThirdTaskBlackBox::ToMesseges(vector<MissionControlMessage>& res){
-	MissionControlMessage msg;
-	msg.MissionCode = 3;
-	res.push_back(msg);
+
+	//send back to ros part:
+	for( uint i = 0; i< boundRect.size(); i++ )
+	{
+		if(draw[i]){
+			MissionControlMessage msg;
+			msg.MissionCode = 3;
+			//need to return:
+			Point topLeft =boundRect[i].tl();
+			msg.bounds.push_back(std::make_pair(topLeft.x,topLeft.y));
+			Point bottomRight = boundRect[i].br();
+			msg.bounds.push_back(std::make_pair(bottomRight.x,bottomRight.y));
+			Point topRight = Point(bottomRight.x, topLeft.y);
+			msg.bounds.push_back(std::make_pair(topRight.x,topRight.y));
+			Point bottomLeft = Point(topLeft.x, bottomRight.y);
+			msg.bounds.push_back(std::make_pair(bottomLeft.x,bottomLeft.y));
+			res.push_back(msg);
+		}
+	}
+
 }
 void ThirdTaskBlackBox::ClearProcessData(){
 	//TODO
