@@ -10976,3 +10976,49 @@ Info
 Date: 04-08-2015	Time: 19:00:58
 Info
 	Waiting for client...
+Date: 18-08-2015	Time: 17:13:49
+Date: 18-08-2015	Time: 17:13:49
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 18-08-2015	Time: 17:13:49
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 18-08-2015	Time: 17:13:49
+Info
+	Loading created filters...
+FilterHandler:	Date: 18-08-2015	Time: 17:13:49
+Info
+	Done loading created filters
+Date: 18-08-2015	Time: 17:13:49
+Info
+	Waiting for client...
+Date: 18-08-2015	Time: 17:17:31
+Date: 18-08-2015	Time: 17:17:31
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 18-08-2015	Time: 17:17:31
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 18-08-2015	Time: 17:17:31
+Info
+	Loading created filters...
+FilterHandler:	Date: 18-08-2015	Time: 17:17:31
+Info
+	Done loading created filters
+Date: 18-08-2015	Time: 17:17:31
+Info
+	Waiting for client...

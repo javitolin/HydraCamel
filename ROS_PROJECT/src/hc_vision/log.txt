@@ -46604,3 +46604,52 @@ Info
 Date: 04-08-2015	Time: 18:37:01
 Info
 	Waiting for client...
+Date: 18-08-2015	Time: 17:10:22
+Date: 18-08-2015	Time: 17:10:22
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 18-08-2015	Time: 17:10:22
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 18-08-2015	Time: 17:10:22
+Info
+	Loading created filters...
+FilterHandler:	Date: 18-08-2015	Time: 17:10:22
+Info
+	Done loading created filters
+Date: 18-08-2015	Time: 17:10:22
+Info
+	Waiting for client...
+Date: 18-08-2015	Time: 17:10:37
+Date: 18-08-2015	Time: 17:10:37
+Info
+	Initiating...
+	Creating folder SOFilters...
+	Folder already exists
+	Creating folder VideoLog...
+	Folder already exists
+	Creating folder CreatedFilters...
+	Folder already exists
+FilterHandler:	Date: 18-08-2015	Time: 17:10:37
+Info
+	Loading .so filters...
+	Done
+FilterHandler:	Date: 18-08-2015	Time: 17:10:37
+Info
+	Loading created filters...
+FilterHandler:	Date: 18-08-2015	Time: 17:10:37
+Info
+	Done loading created filters
+Date: 18-08-2015	Time: 17:10:37
+Info
+	Waiting for client...
+FilterThreadPool::generateFilters:	Date: 18-08-2015	Time: 17:10:37
+Error
+	problem in loading parameters of firstTaskConfig:morph_elem: don't exists in args

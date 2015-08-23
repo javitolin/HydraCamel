@@ -16,7 +16,7 @@ bool FilterThreadPool::generateFilters(RosNetwork* rosN,Log* _log) {
 	vector<char*> taskNames;
 
 	FirstTaskGate* ftg = new FirstTaskGate();
-	string firstTaskConfig = "firstTaskConfig";			//Configuration file name
+	string firstTaskConfig = "FirstTaskGate";			//Configuration file name
 	char* firstTaskChannel = "driverChannel";			//Camera Channel
 	char* firstTaskName = "FirstTaskFilter_Channel";	//Filter Output channel
 	taskNames.push_back(firstTaskName);					//Adding to channel list

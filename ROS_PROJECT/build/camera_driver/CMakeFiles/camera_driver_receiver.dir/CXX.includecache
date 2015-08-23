@@ -29,6 +29,8 @@ stdio.h
 -
 time.h
 -
+signal.h
+-
 
 /opt/ros/indigo/include/XmlRpcDecl.h
 ros/macros.h
