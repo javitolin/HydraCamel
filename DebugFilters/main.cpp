@@ -9,6 +9,7 @@
 
 extern int gateDebug( int argc, char** argv );
 extern int boxDebug( int argc, char** argv );
+extern int collisionDebug( int argc, char** argv );
 
 int main(int argc, char** argv){
 	if(argc<2){
@@ -20,9 +21,12 @@ int main(int argc, char** argv){
 			return gateDebug(argc, argv);
 		else if(mission == 4)
 			return boxDebug(argc, argv);
+		else if(mission == 2)
+			return collisionDebug(argc,argv);
 		else if (mission == 0){
 			gateDebug(argc,argv);
 			boxDebug(argc,argv);
+			collisionDebug(argc,argv);
 		}
 	}
 }
